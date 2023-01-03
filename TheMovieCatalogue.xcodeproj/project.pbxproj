@@ -7,8 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		E54BC7DD295AD0980039A9BD /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = E54BC7DC295AD0980039A9BD /* Alamofire */; };
+		E54BC7E0295AD1760039A9BD /* UISimpleSlidingTabController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E54BC7DF295AD1760039A9BD /* UISimpleSlidingTabController.swift */; };
+		E54BC7E2295AD1E50039A9BD /* HomePage.swift in Sources */ = {isa = PBXBuildFile; fileRef = E54BC7E1295AD1E50039A9BD /* HomePage.swift */; };
+		E54BC7E5295AD5BE0039A9BD /* TabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E54BC7E4295AD5BE0039A9BD /* TabView.swift */; };
+		E563284B295ADE2900F509A7 /* CustomNavigationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E563284A295ADE2900F509A7 /* CustomNavigationView.swift */; };
 		E578BC582954626900B8FDF0 /* TheMovieCatalogueApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = E578BC572954626900B8FDF0 /* TheMovieCatalogueApp.swift */; };
-		E578BC5A2954626900B8FDF0 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E578BC592954626900B8FDF0 /* ContentView.swift */; };
 		E578BC5C2954626A00B8FDF0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E578BC5B2954626A00B8FDF0 /* Assets.xcassets */; };
 		E578BC5F2954626A00B8FDF0 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E578BC5E2954626A00B8FDF0 /* Preview Assets.xcassets */; };
 		E578BC692954626A00B8FDF0 /* TheMovieCatalogueTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E578BC682954626A00B8FDF0 /* TheMovieCatalogueTests.swift */; };
@@ -22,7 +26,8 @@
 		E578BCA1295469F300B8FDF0 /* Montserrat-SemiBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = E578BC9D295469F300B8FDF0 /* Montserrat-SemiBold.ttf */; };
 		E578BCA2295469F300B8FDF0 /* Montserrat-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = E578BC9E295469F300B8FDF0 /* Montserrat-Bold.ttf */; };
 		E578BCA629546A9A00B8FDF0 /* GeneralHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = E578BCA529546A9A00B8FDF0 /* GeneralHelper.swift */; };
-		E578BCA929546CBD00B8FDF0 /* Font+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = E578BCA829546CBD00B8FDF0 /* Font+Extension.swift */; };
+		E578BCA929546CBD00B8FDF0 /* Text+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = E578BCA829546CBD00B8FDF0 /* Text+Extension.swift */; };
+		E57FF0882964109D00E14AB9 /* UIFont+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = E57FF0872964109D00E14AB9 /* UIFont+Extension.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -43,9 +48,12 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		E54BC7DF295AD1760039A9BD /* UISimpleSlidingTabController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UISimpleSlidingTabController.swift; sourceTree = "<group>"; };
+		E54BC7E1295AD1E50039A9BD /* HomePage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomePage.swift; sourceTree = "<group>"; };
+		E54BC7E4295AD5BE0039A9BD /* TabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabView.swift; sourceTree = "<group>"; };
+		E563284A295ADE2900F509A7 /* CustomNavigationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomNavigationView.swift; sourceTree = "<group>"; };
 		E578BC542954626900B8FDF0 /* TheMovieCatalogue.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TheMovieCatalogue.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E578BC572954626900B8FDF0 /* TheMovieCatalogueApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TheMovieCatalogueApp.swift; sourceTree = "<group>"; };
-		E578BC592954626900B8FDF0 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		E578BC5B2954626A00B8FDF0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E578BC5E2954626A00B8FDF0 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		E578BC642954626A00B8FDF0 /* TheMovieCatalogueTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TheMovieCatalogueTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -62,7 +70,8 @@
 		E578BC9E295469F300B8FDF0 /* Montserrat-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Montserrat-Bold.ttf"; path = "../../../../../../../Downloads/Montserrat/static/Montserrat-Bold.ttf"; sourceTree = "<group>"; };
 		E578BCA329546A1E00B8FDF0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		E578BCA529546A9A00B8FDF0 /* GeneralHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GeneralHelper.swift; sourceTree = "<group>"; };
-		E578BCA829546CBD00B8FDF0 /* Font+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Font+Extension.swift"; sourceTree = "<group>"; };
+		E578BCA829546CBD00B8FDF0 /* Text+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Text+Extension.swift"; sourceTree = "<group>"; };
+		E57FF0872964109D00E14AB9 /* UIFont+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIFont+Extension.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -70,6 +79,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E54BC7DD295AD0980039A9BD /* Alamofire in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -90,6 +100,22 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		E54BC7DE295AD1560039A9BD /* MainHeader */ = {
+			isa = PBXGroup;
+			children = (
+				E54BC7DF295AD1760039A9BD /* UISimpleSlidingTabController.swift */,
+			);
+			path = MainHeader;
+			sourceTree = "<group>";
+		};
+		E54BC7E3295AD5AA0039A9BD /* Tabs */ = {
+			isa = PBXGroup;
+			children = (
+				E54BC7E4295AD5BE0039A9BD /* TabView.swift */,
+			);
+			path = Tabs;
+			sourceTree = "<group>";
+		};
 		E578BC4B2954626900B8FDF0 = {
 			isa = PBXGroup;
 			children = (
@@ -193,7 +219,6 @@
 			isa = PBXGroup;
 			children = (
 				E578BC572954626900B8FDF0 /* TheMovieCatalogueApp.swift */,
-				E578BC592954626900B8FDF0 /* ContentView.swift */,
 			);
 			path = App;
 			sourceTree = "<group>";
@@ -262,6 +287,7 @@
 		E578BC90295464BC00B8FDF0 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				E54BC7E1295AD1E50039A9BD /* HomePage.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -283,7 +309,10 @@
 		E578BC94295464E800B8FDF0 /* ViewComponent */ = {
 			isa = PBXGroup;
 			children = (
+				E54BC7E3295AD5AA0039A9BD /* Tabs */,
+				E54BC7DE295AD1560039A9BD /* MainHeader */,
 				E578BC972954654400B8FDF0 /* Home */,
+				E563284A295ADE2900F509A7 /* CustomNavigationView.swift */,
 			);
 			path = ViewComponent;
 			sourceTree = "<group>";
@@ -319,7 +348,8 @@
 		E578BCA729546CB000B8FDF0 /* Extension */ = {
 			isa = PBXGroup;
 			children = (
-				E578BCA829546CBD00B8FDF0 /* Font+Extension.swift */,
+				E578BCA829546CBD00B8FDF0 /* Text+Extension.swift */,
+				E57FF0872964109D00E14AB9 /* UIFont+Extension.swift */,
 			);
 			path = Extension;
 			sourceTree = "<group>";
@@ -340,6 +370,9 @@
 			dependencies = (
 			);
 			name = TheMovieCatalogue;
+			packageProductDependencies = (
+				E54BC7DC295AD0980039A9BD /* Alamofire */,
+			);
 			productName = TheMovieCatalogue;
 			productReference = E578BC542954626900B8FDF0 /* TheMovieCatalogue.app */;
 			productType = "com.apple.product-type.application";
@@ -412,6 +445,9 @@
 				Base,
 			);
 			mainGroup = E578BC4B2954626900B8FDF0;
+			packageReferences = (
+				E54BC7DB295AD0980039A9BD /* XCRemoteSwiftPackageReference "Alamofire" */,
+			);
 			productRefGroup = E578BC552954626900B8FDF0 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -458,13 +494,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E54BC7E5295AD5BE0039A9BD /* TabView.swift in Sources */,
 				E578BC8F2954644600B8FDF0 /* Networking.swift in Sources */,
-				E578BC5A2954626900B8FDF0 /* ContentView.swift in Sources */,
+				E54BC7E2295AD1E50039A9BD /* HomePage.swift in Sources */,
 				E578BCA629546A9A00B8FDF0 /* GeneralHelper.swift in Sources */,
 				E578BC962954651100B8FDF0 /* HomeLayout.swift in Sources */,
+				E57FF0882964109D00E14AB9 /* UIFont+Extension.swift in Sources */,
 				E578BC582954626900B8FDF0 /* TheMovieCatalogueApp.swift in Sources */,
-				E578BCA929546CBD00B8FDF0 /* Font+Extension.swift in Sources */,
+				E578BCA929546CBD00B8FDF0 /* Text+Extension.swift in Sources */,
+				E563284B295ADE2900F509A7 /* CustomNavigationView.swift in Sources */,
 				E578BC992954655100B8FDF0 /* HomeCell.swift in Sources */,
+				E54BC7E0295AD1760039A9BD /* UISimpleSlidingTabController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -791,6 +831,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		E54BC7DB295AD0980039A9BD /* XCRemoteSwiftPackageReference "Alamofire" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Alamofire/Alamofire.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		E54BC7DC295AD0980039A9BD /* Alamofire */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = E54BC7DB295AD0980039A9BD /* XCRemoteSwiftPackageReference "Alamofire" */;
+			productName = Alamofire;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = E578BC4C2954626900B8FDF0 /* Project object */;
 }

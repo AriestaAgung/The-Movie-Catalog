@@ -17,7 +17,6 @@ enum FontType: String {
 
 
 extension Text {
-
     func getCustomFont(type: FontType, size: CGFloat) -> Text {
         return self.font(.custom(type.rawValue, size: size))
         
