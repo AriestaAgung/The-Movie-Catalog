@@ -14,7 +14,7 @@ final class HomeTVMapper {
             let entity = TVEntity()
             entity.id = String(describing: res.id)
             entity.title = res.name ?? ""
-            entity.posterImage = res.posterPath ?? ""
+            entity.posterImage = "\(API.imgBaseUrl)\(res.posterPath)"
             entity.desc = res.overview ?? ""
             return entity
         }
@@ -22,7 +22,7 @@ final class HomeTVMapper {
     
     static func mapEntityToDomain(entities: [TVEntity]) -> [TVListModel] {
         return entities.map{res in
-            let model = TVListModel(id: res.id, title: res.title, posterImage: res.posterImage, desc: res.desc)
+            let model = TVListModel(id: res.id, title: res.title, posterImage: "\(API.imgBaseUrl)\(res.posterImage)", desc: res.desc)
             return model
         }
     }
@@ -33,7 +33,7 @@ final class HomeTVMapper {
             let entity = TVListModel(
                 id: String(describing: res.id),
                 title: res.name ?? "",
-                posterImage: res.posterPath ?? "",
+                posterImage: "\(API.imgBaseUrl)\(res.posterPath)",
                 desc: res.overview ?? ""
             )
             return entity

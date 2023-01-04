@@ -11,7 +11,9 @@ import SwiftUI
 struct TheMovieCatalogueApp: App {
     var body: some Scene {
         WindowGroup {
-            HomePage()
+            let homeUseCase = Injection().provideHome()
+            let homePresenter = HomePresenter(useCase: homeUseCase)
+            HomePage(presenter: homePresenter)
         }
     }
 }

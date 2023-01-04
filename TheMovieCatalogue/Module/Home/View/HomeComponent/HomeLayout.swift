@@ -8,10 +8,11 @@
 import SwiftUI
 
 struct HomeLayout: View {
+    var tvData: [TVListModel]
     var body: some View {
         List {
-            ForEach(Range(NSRange(location: 1, length: 50))!) {_ in
-                HomeCell()
+            ForEach(tvData, id: \.id) { item in
+                HomeCell(title: item.title, desc: item.desc, rate: item.id, firstAiring: item.title, imageURL: item.posterImage)
                     .listRowSeparator(.hidden)
             }
         }
@@ -20,6 +21,6 @@ struct HomeLayout: View {
 
 struct HomeLayout_Previews: PreviewProvider {
     static var previews: some View {
-        HomeLayout()
+        HomeLayout(tvData: [])
     }
 }

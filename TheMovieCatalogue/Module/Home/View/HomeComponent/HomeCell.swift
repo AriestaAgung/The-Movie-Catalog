@@ -15,6 +15,14 @@ struct HomeCell: View {
     var firstAiring: String?
     var imageURL: String?
     
+    init(title: String? = nil, desc: String? = nil, rate: String? = nil, firstAiring: String? = nil, imageURL: String? = nil) {
+        self.title = title
+        self.desc = desc
+        self.rate = rate
+        self.firstAiring = firstAiring
+        self.imageURL = imageURL
+    }
+    
     var body: some View {
         LazyVStack(alignment: .leading, spacing: 8) {
             
@@ -25,7 +33,7 @@ struct HomeCell: View {
                     .aspectRatio(contentMode: .fit)
                     .frame(width: 40, height: 40, alignment: .leading)
                 
-                Text("TESTING NGAB")
+                Text(title ?? "Test")
                     .getCustomFont(type: .medium, size: 16)
                 
             }
@@ -42,12 +50,14 @@ struct HomeCell: View {
                 Text(firstAiring ?? "First Air Date")
                     .getCustomFont(type: .medium, size: 12)
             }
-            .padding([.leading], 48)
+            .padding(.leading, 8)
+            .padding([.trailing], 16)
+            
             
             Text(desc ?? "This is a description")
                 .getCustomFont(type: .medium, size: 12)
                 .lineLimit(2)
-                .padding([.leading, .top], 8)
+                .padding([.leading, .top, .trailing], 8)
                 
         }
     }

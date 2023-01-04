@@ -9,6 +9,7 @@ import SwiftUI
 
 struct HomePage: View {
     @State private var selectedTab: Int = 0
+    @ObservedObject var presenter: HomePresenter
     let tabs: [Tab] = [
         .init(icon: Image(systemName: "music.note"), title: "TV Series"),
         .init(icon: Image(systemName: "film.fill"), title: "Movies"),
@@ -26,13 +27,18 @@ struct HomePage: View {
                         // Views
                         TabView(selection: $selectedTab,
                                 content: {
-                            HomeLayout()
+                            HomeLayout(tvData: presenter.tvList)
                                 .tag(0)
-                            HomeLayout()
+                            HomeLayout(tvData: presenter.tvList)
                                 .tag(1)
                         })
                         .tabViewStyle(PageTabViewStyle(indexDisplayMode: .never))
                     }
+                }
+            }
+            .onAppear{
+                if self.presenter.tvList.count == 0 {
+                    self.presenter.getTVList()
                 }
             }
             .modifier(CustomNavigationView())
@@ -45,6 +51,8 @@ struct HomePage: View {
 
 struct HomePage_Previews: PreviewProvider {
     static var previews: some View {
-        HomePage()
+        let homeUseCase = Injection().provideHome()
+        let homePresenter = HomePresenter(useCase: homeUseCase)
+        HomePage(presenter: homePresenter)
     }
 }

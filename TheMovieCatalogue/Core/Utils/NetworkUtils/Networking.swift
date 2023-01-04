@@ -9,6 +9,7 @@ import Foundation
 
 struct API {
     static let baseUrl = Bundle.main.object(forInfoDictionaryKey: "BaseURL") as! String
+    static let imgBaseUrl = Bundle.main.object(forInfoDictionaryKey: "BaseImageURL") as! String
     static let apiKey = Bundle.main.object(forInfoDictionaryKey: "MovieAPIKey") as! String
 }
 
@@ -26,9 +27,9 @@ enum Endpoints {
         
         public var url: String {
             switch self {
-            case .movieList: return "\(API.baseUrl)movie/latest"
+            case .movieList: return "\(API.baseUrl)movie/latest?api_key=\(API.apiKey)"
             case .movieDetail: return "\(API.baseUrl)movie/{movie_id}"
-            case .tvList: return "\(API.baseUrl)tv/latest"
+            case .tvList: return "\(API.baseUrl)tv/popular?api_key=\(API.apiKey)"
             case .tvDetail: return "\(API.baseUrl)tv/{tv_id}"
             }
         }
