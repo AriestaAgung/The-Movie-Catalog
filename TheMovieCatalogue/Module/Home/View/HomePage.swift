@@ -10,16 +10,15 @@ import SwiftUI
 struct HomePage: View {
     @State private var selectedTab: Int = 0
     let tabs: [Tab] = [
-        .init(icon: Image(systemName: "music.note"), title: "Music"),
+        .init(icon: Image(systemName: "music.note"), title: "TV Series"),
         .init(icon: Image(systemName: "film.fill"), title: "Movies"),
     ]
     
     var body: some View {
-        NavigationView{
-            
+        NavigationStack{
             ZStack{
                 Color.black
-                    .edgesIgnoringSafeArea([.all])
+                    .edgesIgnoringSafeArea([.top])
                 GeometryReader { geo in
                     VStack(spacing: 0) {
                         // Tabs
@@ -40,8 +39,7 @@ struct HomePage: View {
             .navigationTitle("Home")
             .navigationBarTitleDisplayMode(.inline)
             .navigationBarBackButtonHidden(true)
-        }
-        
+        }        
     }
 }
 

@@ -1,0 +1,45 @@
+//
+//  RemoteDataSource.swift
+//  TheMovieCatalogue
+//
+//  Created by BRIMO on 04/01/23.
+//
+
+import Foundation
+import RxSwift
+import Alamofire
+
+protocol RemoteDataSourceProtocol {
+    func getTVList() -> Observable<TVPopularResponse?>
+}
+
+final class RemoteDataSource: NSObject {
+    private override init() { }
+    
+    static let shared: RemoteDataSource = RemoteDataSource()
+}
+
+extension RemoteDataSource: RemoteDataSourceProtocol {
+    func getTVList() -> Observable<TVPopularResponse?> {
+        return Observable<TVPopularResponse?>.create{ observer in
+            if let url = URL(string: Endpoints.Gets.tvList.url) {
+                AF.request(url)
+                    .validate()
+                    .responseDecodable(of: TVPopularResponse.self){ response in
+                        switch response.result {
+                        case .success(let value):
+                            observer.onNext(value)
+                            observer.onCompleted()
+                        case .failure(let err):
+                            observer.onError(err)
+                        }
+                    }
+            }
+            return Disposables.create()
+        }
+    }
+    
+    
+    
+    
+}

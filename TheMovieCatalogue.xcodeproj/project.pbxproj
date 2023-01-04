@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		E54784AA296582C2006CB7F3 /* Injection.swift in Sources */ = {isa = PBXBuildFile; fileRef = E54784A9296582C2006CB7F3 /* Injection.swift */; };
+		E54784AC296584FA006CB7F3 /* HomePresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = E54784AB296584FA006CB7F3 /* HomePresenter.swift */; };
+		E54784AE29658504006CB7F3 /* HomeRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = E54784AD29658504006CB7F3 /* HomeRouter.swift */; };
 		E54BC7DD295AD0980039A9BD /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = E54BC7DC295AD0980039A9BD /* Alamofire */; };
 		E54BC7E0295AD1760039A9BD /* UISimpleSlidingTabController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E54BC7DF295AD1760039A9BD /* UISimpleSlidingTabController.swift */; };
 		E54BC7E2295AD1E50039A9BD /* HomePage.swift in Sources */ = {isa = PBXBuildFile; fileRef = E54BC7E1295AD1E50039A9BD /* HomePage.swift */; };
@@ -28,6 +31,21 @@
 		E578BCA629546A9A00B8FDF0 /* GeneralHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = E578BCA529546A9A00B8FDF0 /* GeneralHelper.swift */; };
 		E578BCA929546CBD00B8FDF0 /* Text+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = E578BCA829546CBD00B8FDF0 /* Text+Extension.swift */; };
 		E57FF0882964109D00E14AB9 /* UIFont+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = E57FF0872964109D00E14AB9 /* UIFont+Extension.swift */; };
+		E57FF08C296523BD00E14AB9 /* TVPopularResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = E57FF08B296523BD00E14AB9 /* TVPopularResponse.swift */; };
+		E57FF08E2965247800E14AB9 /* TVRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = E57FF08D2965247800E14AB9 /* TVRepository.swift */; };
+		E57FF0912965267700E14AB9 /* RemoteDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = E57FF0902965267700E14AB9 /* RemoteDataSource.swift */; };
+		E57FF093296526C100E14AB9 /* TVListModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E57FF092296526C100E14AB9 /* TVListModel.swift */; };
+		E57FF09629652C8A00E14AB9 /* SDWebImageSwiftUI in Frameworks */ = {isa = PBXBuildFile; productRef = E57FF09529652C8A00E14AB9 /* SDWebImageSwiftUI */; };
+		E57FF09829653CB700E14AB9 /* HomeUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = E57FF09729653CB700E14AB9 /* HomeUseCase.swift */; };
+		E57FF09B29653DE500E14AB9 /* RxCocoa in Frameworks */ = {isa = PBXBuildFile; productRef = E57FF09A29653DE500E14AB9 /* RxCocoa */; };
+		E57FF09D29653DE500E14AB9 /* RxSwift in Frameworks */ = {isa = PBXBuildFile; productRef = E57FF09C29653DE500E14AB9 /* RxSwift */; };
+		E57FF0A129654B7300E14AB9 /* Realm in Frameworks */ = {isa = PBXBuildFile; productRef = E57FF0A029654B7300E14AB9 /* Realm */; };
+		E57FF0A329654B7300E14AB9 /* RealmSwift in Frameworks */ = {isa = PBXBuildFile; productRef = E57FF0A229654B7300E14AB9 /* RealmSwift */; };
+		E57FF0A529654B8B00E14AB9 /* LocaleDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = E57FF0A429654B8B00E14AB9 /* LocaleDataSource.swift */; };
+		E57FF0A829654B9E00E14AB9 /* TVEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = E57FF0A729654B9E00E14AB9 /* TVEntity.swift */; };
+		E57FF0AA2965509100E14AB9 /* Results+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = E57FF0A92965509100E14AB9 /* Results+Extension.swift */; };
+		E57FF0AC2965554500E14AB9 /* CustomError+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = E57FF0AB2965554500E14AB9 /* CustomError+Extension.swift */; };
+		E57FF0B32965592800E14AB9 /* TVMapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = E57FF0B22965592800E14AB9 /* TVMapper.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -48,6 +66,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		E54784A9296582C2006CB7F3 /* Injection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Injection.swift; sourceTree = "<group>"; };
+		E54784AB296584FA006CB7F3 /* HomePresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomePresenter.swift; sourceTree = "<group>"; };
+		E54784AD29658504006CB7F3 /* HomeRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeRouter.swift; sourceTree = "<group>"; };
 		E54BC7DF295AD1760039A9BD /* UISimpleSlidingTabController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UISimpleSlidingTabController.swift; sourceTree = "<group>"; };
 		E54BC7E1295AD1E50039A9BD /* HomePage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomePage.swift; sourceTree = "<group>"; };
 		E54BC7E4295AD5BE0039A9BD /* TabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabView.swift; sourceTree = "<group>"; };
@@ -72,6 +93,16 @@
 		E578BCA529546A9A00B8FDF0 /* GeneralHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GeneralHelper.swift; sourceTree = "<group>"; };
 		E578BCA829546CBD00B8FDF0 /* Text+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Text+Extension.swift"; sourceTree = "<group>"; };
 		E57FF0872964109D00E14AB9 /* UIFont+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIFont+Extension.swift"; sourceTree = "<group>"; };
+		E57FF08B296523BD00E14AB9 /* TVPopularResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TVPopularResponse.swift; sourceTree = "<group>"; };
+		E57FF08D2965247800E14AB9 /* TVRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TVRepository.swift; sourceTree = "<group>"; };
+		E57FF0902965267700E14AB9 /* RemoteDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RemoteDataSource.swift; sourceTree = "<group>"; };
+		E57FF092296526C100E14AB9 /* TVListModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TVListModel.swift; sourceTree = "<group>"; };
+		E57FF09729653CB700E14AB9 /* HomeUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeUseCase.swift; sourceTree = "<group>"; };
+		E57FF0A429654B8B00E14AB9 /* LocaleDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocaleDataSource.swift; sourceTree = "<group>"; };
+		E57FF0A729654B9E00E14AB9 /* TVEntity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TVEntity.swift; sourceTree = "<group>"; };
+		E57FF0A92965509100E14AB9 /* Results+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Results+Extension.swift"; sourceTree = "<group>"; };
+		E57FF0AB2965554500E14AB9 /* CustomError+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CustomError+Extension.swift"; sourceTree = "<group>"; };
+		E57FF0B22965592800E14AB9 /* TVMapper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TVMapper.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -79,7 +110,12 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E57FF0A329654B7300E14AB9 /* RealmSwift in Frameworks */,
+				E57FF09B29653DE500E14AB9 /* RxCocoa in Frameworks */,
+				E57FF09629652C8A00E14AB9 /* SDWebImageSwiftUI in Frameworks */,
+				E57FF09D29653DE500E14AB9 /* RxSwift in Frameworks */,
 				E54BC7DD295AD0980039A9BD /* Alamofire in Frameworks */,
+				E57FF0A129654B7300E14AB9 /* Realm in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -177,6 +213,7 @@
 		E578BC812954628D00B8FDF0 /* Data */ = {
 			isa = PBXGroup;
 			children = (
+				E57FF09E29653E3100E14AB9 /* Repository */,
 				E578BC852954631D00B8FDF0 /* Remote */,
 				E578BC842954631800B8FDF0 /* Local */,
 			);
@@ -204,6 +241,8 @@
 		E578BC842954631800B8FDF0 /* Local */ = {
 			isa = PBXGroup;
 			children = (
+				E57FF0A629654B9100E14AB9 /* Entity */,
+				E57FF0A429654B8B00E14AB9 /* LocaleDataSource.swift */,
 			);
 			path = Local;
 			sourceTree = "<group>";
@@ -211,6 +250,8 @@
 		E578BC852954631D00B8FDF0 /* Remote */ = {
 			isa = PBXGroup;
 			children = (
+				E57FF08F2965266500E14AB9 /* Response */,
+				E57FF0902965267700E14AB9 /* RemoteDataSource.swift */,
 			);
 			path = Remote;
 			sourceTree = "<group>";
@@ -237,6 +278,7 @@
 		E578BC882954637F00B8FDF0 /* DI */ = {
 			isa = PBXGroup;
 			children = (
+				E54784A9296582C2006CB7F3 /* Injection.swift */,
 			);
 			path = DI;
 			sourceTree = "<group>";
@@ -253,6 +295,7 @@
 		E578BC8A295463D200B8FDF0 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				E57FF092296526C100E14AB9 /* TVListModel.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -260,6 +303,7 @@
 		E578BC8B295463DA00B8FDF0 /* UseCases */ = {
 			isa = PBXGroup;
 			children = (
+				E57FF09729653CB700E14AB9 /* HomeUseCase.swift */,
 			);
 			path = UseCases;
 			sourceTree = "<group>";
@@ -272,6 +316,7 @@
 				E578BC9A295469CC00B8FDF0 /* Font */,
 				E578BC94295464E800B8FDF0 /* ViewComponent */,
 				E578BC8D2954643500B8FDF0 /* NetworkUtils */,
+				E57FF0AF2965590E00E14AB9 /* Mapper */,
 			);
 			path = Utils;
 			sourceTree = "<group>";
@@ -287,6 +332,7 @@
 		E578BC90295464BC00B8FDF0 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				E578BC972954654400B8FDF0 /* HomeComponent */,
 				E54BC7E1295AD1E50039A9BD /* HomePage.swift */,
 			);
 			path = View;
@@ -295,6 +341,7 @@
 		E578BC91295464C600B8FDF0 /* Presenter */ = {
 			isa = PBXGroup;
 			children = (
+				E54784AB296584FA006CB7F3 /* HomePresenter.swift */,
 			);
 			path = Presenter;
 			sourceTree = "<group>";
@@ -302,6 +349,7 @@
 		E578BC92295464CC00B8FDF0 /* Router */ = {
 			isa = PBXGroup;
 			children = (
+				E54784AD29658504006CB7F3 /* HomeRouter.swift */,
 			);
 			path = Router;
 			sourceTree = "<group>";
@@ -311,19 +359,18 @@
 			children = (
 				E54BC7E3295AD5AA0039A9BD /* Tabs */,
 				E54BC7DE295AD1560039A9BD /* MainHeader */,
-				E578BC972954654400B8FDF0 /* Home */,
 				E563284A295ADE2900F509A7 /* CustomNavigationView.swift */,
 			);
 			path = ViewComponent;
 			sourceTree = "<group>";
 		};
-		E578BC972954654400B8FDF0 /* Home */ = {
+		E578BC972954654400B8FDF0 /* HomeComponent */ = {
 			isa = PBXGroup;
 			children = (
 				E578BC952954651100B8FDF0 /* HomeLayout.swift */,
 				E578BC982954655100B8FDF0 /* HomeCell.swift */,
 			);
-			path = Home;
+			path = HomeComponent;
 			sourceTree = "<group>";
 		};
 		E578BC9A295469CC00B8FDF0 /* Font */ = {
@@ -350,8 +397,42 @@
 			children = (
 				E578BCA829546CBD00B8FDF0 /* Text+Extension.swift */,
 				E57FF0872964109D00E14AB9 /* UIFont+Extension.swift */,
+				E57FF0A92965509100E14AB9 /* Results+Extension.swift */,
+				E57FF0AB2965554500E14AB9 /* CustomError+Extension.swift */,
 			);
 			path = Extension;
+			sourceTree = "<group>";
+		};
+		E57FF08F2965266500E14AB9 /* Response */ = {
+			isa = PBXGroup;
+			children = (
+				E57FF08B296523BD00E14AB9 /* TVPopularResponse.swift */,
+			);
+			path = Response;
+			sourceTree = "<group>";
+		};
+		E57FF09E29653E3100E14AB9 /* Repository */ = {
+			isa = PBXGroup;
+			children = (
+				E57FF08D2965247800E14AB9 /* TVRepository.swift */,
+			);
+			path = Repository;
+			sourceTree = "<group>";
+		};
+		E57FF0A629654B9100E14AB9 /* Entity */ = {
+			isa = PBXGroup;
+			children = (
+				E57FF0A729654B9E00E14AB9 /* TVEntity.swift */,
+			);
+			path = Entity;
+			sourceTree = "<group>";
+		};
+		E57FF0AF2965590E00E14AB9 /* Mapper */ = {
+			isa = PBXGroup;
+			children = (
+				E57FF0B22965592800E14AB9 /* TVMapper.swift */,
+			);
+			path = Mapper;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -372,6 +453,11 @@
 			name = TheMovieCatalogue;
 			packageProductDependencies = (
 				E54BC7DC295AD0980039A9BD /* Alamofire */,
+				E57FF09529652C8A00E14AB9 /* SDWebImageSwiftUI */,
+				E57FF09A29653DE500E14AB9 /* RxCocoa */,
+				E57FF09C29653DE500E14AB9 /* RxSwift */,
+				E57FF0A029654B7300E14AB9 /* Realm */,
+				E57FF0A229654B7300E14AB9 /* RealmSwift */,
 			);
 			productName = TheMovieCatalogue;
 			productReference = E578BC542954626900B8FDF0 /* TheMovieCatalogue.app */;
@@ -447,6 +533,9 @@
 			mainGroup = E578BC4B2954626900B8FDF0;
 			packageReferences = (
 				E54BC7DB295AD0980039A9BD /* XCRemoteSwiftPackageReference "Alamofire" */,
+				E57FF09429652C8900E14AB9 /* XCRemoteSwiftPackageReference "SDWebImageSwiftUI" */,
+				E57FF09929653DE500E14AB9 /* XCRemoteSwiftPackageReference "RxSwift" */,
+				E57FF09F29654B7300E14AB9 /* XCRemoteSwiftPackageReference "realm-cocoa" */,
 			);
 			productRefGroup = E578BC552954626900B8FDF0 /* Products */;
 			projectDirPath = "";
@@ -496,15 +585,28 @@
 			files = (
 				E54BC7E5295AD5BE0039A9BD /* TabView.swift in Sources */,
 				E578BC8F2954644600B8FDF0 /* Networking.swift in Sources */,
+				E54784AC296584FA006CB7F3 /* HomePresenter.swift in Sources */,
 				E54BC7E2295AD1E50039A9BD /* HomePage.swift in Sources */,
 				E578BCA629546A9A00B8FDF0 /* GeneralHelper.swift in Sources */,
 				E578BC962954651100B8FDF0 /* HomeLayout.swift in Sources */,
 				E57FF0882964109D00E14AB9 /* UIFont+Extension.swift in Sources */,
+				E57FF08C296523BD00E14AB9 /* TVPopularResponse.swift in Sources */,
 				E578BC582954626900B8FDF0 /* TheMovieCatalogueApp.swift in Sources */,
+				E57FF0A529654B8B00E14AB9 /* LocaleDataSource.swift in Sources */,
+				E57FF0912965267700E14AB9 /* RemoteDataSource.swift in Sources */,
 				E578BCA929546CBD00B8FDF0 /* Text+Extension.swift in Sources */,
 				E563284B295ADE2900F509A7 /* CustomNavigationView.swift in Sources */,
+				E54784AE29658504006CB7F3 /* HomeRouter.swift in Sources */,
 				E578BC992954655100B8FDF0 /* HomeCell.swift in Sources */,
+				E54784AA296582C2006CB7F3 /* Injection.swift in Sources */,
+				E57FF08E2965247800E14AB9 /* TVRepository.swift in Sources */,
+				E57FF0A829654B9E00E14AB9 /* TVEntity.swift in Sources */,
+				E57FF0AA2965509100E14AB9 /* Results+Extension.swift in Sources */,
+				E57FF093296526C100E14AB9 /* TVListModel.swift in Sources */,
+				E57FF09829653CB700E14AB9 /* HomeUseCase.swift in Sources */,
+				E57FF0B32965592800E14AB9 /* TVMapper.swift in Sources */,
 				E54BC7E0295AD1760039A9BD /* UISimpleSlidingTabController.swift in Sources */,
+				E57FF0AC2965554500E14AB9 /* CustomError+Extension.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -841,6 +943,30 @@
 				minimumVersion = 5.0.0;
 			};
 		};
+		E57FF09429652C8900E14AB9 /* XCRemoteSwiftPackageReference "SDWebImageSwiftUI" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SDWebImage/SDWebImageSwiftUI.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 2.0.0;
+			};
+		};
+		E57FF09929653DE500E14AB9 /* XCRemoteSwiftPackageReference "RxSwift" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/ReactiveX/RxSwift";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 6.0.0;
+			};
+		};
+		E57FF09F29654B7300E14AB9 /* XCRemoteSwiftPackageReference "realm-cocoa" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/realm/realm-cocoa";
+			requirement = {
+				branch = master;
+				kind = branch;
+			};
+		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
@@ -848,6 +974,31 @@
 			isa = XCSwiftPackageProductDependency;
 			package = E54BC7DB295AD0980039A9BD /* XCRemoteSwiftPackageReference "Alamofire" */;
 			productName = Alamofire;
+		};
+		E57FF09529652C8A00E14AB9 /* SDWebImageSwiftUI */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = E57FF09429652C8900E14AB9 /* XCRemoteSwiftPackageReference "SDWebImageSwiftUI" */;
+			productName = SDWebImageSwiftUI;
+		};
+		E57FF09A29653DE500E14AB9 /* RxCocoa */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = E57FF09929653DE500E14AB9 /* XCRemoteSwiftPackageReference "RxSwift" */;
+			productName = RxCocoa;
+		};
+		E57FF09C29653DE500E14AB9 /* RxSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = E57FF09929653DE500E14AB9 /* XCRemoteSwiftPackageReference "RxSwift" */;
+			productName = RxSwift;
+		};
+		E57FF0A029654B7300E14AB9 /* Realm */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = E57FF09F29654B7300E14AB9 /* XCRemoteSwiftPackageReference "realm-cocoa" */;
+			productName = Realm;
+		};
+		E57FF0A229654B7300E14AB9 /* RealmSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = E57FF09F29654B7300E14AB9 /* XCRemoteSwiftPackageReference "realm-cocoa" */;
+			productName = RealmSwift;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};

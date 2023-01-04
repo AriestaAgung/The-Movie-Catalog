@@ -2,6 +2,10 @@
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
 <dict>
+	<key>BaseURL</key>
+	<string>https://api.themoviedb.org/3/</string>
+	<key>MovieAPIKey</key>
+	<string>4b5be937d573ade246e0789cfc56ea41</string>
 	<key>UIAppFonts</key>
 	<array>
 		<string>Montserrat-Medium.ttf</string>

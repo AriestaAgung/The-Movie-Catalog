@@ -10,13 +10,11 @@ import SwiftUI
 struct HomeLayout: View {
     var body: some View {
         List {
-            ForEach(Range(NSRange(location: 1, length: 10))!) {_ in
+            ForEach(Range(NSRange(location: 1, length: 50))!) {_ in
                 HomeCell()
                     .listRowSeparator(.hidden)
             }
         }
-        
-        
     }
 }
 
