@@ -9,7 +9,7 @@ import Foundation
 import RealmSwift
 
 final class Injection: NSObject {
-    private func provideRepository() -> TVRepositoryProtocol {
+    private func provideTVRepository() -> TVRepositoryProtocol {
         let configuration = Realm.Configuration(
             schemaVersion: GeneralHelper.databaseSchemaVersion
         )
@@ -20,9 +20,21 @@ final class Injection: NSObject {
         
         return TVRepository.shared(locale, remote)
     }
+    private func provideMovieRepository() -> MovieRepositoryProtocol {
+        let configuration = Realm.Configuration(
+            schemaVersion: GeneralHelper.databaseSchemaVersion
+        )
+        let realm = try? Realm(configuration: configuration)
+        
+        let locale: LocaleDataSource = LocaleDataSource.shared(realm)
+        let remote: RemoteDataSource = RemoteDataSource.shared
+        
+        return MovieRepository.shared(locale, remote)
+    }
     
     func provideHome() -> HomeUseCase {
-        let repo = provideRepository()
-        return HomeInteractor(TVRepository: repo)
+        let repo = provideTVRepository()
+        let movieRepo = provideMovieRepository()
+        return HomeInteractor(TVRepository: repo, movieRepository: movieRepo)
     }
 }

@@ -27,7 +27,7 @@ enum Endpoints {
         
         public var url: String {
             switch self {
-            case .movieList: return "\(API.baseUrl)movie/latest?api_key=\(API.apiKey)"
+            case .movieList: return "\(API.baseUrl)movie/now_playing?api_key=\(API.apiKey)"
             case .movieDetail: return "\(API.baseUrl)movie/{movie_id}"
             case .tvList: return "\(API.baseUrl)tv/popular?api_key=\(API.apiKey)"
             case .tvDetail: return "\(API.baseUrl)tv/{tv_id}"

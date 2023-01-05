@@ -14,6 +14,7 @@ class HomePresenter: ObservableObject {
     private let useCase: HomeUseCase
     
     @Published var tvList: [TVListModel] = []
+    @Published var movieList: [MovieListModel] = []
     @Published var errorMessage: String = ""
     @Published var loadingState: Bool = false
 
@@ -34,6 +35,21 @@ class HomePresenter: ObservableObject {
             } onCompleted: {
                 self.loadingState = false
                 print(self.tvList.count)
+            }.disposed(by: disposeBag)
+    }
+    
+    func getMovieList() {
+        loadingState = true
+        useCase.getMovieHomeList()
+            .observe(on: MainScheduler.instance)
+            .subscribe{ res in
+                self.movieList = res
+            } onError: { err in
+                self.errorMessage = err.localizedDescription
+                print(self.errorMessage)
+            } onCompleted: {
+                self.loadingState = false
+                print(self.movieList.count)
             }.disposed(by: disposeBag)
     }
     

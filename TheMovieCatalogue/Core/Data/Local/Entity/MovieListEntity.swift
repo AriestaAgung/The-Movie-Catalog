@@ -1,14 +1,14 @@
 //
-//  TVEntity.swift
+//  MovieListEntity.swift
 //  TheMovieCatalogue
 //
-//  Created by BRIMO on 04/01/23.
+//  Created by BRIMO on 05/01/23.
 //
 
 import Foundation
 import RealmSwift
 
-class TVEntity: Object {
+class MovieListEntity: Object {
     @objc dynamic var id: String = ""
     @objc dynamic var title: String = ""
     @objc dynamic var posterImage: String = ""

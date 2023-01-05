@@ -27,9 +27,9 @@ struct HomePage: View {
                         // Views
                         TabView(selection: $selectedTab,
                                 content: {
-                            HomeLayout(tvData: presenter.tvList)
+                            HomeLayout(tvData: presenter.tvList, movieData: presenter.movieList, isMovie: true)
                                 .tag(0)
-                            HomeLayout(tvData: presenter.tvList)
+                            HomeLayout(tvData: presenter.tvList, movieData: presenter.movieList, isMovie: false)
                                 .tag(1)
                         })
                         .tabViewStyle(PageTabViewStyle(indexDisplayMode: .never))
@@ -39,6 +39,9 @@ struct HomePage: View {
             .onAppear{
                 if self.presenter.tvList.count == 0 {
                     self.presenter.getTVList()
+                }
+                if self.presenter.movieList.count == 0 {
+                    self.presenter.getMovieList()
                 }
             }
             .modifier(CustomNavigationView())

@@ -8,10 +8,10 @@
 import Foundation
 
 final class HomeTVMapper {
-    static func mapResponseToEntities(response: [TVPopularResponseResult]?) -> [TVEntity] {
+    static func mapResponseToEntities(response: [TVPopularResponseResult]?) -> [TVListEntity] {
         guard let response = response else {return []}
         return response.map{ res in
-            let entity = TVEntity()
+            let entity = TVListEntity()
             entity.id = res.id.description
             entity.title = res.name ?? ""
             entity.posterImage = API.imgBaseUrl + (res.posterPath ?? "")
@@ -21,7 +21,7 @@ final class HomeTVMapper {
         }
     }
     
-    static func mapEntityToDomain(entities: [TVEntity]) -> [TVListModel] {
+    static func mapEntityToDomain(entities: [TVListEntity]) -> [TVListModel] {
         return entities.map{res in
             let model = TVListModel(id: res.id, title: res.title, posterImage:  res.posterImage, desc: res.desc, firstAiring: res.firstAiring)
             return model
