@@ -13,6 +13,7 @@ class TVEntity: Object {
     @objc dynamic var title: String = ""
     @objc dynamic var posterImage: String = ""
     @objc dynamic var desc: String = ""
+    @objc dynamic var firstAiring: String = ""
     
     override static func primaryKey() -> String? {
       return "id"

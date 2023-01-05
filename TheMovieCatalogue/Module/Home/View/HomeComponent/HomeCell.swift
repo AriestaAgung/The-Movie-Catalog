@@ -24,42 +24,35 @@ struct HomeCell: View {
     }
     
     var body: some View {
-        LazyVStack(alignment: .leading, spacing: 8) {
-            
-            LazyHStack {
-                WebImage(url: URL(string: imageURL ?? "" ))
-                    .resizable()
-                    .placeholder(Image("NoImage"))
-                    .aspectRatio(contentMode: .fit)
-                    .frame(width: 40, height: 40, alignment: .leading)
-                
+        HStack(spacing: 8){
+            WebImage(url: URL(string: imageURL ?? "" ))
+                .resizable()
+                .placeholder(Image("NoImage"))
+                .aspectRatio(contentMode: .fit)
+                .frame(maxWidth: 64)
+            LazyVStack(alignment: .leading, spacing: 8) {
                 Text(title ?? "Test")
-                    .getCustomFont(type: .medium, size: 16)
-                
-            }
-            LazyHStack{
-                Image(systemName: "star.fill")
-                    .resizable()
-                    .frame(width: 10, height: 10)
-                    .aspectRatio(contentMode: .fit)
-                    .foregroundColor(Color.gray)
-                Text(rate ?? "0")
-                    .getCustomFont(type: .medium, size: 12)
-                Text(" || ")
-                    .getCustomFont(type: .medium, size: 12)
+                    .getCustomFont(type: .bold, size: 16)
                 Text(firstAiring ?? "First Air Date")
-                    .getCustomFont(type: .medium, size: 12)
-            }
-            .padding(.leading, 8)
-            .padding([.trailing], 16)
-            
-            
-            Text(desc ?? "This is a description")
-                .getCustomFont(type: .medium, size: 12)
-                .lineLimit(2)
-                .padding([.leading, .top, .trailing], 8)
+                    .getCustomFont(type: .regular, size: 10)
+                    .padding(.trailing, 16)
                 
+                if desc != "" {
+                    Text(desc ?? "")
+                        .getCustomFont(type: .medium, size: 12)
+                        .lineLimit(2)
+                        .padding([.trailing], 8)
+                } else {
+                    Text(title ?? "")
+                        .getCustomFont(type: .medium, size: 12)
+                        .lineLimit(2)
+                        .padding([.trailing], 8)
+                }
+            }
+            
         }
+        .frame(maxWidth: .infinity, maxHeight: 160, alignment: .leading)
+        
     }
 }
 

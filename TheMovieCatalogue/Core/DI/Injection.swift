@@ -10,7 +10,10 @@ import RealmSwift
 
 final class Injection: NSObject {
     private func provideRepository() -> TVRepositoryProtocol {
-        let realm = try? Realm()
+        let configuration = Realm.Configuration(
+            schemaVersion: GeneralHelper.databaseSchemaVersion
+        )
+        let realm = try? Realm(configuration: configuration)
         
         let locale: LocaleDataSource = LocaleDataSource.shared(realm)
         let remote: RemoteDataSource = RemoteDataSource.shared

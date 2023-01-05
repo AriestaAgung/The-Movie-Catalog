@@ -28,7 +28,6 @@ class HomePresenter: ObservableObject {
             .observe(on: MainScheduler.instance)
             .subscribe{ res in
                 self.tvList = res
-                dump(self.tvList)
             } onError: { err in
                 self.errorMessage = err.localizedDescription
                 print(self.errorMessage)

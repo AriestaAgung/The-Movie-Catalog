@@ -11,8 +11,8 @@ struct HomePage: View {
     @State private var selectedTab: Int = 0
     @ObservedObject var presenter: HomePresenter
     let tabs: [Tab] = [
-        .init(icon: Image(systemName: "music.note"), title: "TV Series"),
         .init(icon: Image(systemName: "film.fill"), title: "Movies"),
+        .init(icon: Image(systemName: "sparkles.tv.fill"), title: "TV Series"),
     ]
     
     var body: some View {

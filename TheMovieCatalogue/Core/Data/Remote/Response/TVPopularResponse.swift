@@ -24,7 +24,7 @@ struct TVPopularResponseResult: Codable {
     let backdropPath: String?
     let firstAirDate: String?
     let genreIDS: [Int]?
-    let id: Int?
+    let id: Int
     let name: String?
     let originCountry: [String]?
     let originalLanguage, originalName, overview: String?

@@ -27,7 +27,6 @@ final class RemoteDataSource: NSObject {
 
 extension RemoteDataSource: RemoteDataSourceProtocol {
     func getTVList() -> Observable<TVPopularResponse?> {
-        dump(API.imgBaseUrl)
         return Observable<TVPopularResponse?>.create{ observer in
             if let url = URL(string: Endpoints.Gets.tvList.url) {
                 AF.request(url)
@@ -37,7 +36,6 @@ extension RemoteDataSource: RemoteDataSourceProtocol {
                         case .success(let value):
                             observer.onNext(value)
                             observer.onCompleted()
-                            dump(response.result)
                         case .failure(let err):
                             observer.onError(err)
                         }

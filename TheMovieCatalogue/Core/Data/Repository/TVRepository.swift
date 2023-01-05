@@ -18,12 +18,12 @@ final class TVRepository: NSObject {
     fileprivate let locale: LocaleDataSource
     
     private init(locale: LocaleDataSource, remote: RemoteDataSource) {
-      self.locale = locale
-      self.remote = remote
+        self.locale = locale
+        self.remote = remote
     }
-
+    
     static let shared: TVInstance = { localeRepo, remoteRepo in
-      return TVRepository(locale: localeRepo, remote: remoteRepo)
+        return TVRepository(locale: localeRepo, remote: remoteRepo)
     }
 }
 
@@ -40,6 +40,9 @@ extension TVRepository: TVRepositoryProtocol {
                         .map{ HomeTVMapper.mapEntityToDomain(entities: $0) }
                 }
             )
+            
+            
+        
     }
     
     

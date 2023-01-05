@@ -8,6 +8,6 @@
 import Foundation
 import SwiftUI
 
-class GeneralHelper {
-    
+final class GeneralHelper {
+    static var databaseSchemaVersion: UInt64 = 2
 }
