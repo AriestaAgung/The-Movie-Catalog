@@ -20,12 +20,12 @@ struct CustomNavigationView: ViewModifier {
         // this only applies to big titles
         appearance.largeTitleTextAttributes = [
             .font : UIFont.getCustomFont(type: .bold, size: 20),
-            NSAttributedString.Key.foregroundColor : UIColor.black
+            NSAttributedString.Key.foregroundColor : UIColor.white
         ]
         // this only applies to small titles
         appearance.titleTextAttributes = [
             .font : UIFont.getCustomFont(type: .bold, size: 20),
-            NSAttributedString.Key.foregroundColor : UIColor.black
+            NSAttributedString.Key.foregroundColor : UIColor.white
         ]
         
         //In the following two lines you make sure that you apply the style for good
@@ -35,11 +35,11 @@ struct CustomNavigationView: ViewModifier {
         // This property is not present on the UINavigationBarAppearance
         // object for some reason and you have to leave it til the end
         appearance.configureWithOpaqueBackground()
-        appearance.backgroundColor = UIColor(#colorLiteral(red: 0.737254902, green: 0.1294117647, blue: 0.2941176471, alpha: 0.5))
+        appearance.backgroundColor = UIColor(#colorLiteral(red: 0.737254902, green: 0.1294117647, blue: 0.2941176471, alpha: 1))
         UINavigationBar.appearance().standardAppearance = appearance
         UINavigationBar.appearance().scrollEdgeAppearance = appearance
 //        UINavigationBar.appearance().titleTextAttributes = [.foregroundColor: UIColor.white, .font: FontType.bold.rawValue]
-        UINavigationBar.appearance().isTranslucent = false
+        UINavigationBar.appearance().isTranslucent = true
         
     }
     func body(content: Content) -> some View {
