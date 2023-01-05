@@ -12,6 +12,7 @@
 		E5182DF22966607F0004DA37 /* MovieListEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5182DF12966607F0004DA37 /* MovieListEntity.swift */; };
 		E5182DF42966623B0004DA37 /* MovieMapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5182DF32966623B0004DA37 /* MovieMapper.swift */; };
 		E5182DF62966637E0004DA37 /* MovieRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5182DF52966637E0004DA37 /* MovieRepository.swift */; };
+		E5182DF829666BD40004DA37 /* HomeTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5182DF729666BD40004DA37 /* HomeTabView.swift */; };
 		E54784AA296582C2006CB7F3 /* Injection.swift in Sources */ = {isa = PBXBuildFile; fileRef = E54784A9296582C2006CB7F3 /* Injection.swift */; };
 		E54784AC296584FA006CB7F3 /* HomePresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = E54784AB296584FA006CB7F3 /* HomePresenter.swift */; };
 		E54784AE29658504006CB7F3 /* HomeRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = E54784AD29658504006CB7F3 /* HomeRouter.swift */; };
@@ -52,6 +53,7 @@
 		E57FF0AA2965509100E14AB9 /* Results+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = E57FF0A92965509100E14AB9 /* Results+Extension.swift */; };
 		E57FF0AC2965554500E14AB9 /* CustomError+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = E57FF0AB2965554500E14AB9 /* CustomError+Extension.swift */; };
 		E57FF0B32965592800E14AB9 /* TVMapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = E57FF0B22965592800E14AB9 /* TVMapper.swift */; };
+		E582AD8729668B46003487F0 /* ProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E582AD8629668B46003487F0 /* ProfileView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -77,6 +79,7 @@
 		E5182DF12966607F0004DA37 /* MovieListEntity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieListEntity.swift; sourceTree = "<group>"; };
 		E5182DF32966623B0004DA37 /* MovieMapper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieMapper.swift; sourceTree = "<group>"; };
 		E5182DF52966637E0004DA37 /* MovieRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieRepository.swift; sourceTree = "<group>"; };
+		E5182DF729666BD40004DA37 /* HomeTabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeTabView.swift; sourceTree = "<group>"; };
 		E54784A9296582C2006CB7F3 /* Injection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Injection.swift; sourceTree = "<group>"; };
 		E54784AB296584FA006CB7F3 /* HomePresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomePresenter.swift; sourceTree = "<group>"; };
 		E54784AD29658504006CB7F3 /* HomeRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeRouter.swift; sourceTree = "<group>"; };
@@ -115,6 +118,7 @@
 		E57FF0A92965509100E14AB9 /* Results+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Results+Extension.swift"; sourceTree = "<group>"; };
 		E57FF0AB2965554500E14AB9 /* CustomError+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CustomError+Extension.swift"; sourceTree = "<group>"; };
 		E57FF0B22965592800E14AB9 /* TVMapper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TVMapper.swift; sourceTree = "<group>"; };
+		E582AD8629668B46003487F0 /* ProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -252,6 +256,7 @@
 		E578BC822954630700B8FDF0 /* Module */ = {
 			isa = PBXGroup;
 			children = (
+				E582AD8429668B23003487F0 /* Profile */,
 				E578BC832954631100B8FDF0 /* Home */,
 			);
 			path = Module;
@@ -399,6 +404,7 @@
 			children = (
 				E578BC952954651100B8FDF0 /* HomeLayout.swift */,
 				E578BC982954655100B8FDF0 /* HomeCell.swift */,
+				E5182DF729666BD40004DA37 /* HomeTabView.swift */,
 			);
 			path = HomeComponent;
 			sourceTree = "<group>";
@@ -467,6 +473,22 @@
 				E5182DF32966623B0004DA37 /* MovieMapper.swift */,
 			);
 			path = Mapper;
+			sourceTree = "<group>";
+		};
+		E582AD8429668B23003487F0 /* Profile */ = {
+			isa = PBXGroup;
+			children = (
+				E582AD8529668B2F003487F0 /* View */,
+			);
+			path = Profile;
+			sourceTree = "<group>";
+		};
+		E582AD8529668B2F003487F0 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				E582AD8629668B46003487F0 /* ProfileView.swift */,
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -636,10 +658,12 @@
 				E578BC992954655100B8FDF0 /* HomeCell.swift in Sources */,
 				E54784AA296582C2006CB7F3 /* Injection.swift in Sources */,
 				E5182DF22966607F0004DA37 /* MovieListEntity.swift in Sources */,
+				E5182DF829666BD40004DA37 /* HomeTabView.swift in Sources */,
 				E54784B129658BE9006CB7F3 /* ActivityIndicator.swift in Sources */,
 				E57FF08E2965247800E14AB9 /* TVRepository.swift in Sources */,
 				E57FF0A829654B9E00E14AB9 /* TVListEntity.swift in Sources */,
 				E57FF0AA2965509100E14AB9 /* Results+Extension.swift in Sources */,
+				E582AD8729668B46003487F0 /* ProfileView.swift in Sources */,
 				E57FF093296526C100E14AB9 /* TVListModel.swift in Sources */,
 				E57FF09829653CB700E14AB9 /* HomeUseCase.swift in Sources */,
 				E57FF0B32965592800E14AB9 /* TVMapper.swift in Sources */,

@@ -8,47 +8,35 @@
 import SwiftUI
 
 struct HomePage: View {
-    @State private var selectedTab: Int = 0
-    @ObservedObject var presenter: HomePresenter
-    let tabs: [Tab] = [
-        .init(icon: Image(systemName: "film.fill"), title: "Movies"),
-        .init(icon: Image(systemName: "sparkles.tv.fill"), title: "TV Series"),
-    ]
-    
+    //    @State private var selectedTab: Int = 0
+    //    @ObservedObject var presenter: HomePresenter
+    //    let tabs: [Tab] = [
+    //        .init(icon: Image(systemName: "film.fill"), title: "Movies"),
+    //        .init(icon: Image(systemName: "sparkles.tv.fill"), title: "TV Series"),
+    //    ]
+    @State private var selectedTabName = "Home"
+    @State private var selection = 0
     var body: some View {
-        NavigationStack{
-            ZStack{
-                Color.black
-                    .edgesIgnoringSafeArea([.top])
-                GeometryReader { geo in
-                    VStack(spacing: 0) {
-                        // Tabs
-                        TabComponent(tabs: tabs, geoWidth: geo.size.width, selectedTab: $selectedTab)
-                        // Views
-                        TabView(selection: $selectedTab,
-                                content: {
-                            HomeLayout(tvData: presenter.tvList, movieData: presenter.movieList, isMovie: true)
-                                .tag(0)
-                            HomeLayout(tvData: presenter.tvList, movieData: presenter.movieList, isMovie: false)
-                                .tag(1)
-                        })
-                        .tabViewStyle(PageTabViewStyle(indexDisplayMode: .never))
-                    }
+        TabView(selection: $selection) {
+            let homeUseCase = Injection().provideHome()
+            let homePresenter = HomePresenter(useCase: homeUseCase)
+            HomeTabView(presenter: homePresenter)
+                .tabItem {
+                    Label("Home", systemImage: "house.fill")
                 }
-            }
-            .onAppear{
-                if self.presenter.tvList.count == 0 {
-                    self.presenter.getTVList()
+                .tag(0)
+                .onAppear{
+                    selectedTabName = "Home"
                 }
-                if self.presenter.movieList.count == 0 {
-                    self.presenter.getMovieList()
+            ProfileView()
+                .tabItem {
+                    Label("Profile", systemImage: "person.fill")
                 }
-            }
-            .modifier(CustomNavigationView())
-            .navigationTitle("Home")
-            .navigationBarTitleDisplayMode(.inline)
-            .navigationBarBackButtonHidden(true)
-        }        
+                .tag(1)
+                .onAppear{
+                    selectedTabName = "Profile"
+                }
+        }
     }
 }
 
@@ -56,6 +44,6 @@ struct HomePage_Previews: PreviewProvider {
     static var previews: some View {
         let homeUseCase = Injection().provideHome()
         let homePresenter = HomePresenter(useCase: homeUseCase)
-        HomePage(presenter: homePresenter)
+        HomePage()
     }
 }
