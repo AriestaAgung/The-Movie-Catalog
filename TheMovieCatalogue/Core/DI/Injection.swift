@@ -37,4 +37,10 @@ final class Injection: NSObject {
         let movieRepo = provideMovieRepository()
         return HomeInteractor(TVRepository: repo, movieRepository: movieRepo)
     }
+    
+    func provideDetailItem() -> DetailUseCase {
+        let repo = provideTVRepository()
+        let movieRepo = provideMovieRepository()
+        return DetailInteractor(TVRepository: repo, movieRepository: movieRepo)
+    }
 }

@@ -12,7 +12,7 @@ final class HomeMovieMapper {
         guard let response = response else {return []}
         return response.map{ res in
             let entity = MovieListEntity()
-            entity.id = res.id.description
+            entity.id = res.id
             entity.title = res.title ?? ""
             entity.posterImage = API.imgBaseUrl + (res.posterPath ?? "")
             entity.desc = res.overview ?? ""
@@ -32,7 +32,7 @@ final class HomeMovieMapper {
         guard let result = response.results else {return []}
         return result.map{ res in
             let entity = MovieListModel(
-                id: res.id.description,
+                id: res.id,
                 title: res.title ?? "",
                 posterImage: API.imgBaseUrl + (res.posterPath ?? ""),
                 desc: res.overview ?? "",

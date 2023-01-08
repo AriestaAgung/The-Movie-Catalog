@@ -1,5 +1,5 @@
 //
-//  MovieListModel.swift
+//  MovieDetailModel.swift
 //  TheMovieCatalogue
 //
 //  Created by BRIMO on 05/01/23.
@@ -7,7 +7,7 @@
 
 import Foundation
 
-struct MovieListModel: Equatable, Identifiable {
+struct MovieDetailModel: Equatable, Identifiable {
     let id: Int
     let title: String
     let posterImage: String

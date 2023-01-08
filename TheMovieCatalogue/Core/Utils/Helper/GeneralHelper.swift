@@ -10,4 +10,9 @@ import SwiftUI
 
 final class GeneralHelper {
     static var databaseSchemaVersion: UInt64 = 2
+    
+    static func getCustomPath(id: String, baseEndpoint: String) -> URL? {
+        let combined = baseEndpoint + id + "?api_key=" + API.apiKey
+        return URL(string: combined)
+    }
 }

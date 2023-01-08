@@ -42,8 +42,6 @@ struct HomePage: View {
 
 struct HomePage_Previews: PreviewProvider {
     static var previews: some View {
-        let homeUseCase = Injection().provideHome()
-        let homePresenter = HomePresenter(useCase: homeUseCase)
         HomePage()
     }
 }

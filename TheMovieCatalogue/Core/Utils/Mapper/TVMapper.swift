@@ -12,7 +12,7 @@ final class HomeTVMapper {
         guard let response = response else {return []}
         return response.map{ res in
             let entity = TVListEntity()
-            entity.id = res.id.description
+            entity.id = res.id
             entity.title = res.name ?? ""
             entity.posterImage = API.imgBaseUrl + (res.posterPath ?? "")
             entity.desc = res.overview ?? ""
@@ -32,7 +32,7 @@ final class HomeTVMapper {
         guard let result = response.results else {return []}
         return result.map{ res in
             let entity = TVListModel(
-                id: res.id.description,
+                id: res.id,
                 title: res.name ?? "",
                 posterImage: API.imgBaseUrl + (res.posterPath ?? ""),
                 desc: res.overview ?? "",

@@ -38,8 +38,7 @@ struct CustomNavigationView: ViewModifier {
         appearance.backgroundColor = UIColor(#colorLiteral(red: 0.737254902, green: 0.1294117647, blue: 0.2941176471, alpha: 1))
         UINavigationBar.appearance().standardAppearance = appearance
         UINavigationBar.appearance().scrollEdgeAppearance = appearance
-//        UINavigationBar.appearance().titleTextAttributes = [.foregroundColor: UIColor.white, .font: FontType.bold.rawValue]
-        UINavigationBar.appearance().isTranslucent = true
+        UINavigationBar.appearance().isTranslucent = false
         
     }
     func body(content: Content) -> some View {

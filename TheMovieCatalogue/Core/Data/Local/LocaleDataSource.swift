@@ -12,10 +12,13 @@ import RxSwift
 protocol LocaleDataSourceProtocol {
     func getTVList() -> Observable<[TVListEntity]>
     func addTVList(from list: [TVListEntity]) -> Observable<Bool>
+    func getTVDetail(id: Int) -> Observable<TVListEntity>
+    func addTVDetail(item: TVListEntity) -> Observable<Bool>
     
     func getMovieList() -> Observable<[MovieListEntity]>
     func addMovieList(from list: [MovieListEntity]) -> Observable<Bool>
-//    func getTVByID() ->
+    func getMovieDetail(id: Int) -> Observable<MovieListEntity>
+    func addMovieDetail(item: MovieListEntity) -> Observable<Bool>
     
 }
 
@@ -31,7 +34,69 @@ final class LocaleDataSource: NSObject {
 }
 
 extension LocaleDataSource: LocaleDataSourceProtocol {
-    func getMovieList() -> RxSwift.Observable<[MovieListEntity]> {
+    func addTVDetail(item: TVListEntity) -> Observable<Bool> {
+        return Observable<Bool>.create{ observer in
+            if let realm = self.realm {
+                do {
+                    try realm.write{
+                        realm.add(item, update: .all)
+                        observer.onNext(true)
+                        observer.onCompleted()
+                    }
+                } catch(let err) {
+                    observer.onError(err)
+                }
+            }
+            return Disposables.create()
+        }
+    }
+    
+    func addMovieDetail(item: MovieListEntity) -> Observable<Bool> {
+        return Observable<Bool>.create{ observer in
+            if let realm = self.realm {
+                do {
+                    try realm.write{
+                            realm.add(item, update: .all)
+                        observer.onNext(true)
+                        observer.onCompleted()
+                    }
+                } catch(let err) {
+                    observer.onError(err)
+                }
+            }
+            return Disposables.create()
+        }
+    }
+    
+    func getMovieDetail(id: Int) -> Observable<MovieListEntity> {
+        return Observable<MovieListEntity>.create{ observer in
+            if let realm = self.realm {
+                let movie: Results<MovieListEntity> = realm.objects(MovieListEntity.self)
+                observer.onNext(movie.filter{$0.id == id}.first!)
+                observer.onCompleted()
+            } else {
+                observer.onError(DatabaseError.invalidInstance)
+            }
+            return Disposables.create()
+        }
+    }
+    
+ 
+    
+    func getTVDetail(id: Int) -> Observable<TVListEntity> {
+        return Observable<TVListEntity>.create{ observer in
+            if let realm = self.realm {
+                let tv: Results<TVListEntity> = realm.objects(TVListEntity.self)
+                observer.onNext(tv.filter{$0.id == id}.first!)
+                observer.onCompleted()
+            } else {
+                observer.onError(DatabaseError.invalidInstance)
+            }
+            return Disposables.create()
+        }
+    }
+    
+    func getMovieList() -> Observable<[MovieListEntity]> {
         return Observable<[MovieListEntity]>.create{ observer in
             if let realm = self.realm {
                 let movieList: Results<MovieListEntity> = {
@@ -47,7 +112,7 @@ extension LocaleDataSource: LocaleDataSourceProtocol {
         }
     }
     
-    func addMovieList(from list: [MovieListEntity]) -> RxSwift.Observable<Bool> {
+    func addMovieList(from list: [MovieListEntity]) -> Observable<Bool> {
         return Observable<Bool>.create{ observer in
             if let realm = self.realm {
                 do {

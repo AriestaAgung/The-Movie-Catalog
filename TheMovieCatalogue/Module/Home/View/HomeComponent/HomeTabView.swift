@@ -18,8 +18,6 @@ struct HomeTabView: View {
         
         NavigationStack{
             ZStack{
-//                Color.black
-//                    .edgesIgnoringSafeArea([.top])
                 GeometryReader { geo in
                     VStack(spacing: 0) {
                         // Tabs
@@ -27,9 +25,9 @@ struct HomeTabView: View {
                         // Views
                         TabView(selection: $selectedTab,
                                 content: {
-                            HomeLayout(tvData: presenter.tvList, movieData: presenter.movieList, isMovie: true)
+                            HomeLayout(presenter: presenter, tvData: presenter.tvList, movieData: presenter.movieList, isMovie: true)
                                 .tag(0)
-                            HomeLayout(tvData: presenter.tvList, movieData: presenter.movieList, isMovie: false)
+                            HomeLayout(presenter: presenter, tvData: presenter.tvList, movieData: presenter.movieList, isMovie: false)
                                 .tag(1)
                         })
                         .tabViewStyle(PageTabViewStyle(indexDisplayMode: .never))
@@ -40,12 +38,6 @@ struct HomeTabView: View {
             .navigationTitle("Home")
             .navigationBarTitleDisplayMode(.inline)
             .navigationBarBackButtonHidden(true)
-            
-        }
-        
-        .onDisappear{
-            self.presenter.movieList.removeAll()
-            self.presenter.tvList.removeAll()
         }
         .onAppear{
             if self.presenter.tvList.count == 0 {
@@ -54,8 +46,8 @@ struct HomeTabView: View {
             if self.presenter.movieList.count == 0 {
                 self.presenter.getMovieList()
             }
+
         }
-        
     }
 }
 

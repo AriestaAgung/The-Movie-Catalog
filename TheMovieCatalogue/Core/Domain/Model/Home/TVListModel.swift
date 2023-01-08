@@ -8,7 +8,7 @@
 import Foundation
 
 struct TVListModel: Equatable, Identifiable {
-    let id: String
+    let id: Int
     let title: String
     let posterImage: String
     let desc: String

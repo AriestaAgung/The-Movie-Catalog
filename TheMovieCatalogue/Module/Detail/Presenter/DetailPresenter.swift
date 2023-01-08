@@ -1,70 +1,60 @@
 //
-//  HomePresenter.swift
+//  DetailPresenter.swift
 //  TheMovieCatalogue
 //
-//  Created by BRIMO on 04/01/23.
+//  Created by BRIMO on 06/01/23.
 //
 
 import Foundation
 import RxSwift
-import SwiftUI
 
-class HomePresenter: ObservableObject {
+class DetailPresenter: ObservableObject {
+    private let useCase: DetailUseCase
     private let disposeBag = DisposeBag()
-    let router = HomeRouter()
-    private let useCase: HomeUseCase
     
-    @Published var tvList: [TVListModel] = []
-    @Published var movieList: [MovieListModel] = []
+    @Published var tvDetail: TVListModel? = nil
+    @Published var movieDetail: MovieListModel? = nil
     @Published var errorMessage: String = ""
     @Published var loadingState: Bool = false
-
-    @State private var tabBar: UITabBar! = nil
-
+    @Published var isMovie: Bool = false
+    @Published var selectedID: Int = 0
     
-    init(useCase: HomeUseCase) {
+    init(useCase: DetailUseCase, isMovie: Bool, selectedID: Int = 0) {
         self.useCase = useCase
+        self.isMovie = isMovie
+        self.selectedID = selectedID
     }
     
-    func getTVList() {
+    func getMovie(id: Int) {
         loadingState = true
-        useCase.getTVHomeList()
+        self.movieDetail = nil
+        useCase.getMovieDetail(id: selectedID)
             .observe(on: MainScheduler.instance)
             .subscribe{ res in
-                self.tvList = res
+                self.movieDetail = res
+                print("detail title: \(res.title)")
             } onError: { err in
                 self.errorMessage = err.localizedDescription
                 print(self.errorMessage)
             } onCompleted: {
                 self.loadingState = false
-                print(self.tvList.count)
             }.disposed(by: disposeBag)
     }
     
-    func getMovieList() {
+    func getTv(id: Int) {
         loadingState = true
-        useCase.getMovieHomeList()
+        self.tvDetail = nil
+        useCase.getTVDetail(id: selectedID)
             .observe(on: MainScheduler.instance)
             .subscribe{ res in
-                self.movieList = res
+                self.tvDetail = res
+                print("detail title: \(res.title)")
             } onError: { err in
                 self.errorMessage = err.localizedDescription
                 print(self.errorMessage)
             } onCompleted: {
                 self.loadingState = false
-                print(self.movieList.count)
             }.disposed(by: disposeBag)
-    }
- 
-    func linkBuilder<Content: View>(
-        isMovie: Bool,
-        id: Int,
-        @ViewBuilder content: () -> Content
-    ) -> some View{
-        
-        NavigationLink(destination: router.showDetailView(id: id, isMovie: isMovie)) {
-            content()
-        }            
     }
     
 }

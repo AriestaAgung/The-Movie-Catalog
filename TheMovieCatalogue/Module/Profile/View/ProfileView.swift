@@ -28,6 +28,7 @@ struct ProfileView: View {
             .navigationBarTitleDisplayMode(.inline)
             .navigationBarBackButtonHidden(true)
         }
+       
     }
 }
 
