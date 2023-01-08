@@ -28,11 +28,19 @@ struct HomePage: View {
                 .onAppear{
                     selectedTabName = "Home"
                 }
+            HomeTabView(presenter: homePresenter)
+                .tabItem {
+                    Label("Favorite", systemImage: "star.fill")
+                }
+                .tag(1)
+                .onAppear{
+                    selectedTabName = "Home"
+                }
             ProfileView()
                 .tabItem {
                     Label("Profile", systemImage: "person.fill")
                 }
-                .tag(1)
+                .tag(2)
                 .onAppear{
                     selectedTabName = "Profile"
                 }
