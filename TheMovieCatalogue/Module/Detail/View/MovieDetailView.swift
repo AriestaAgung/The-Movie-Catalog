@@ -59,9 +59,13 @@ struct MovieDetailView: View {
                                 .getCustomFont(type: .regular, size: 14)
                             Text("Synopsis")
                                 .getCustomFont(type: .bold, size: 16)
-                            Text(presenter.tvDetail?.desc ?? "No Detail")
-                                .getCustomFont(type: .medium, size: 16)
-                            
+                            if presenter.tvDetail?.desc == "" {
+                                Text("No Detail provided")
+                                    .getCustomFont(type: .medium, size: 16)
+                            } else {
+                                Text(presenter.tvDetail?.desc ?? "No Detail")
+                                    .getCustomFont(type: .medium, size: 16)
+                            }
                         }
                         .padding(16)
                         .frame(maxWidth: .infinity, alignment: .leading)
@@ -76,7 +80,6 @@ struct MovieDetailView: View {
             .navigationBarBackButtonHidden(false)
         }
         .onAppear{
-
             self.presenter.isMovie = self.isMovie
             if self.presenter.isMovie {
                 print("id: \(self.presenter.selectedID)")
@@ -86,12 +89,7 @@ struct MovieDetailView: View {
                 self.presenter.getTv(id: self.presenter.tvDetail?.id ?? 0)
             }
         }
-        .toolbar(.hidden, for: .tabBar)
-
-        
-
-
-        
+        .toolbar(.hidden, for: .tabBar)  
     }
 }
 
