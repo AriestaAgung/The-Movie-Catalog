@@ -15,6 +15,18 @@ protocol LocaleDataSourceProtocol {
     func getTVDetail(id: Int) -> Observable<TVListEntity>
     func addTVDetail(item: TVListEntity) -> Observable<Bool>
     
+    // TV Favorite
+    func getFavoriteTVList() -> Observable<[TVListEntity]>
+    func getFavoriteTVDetail(id: Int) -> Observable<TVListEntity>
+    func addTVFavorite(from list: [TVListEntity]) -> Observable<Bool>
+    func addTVFavoriteDetail(item: TVListEntity) -> Observable<Bool>
+    
+    // Movie Favorite
+    func getFavoriteMovieList() -> Observable<[MovieListEntity]>
+    func getFavoriteMovieDetail(id: Int) -> Observable<MovieListEntity>
+    func addMovieFavorite(from list: [MovieListEntity]) -> Observable<Bool>
+    func addMovieFavoriteDetail(item: MovieListEntity) -> Observable<Bool>
+    
     func getMovieList() -> Observable<[MovieListEntity]>
     func addMovieList(from list: [MovieListEntity]) -> Observable<Bool>
     func getMovieDetail(id: Int) -> Observable<MovieListEntity>
@@ -34,6 +46,105 @@ final class LocaleDataSource: NSObject {
 }
 
 extension LocaleDataSource: LocaleDataSourceProtocol {
+    func addTVFavorite(from list: [TVListEntity]) -> Observable<Bool> {
+        return Observable<Bool>.create{ observer in
+            observer.onNext(false)
+            observer.onCompleted()
+            return Disposables.create()
+        }
+    }
+    
+    func addTVFavoriteDetail(item: TVListEntity) -> Observable<Bool> {
+        return Observable<Bool>.create{ observer in
+            if let realm = self.realm {
+                do {
+                    try realm.write{
+                        item.isFavorite = !item.isFavorite
+                        realm.add(item, update: .all)
+                        observer.onNext(true)
+                        observer.onCompleted()
+                    }
+                } catch let err {
+                    observer.onError(err)
+                }
+            }
+            return Disposables.create()
+        }
+    }
+    
+    func getFavoriteMovieList() -> Observable<[MovieListEntity]> {
+        return Observable<[MovieListEntity]>.create{ observer in
+            if let realm = self.realm {
+                let movie: Results<MovieListEntity> = realm.objects(MovieListEntity.self)
+                    
+                observer.onNext(movie.filter{$0.isFavorite == true})
+                observer.onCompleted()
+            }
+            return Disposables.create()
+        }
+    }
+    
+    func getFavoriteMovieDetail(id: Int) -> Observable<MovieListEntity> {
+        return Observable<MovieListEntity>.create{ observer in
+            if let realm = self.realm {
+                let movie: Results<MovieListEntity> = realm.objects(MovieListEntity.self)
+                observer.onNext(movie.filter{$0.id == id}.first!)
+                observer.onCompleted()
+            }
+            return Disposables.create()
+        }
+    }
+    
+    func addMovieFavorite(from list: [MovieListEntity]) -> Observable<Bool> {
+        return Observable<Bool>.create{ observer in
+            observer.onNext(false)
+            observer.onCompleted()
+            return Disposables.create()
+        }
+    }
+    
+    func addMovieFavoriteDetail(item: MovieListEntity) -> Observable<Bool> {
+        return Observable<Bool>.create{ observer in
+            if let realm = self.realm {
+                do {
+                    try realm.write{
+                        item.isFavorite = !item.isFavorite
+                        realm.add(item, update: .all)
+                        observer.onNext(true)
+                        observer.onCompleted()
+                    }
+                } catch let err {
+                    observer.onError(err)
+                }
+            }
+            return Disposables.create()
+        }
+    }
+    
+    func getFavoriteTVList() -> RxSwift.Observable<[TVListEntity]> {
+        return Observable<[TVListEntity]>.create{ observer in
+            if let realm = self.realm {
+                let tv: Results<TVListEntity> = realm.objects(TVListEntity.self)
+                observer.onNext(tv.filter{$0.isFavorite == true})
+                observer.onCompleted()
+            } else {
+                observer.onError(DatabaseError.invalidInstance)
+            }
+            return Disposables.create()
+        }
+    }
+    
+    func getFavoriteTVDetail(id: Int) -> Observable<TVListEntity> {
+        return Observable<TVListEntity>.create{ observer in
+            if let realm = self.realm {
+                let tv: Results<TVListEntity> = realm.objects(TVListEntity.self)
+                observer.onNext(tv.filter{$0.id == id}.first!)
+                observer.onCompleted()
+            }
+            return Disposables.create()
+        }
+    }
+    
     func addTVDetail(item: TVListEntity) -> Observable<Bool> {
         return Observable<Bool>.create{ observer in
             if let realm = self.realm {
@@ -56,7 +167,7 @@ extension LocaleDataSource: LocaleDataSourceProtocol {
             if let realm = self.realm {
                 do {
                     try realm.write{
-                            realm.add(item, update: .all)
+                        realm.add(item, update: .all)
                         observer.onNext(true)
                         observer.onCompleted()
                     }
@@ -80,8 +191,6 @@ extension LocaleDataSource: LocaleDataSourceProtocol {
             return Disposables.create()
         }
     }
-    
- 
     
     func getTVDetail(id: Int) -> Observable<TVListEntity> {
         return Observable<TVListEntity>.create{ observer in

@@ -14,6 +14,7 @@ class TVListEntity: Object {
     @objc dynamic var posterImage: String = ""
     @objc dynamic var desc: String = ""
     @objc dynamic var firstAiring: String = ""
+    @objc dynamic var isFavorite: Bool = false
     
     override static func primaryKey() -> String? {
       return "id"

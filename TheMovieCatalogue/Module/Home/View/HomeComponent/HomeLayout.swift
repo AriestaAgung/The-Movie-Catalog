@@ -9,26 +9,61 @@ import SwiftUI
 
 struct HomeLayout: View {
     @ObservedObject var presenter: HomePresenter
-    var tvData: [TVListModel]
-    var movieData: [MovieListModel]
+    @State var tvData: [TVListModel]
+    @State var movieData: [MovieListModel]
     var isMovie: Bool
+    var isFavorite: Bool = false
     var body: some View {
         List {
             if isMovie {
-                ForEach(movieData, id: \.id) { item in
-                    HomeCell(title: item.title, desc: item.desc, rate: item.id.description, firstAiring: item.firstAiring, imageURL: item.posterImage, isMovie: isMovie, presenter: presenter, id: item.id)
-                        .listRowSeparator(.hidden)
-                        .listRowBackground(Color.clear)
+                if !isFavorite {
+                    ForEach(movieData, id: \.id) { item in
+                        HomeCell(title: item.title, desc: item.desc, rate: item.id.description, firstAiring: item.firstAiring, imageURL: item.posterImage, isMovie: isMovie, presenter: presenter, id: item.id)
+                            .listRowSeparator(.hidden)
+                            .listRowBackground(Color.clear)
+                    }
+                    .padding(0)
+                } else {
+                    ForEach(movieData
+                        .filter{$0.isFavorite == true},
+                            id: \.id)
+                    { item in
+                        HomeCell(title: item.title, desc: item.desc, rate: item.id.description, firstAiring: item.firstAiring, imageURL: item.posterImage, isMovie: isMovie, presenter: presenter, id: item.id)
+                            .listRowSeparator(.hidden)
+                            .listRowBackground(Color.clear)
+                    }
+                    .padding(0)
                 }
-                .padding(0)
             
             } else {
-                ForEach(tvData, id: \.id) { item in
-                    HomeCell(title: item.title, desc: item.desc, rate: item.id.description, firstAiring: item.firstAiring, imageURL: item.posterImage, isMovie: isMovie, presenter: presenter, id: item.id)
-                        .listRowSeparator(.hidden)
-                        .listRowBackground(Color.clear)
+                if !isFavorite {
+                    ForEach(tvData, id: \.id) { item in
+                        HomeCell(title: item.title, desc: item.desc, rate: item.id.description, firstAiring: item.firstAiring, imageURL: item.posterImage, isMovie: isMovie, presenter: presenter, id: item.id)
+                            .listRowSeparator(.hidden)
+                            .listRowBackground(Color.clear)
+                    }
+                    .padding(0)
+                } else {
+                    ForEach(tvData
+                        .filter{$0.isFavorite == true},
+                            id: \.id)
+                    { item in
+                        HomeCell(title: item.title, desc: item.desc, rate: item.id.description, firstAiring: item.firstAiring, imageURL: item.posterImage, isMovie: isMovie, presenter: presenter, id: item.id)
+                            .listRowSeparator(.hidden)
+                            .listRowBackground(Color.clear)
+                    }
+                    .padding(0)
                 }
-                .padding(0)
+                
+            }
+        }
+        .refreshable {
+            if isMovie {
+                self.presenter.getMovieList()
+                self.movieData = presenter.movieList
+            } else {
+                self.presenter.getTVList()
+                self.tvData = presenter.tvList
             }
         }
     }

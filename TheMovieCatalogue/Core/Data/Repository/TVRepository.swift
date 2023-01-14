@@ -11,6 +11,11 @@ import RxSwift
 protocol TVRepositoryProtocol {
     func getTVList() -> Observable<[TVListModel]>
     func getTVDetail( id: Int) -> Observable<TVListModel>
+    
+    func getFavoriteTVList() -> Observable<[TVListModel]>
+    func getFavoriteTVDetail(id: Int) -> Observable<TVListModel>
+    
+    func addTVFavorite(item: TVListEntity) -> Observable<Bool>
 }
 
 final class TVRepository: NSObject {
@@ -29,6 +34,25 @@ final class TVRepository: NSObject {
 }
 
 extension TVRepository: TVRepositoryProtocol {
+    func addTVFavorite(item: TVListEntity) -> RxSwift.Observable<Bool> {
+        return self.locale.addTVFavoriteDetail(item: item)
+    }
+    
+    func getFavoriteTVList() -> RxSwift.Observable<[TVListModel]> {
+        return self.locale.getFavoriteTVList()
+            .map{HomeTVMapper.mapEntityToDomain(entities: $0).filter{$0.isFavorite == true}}
+            .filter{!$0.isEmpty}
+        
+    }
+    
+    func getFavoriteTVDetail(id: Int) -> RxSwift.Observable<TVListModel> {
+        return self.locale.getFavoriteTVDetail(id: id)
+            .map{item in
+                return TVListModel(id: item.id, title: item.title, posterImage: item.posterImage, desc: item.desc, firstAiring: item.firstAiring, isFavorite: item.isFavorite)
+            }
+            .filter{$0.id == id && $0.isFavorite == true}
+    }
+    
     
     func getTVList() -> Observable<[TVListModel]> {
         return self.locale.getTVList()
@@ -46,7 +70,7 @@ extension TVRepository: TVRepositoryProtocol {
     func getTVDetail(id: Int) -> RxSwift.Observable<TVListModel> {
         return self.locale.getTVDetail(id: id)
             .map{ item in
-                return TVListModel(id: item.id, title: item.title, posterImage: item.posterImage, desc: item.desc, firstAiring: item.firstAiring)
+                return TVListModel(id: item.id, title: item.title, posterImage: item.posterImage, desc: item.desc, firstAiring: item.firstAiring, isFavorite: item.isFavorite)
             }
             .filter{$0.id == id}
             .ifEmpty(switchTo: self.remote.getTVDetail(id: id)
@@ -62,7 +86,7 @@ extension TVRepository: TVRepositoryProtocol {
                 .filter{$0}
                 .flatMap{ _ in self.locale.getTVDetail(id: id)
                         .map{ item in
-                            TVListModel(id: item.id , title: item.title , posterImage:  (item.posterImage ), desc: item.desc , firstAiring: item.firstAiring )
+                            TVListModel(id: item.id , title: item.title , posterImage:  (item.posterImage ), desc: item.desc , firstAiring: item.firstAiring, isFavorite: item.isFavorite )
                         }
                         .filter{$0.id == id}
                     

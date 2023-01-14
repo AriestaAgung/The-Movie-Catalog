@@ -59,4 +59,5 @@ struct MoviePopularResponseResult: Codable {
 enum OriginalLanguage: String, Codable {
     case en = "en"
     case id = "id"
+    case es = "es"
 }

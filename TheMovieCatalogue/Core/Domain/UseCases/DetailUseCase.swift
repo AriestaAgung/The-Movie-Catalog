@@ -31,4 +31,6 @@ class DetailInteractor: DetailUseCase {
         return self.movieRepository.getMovieDetail(id: id)
     }
     
+    
+    
 }

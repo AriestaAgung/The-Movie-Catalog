@@ -13,4 +13,5 @@ struct TVListModel: Equatable, Identifiable {
     let posterImage: String
     let desc: String
     let firstAiring: String
+    let isFavorite: Bool
 }

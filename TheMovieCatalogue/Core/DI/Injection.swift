@@ -20,6 +20,7 @@ final class Injection: NSObject {
         
         return TVRepository.shared(locale, remote)
     }
+    
     private func provideMovieRepository() -> MovieRepositoryProtocol {
         let configuration = Realm.Configuration(
             schemaVersion: GeneralHelper.databaseSchemaVersion
@@ -42,5 +43,11 @@ final class Injection: NSObject {
         let repo = provideTVRepository()
         let movieRepo = provideMovieRepository()
         return DetailInteractor(TVRepository: repo, movieRepository: movieRepo)
+    }
+    
+    func provideFavorite() -> FavoriteUseCase {
+        let repo = provideTVRepository()
+        let movieRepo = provideMovieRepository()
+        return FavoriteInteractor(TVRepository: repo, movieRepository: movieRepo)
     }
 }

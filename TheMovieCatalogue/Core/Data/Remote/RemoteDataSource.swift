@@ -74,8 +74,10 @@ extension RemoteDataSource: RemoteDataSourceProtocol {
                 AF.request(url)
                     .validate()
                     .responseDecodable(of: MoviePopularResponse.self) { response in
+                        dump(response.result)
                         switch response.result {
                         case .success(let value):
+                            dump(value)
                             observer.onNext(value)
                             observer.onCompleted()
                         case .failure(let err):

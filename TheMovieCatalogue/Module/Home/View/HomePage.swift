@@ -19,7 +19,9 @@ struct HomePage: View {
     var body: some View {
         TabView(selection: $selection) {
             let homeUseCase = Injection().provideHome()
+            let favoriteUseCase = Injection().provideFavorite()
             let homePresenter = HomePresenter(useCase: homeUseCase)
+            let favoritePresenter = FavoritePresenter(useCase: favoriteUseCase)
             HomeTabView(presenter: homePresenter)
                 .tabItem {
                     Label("Home", systemImage: "house.fill")
@@ -28,13 +30,13 @@ struct HomePage: View {
                 .onAppear{
                     selectedTabName = "Home"
                 }
-            HomeTabView(presenter: homePresenter)
+            FavoriteTabView(presenter: favoritePresenter)
                 .tabItem {
                     Label("Favorite", systemImage: "star.fill")
                 }
                 .tag(1)
                 .onAppear{
-                    selectedTabName = "Home"
+                    selectedTabName = "Favorite"
                 }
             ProfileView()
                 .tabItem {
