@@ -1,8 +1,8 @@
 //
-//  Font+Extension.swift
-//  TheMovieCatalogue
+//  Text+Extension.swift
+//  
 //
-//  Created by BRIMO on 22/12/22.
+//  Created by BRIMO on 18/01/23.
 //
 
 import Foundation
