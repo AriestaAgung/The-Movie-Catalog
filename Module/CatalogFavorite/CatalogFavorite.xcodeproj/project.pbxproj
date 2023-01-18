@@ -7,160 +7,153 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		E5B918CF297801D700433AF7 /* CatalogCommon.docc in Sources */ = {isa = PBXBuildFile; fileRef = E5B918CE297801D700433AF7 /* CatalogCommon.docc */; };
-		E5B918D5297801D700433AF7 /* CatalogCommon.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E5B918CA297801D700433AF7 /* CatalogCommon.framework */; };
-		E5B918DA297801D700433AF7 /* CatalogCommonTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5B918D9297801D700433AF7 /* CatalogCommonTests.swift */; };
-		E5B918DB297801D700433AF7 /* CatalogCommon.h in Headers */ = {isa = PBXBuildFile; fileRef = E5B918CD297801D700433AF7 /* CatalogCommon.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		E5B9190B297806EF00433AF7 /* Lottie in Frameworks */ = {isa = PBXBuildFile; productRef = E5B9190A297806EF00433AF7 /* Lottie */; };
+		E5B91963297809DE00433AF7 /* CatalogFavorite.docc in Sources */ = {isa = PBXBuildFile; fileRef = E5B91962297809DE00433AF7 /* CatalogFavorite.docc */; };
+		E5B91969297809DE00433AF7 /* CatalogFavorite.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E5B9195E297809DE00433AF7 /* CatalogFavorite.framework */; };
+		E5B9196E297809DE00433AF7 /* CatalogFavoriteTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5B9196D297809DE00433AF7 /* CatalogFavoriteTests.swift */; };
+		E5B9196F297809DE00433AF7 /* CatalogFavorite.h in Headers */ = {isa = PBXBuildFile; fileRef = E5B91961297809DE00433AF7 /* CatalogFavorite.h */; settings = {ATTRIBUTES = (Public, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		E5B918D6297801D700433AF7 /* PBXContainerItemProxy */ = {
+		E5B9196A297809DE00433AF7 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = E5B918C1297801D700433AF7 /* Project object */;
+			containerPortal = E5B91955297809DE00433AF7 /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = E5B918C9297801D700433AF7;
-			remoteInfo = CatalogCommon;
+			remoteGlobalIDString = E5B9195D297809DE00433AF7;
+			remoteInfo = CatalogFavorite;
 		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		E5B918CA297801D700433AF7 /* CatalogCommon.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = CatalogCommon.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		E5B918CD297801D700433AF7 /* CatalogCommon.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CatalogCommon.h; sourceTree = "<group>"; };
-		E5B918CE297801D700433AF7 /* CatalogCommon.docc */ = {isa = PBXFileReference; lastKnownFileType = folder.documentationcatalog; path = CatalogCommon.docc; sourceTree = "<group>"; };
-		E5B918D4297801D700433AF7 /* CatalogCommonTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CatalogCommonTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		E5B918D9297801D700433AF7 /* CatalogCommonTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CatalogCommonTests.swift; sourceTree = "<group>"; };
-		E5B918E42978032300433AF7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		E5B9195E297809DE00433AF7 /* CatalogFavorite.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = CatalogFavorite.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E5B91961297809DE00433AF7 /* CatalogFavorite.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CatalogFavorite.h; sourceTree = "<group>"; };
+		E5B91962297809DE00433AF7 /* CatalogFavorite.docc */ = {isa = PBXFileReference; lastKnownFileType = folder.documentationcatalog; path = CatalogFavorite.docc; sourceTree = "<group>"; };
+		E5B91968297809DE00433AF7 /* CatalogFavoriteTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CatalogFavoriteTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		E5B9196D297809DE00433AF7 /* CatalogFavoriteTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CatalogFavoriteTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		E5B918C7297801D700433AF7 /* Frameworks */ = {
+		E5B9195B297809DE00433AF7 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E5B9190B297806EF00433AF7 /* Lottie in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		E5B918D1297801D700433AF7 /* Frameworks */ = {
+		E5B91965297809DE00433AF7 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E5B918D5297801D700433AF7 /* CatalogCommon.framework in Frameworks */,
+				E5B91969297809DE00433AF7 /* CatalogFavorite.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		E5B918C0297801D700433AF7 = {
+		E5B91954297809DE00433AF7 = {
 			isa = PBXGroup;
 			children = (
-				E5B918CC297801D700433AF7 /* CatalogCommon */,
-				E5B918D8297801D700433AF7 /* CatalogCommonTests */,
-				E5B918CB297801D700433AF7 /* Products */,
+				E5B91960297809DE00433AF7 /* CatalogFavorite */,
+				E5B9196C297809DE00433AF7 /* CatalogFavoriteTests */,
+				E5B9195F297809DE00433AF7 /* Products */,
 			);
 			sourceTree = "<group>";
 		};
-		E5B918CB297801D700433AF7 /* Products */ = {
+		E5B9195F297809DE00433AF7 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				E5B918CA297801D700433AF7 /* CatalogCommon.framework */,
-				E5B918D4297801D700433AF7 /* CatalogCommonTests.xctest */,
+				E5B9195E297809DE00433AF7 /* CatalogFavorite.framework */,
+				E5B91968297809DE00433AF7 /* CatalogFavoriteTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		E5B918CC297801D700433AF7 /* CatalogCommon */ = {
+		E5B91960297809DE00433AF7 /* CatalogFavorite */ = {
 			isa = PBXGroup;
 			children = (
-				E5B918E42978032300433AF7 /* Info.plist */,
-				E5B918CD297801D700433AF7 /* CatalogCommon.h */,
-				E5B918CE297801D700433AF7 /* CatalogCommon.docc */,
+				E5B91961297809DE00433AF7 /* CatalogFavorite.h */,
+				E5B91962297809DE00433AF7 /* CatalogFavorite.docc */,
 			);
-			path = CatalogCommon;
+			path = CatalogFavorite;
 			sourceTree = "<group>";
 		};
-		E5B918D8297801D700433AF7 /* CatalogCommonTests */ = {
+		E5B9196C297809DE00433AF7 /* CatalogFavoriteTests */ = {
 			isa = PBXGroup;
 			children = (
-				E5B918D9297801D700433AF7 /* CatalogCommonTests.swift */,
+				E5B9196D297809DE00433AF7 /* CatalogFavoriteTests.swift */,
 			);
-			path = CatalogCommonTests;
+			path = CatalogFavoriteTests;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
-		E5B918C5297801D700433AF7 /* Headers */ = {
+		E5B91959297809DE00433AF7 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E5B918DB297801D700433AF7 /* CatalogCommon.h in Headers */,
+				E5B9196F297809DE00433AF7 /* CatalogFavorite.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
-		E5B918C9297801D700433AF7 /* CatalogCommon */ = {
+		E5B9195D297809DE00433AF7 /* CatalogFavorite */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = E5B918DE297801D700433AF7 /* Build configuration list for PBXNativeTarget "CatalogCommon" */;
+			buildConfigurationList = E5B91972297809DE00433AF7 /* Build configuration list for PBXNativeTarget "CatalogFavorite" */;
 			buildPhases = (
-				E5B918C5297801D700433AF7 /* Headers */,
-				E5B918C6297801D700433AF7 /* Sources */,
-				E5B918C7297801D700433AF7 /* Frameworks */,
-				E5B918C8297801D700433AF7 /* Resources */,
+				E5B91959297809DE00433AF7 /* Headers */,
+				E5B9195A297809DE00433AF7 /* Sources */,
+				E5B9195B297809DE00433AF7 /* Frameworks */,
+				E5B9195C297809DE00433AF7 /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
-			name = CatalogCommon;
-			packageProductDependencies = (
-				E5B9190A297806EF00433AF7 /* Lottie */,
-			);
-			productName = CatalogCommon;
-			productReference = E5B918CA297801D700433AF7 /* CatalogCommon.framework */;
+			name = CatalogFavorite;
+			productName = CatalogFavorite;
+			productReference = E5B9195E297809DE00433AF7 /* CatalogFavorite.framework */;
 			productType = "com.apple.product-type.framework";
 		};
-		E5B918D3297801D700433AF7 /* CatalogCommonTests */ = {
+		E5B91967297809DE00433AF7 /* CatalogFavoriteTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = E5B918E1297801D700433AF7 /* Build configuration list for PBXNativeTarget "CatalogCommonTests" */;
+			buildConfigurationList = E5B91975297809DE00433AF7 /* Build configuration list for PBXNativeTarget "CatalogFavoriteTests" */;
 			buildPhases = (
-				E5B918D0297801D700433AF7 /* Sources */,
-				E5B918D1297801D700433AF7 /* Frameworks */,
-				E5B918D2297801D700433AF7 /* Resources */,
+				E5B91964297809DE00433AF7 /* Sources */,
+				E5B91965297809DE00433AF7 /* Frameworks */,
+				E5B91966297809DE00433AF7 /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				E5B918D7297801D700433AF7 /* PBXTargetDependency */,
+				E5B9196B297809DE00433AF7 /* PBXTargetDependency */,
 			);
-			name = CatalogCommonTests;
-			productName = CatalogCommonTests;
-			productReference = E5B918D4297801D700433AF7 /* CatalogCommonTests.xctest */;
+			name = CatalogFavoriteTests;
+			productName = CatalogFavoriteTests;
+			productReference = E5B91968297809DE00433AF7 /* CatalogFavoriteTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		E5B918C1297801D700433AF7 /* Project object */ = {
+		E5B91955297809DE00433AF7 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
 				BuildIndependentTargetsInParallel = 1;
 				LastSwiftUpdateCheck = 1420;
 				LastUpgradeCheck = 1420;
 				TargetAttributes = {
-					E5B918C9297801D700433AF7 = {
+					E5B9195D297809DE00433AF7 = {
 						CreatedOnToolsVersion = 14.2;
 					};
-					E5B918D3297801D700433AF7 = {
+					E5B91967297809DE00433AF7 = {
 						CreatedOnToolsVersion = 14.2;
 					};
 				};
 			};
-			buildConfigurationList = E5B918C4297801D700433AF7 /* Build configuration list for PBXProject "CatalogCommon" */;
+			buildConfigurationList = E5B91958297809DE00433AF7 /* Build configuration list for PBXProject "CatalogFavorite" */;
 			compatibilityVersion = "Xcode 14.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -168,29 +161,26 @@
 				en,
 				Base,
 			);
-			mainGroup = E5B918C0297801D700433AF7;
-			packageReferences = (
-				E5B91909297806EF00433AF7 /* XCRemoteSwiftPackageReference "lottie-ios" */,
-			);
-			productRefGroup = E5B918CB297801D700433AF7 /* Products */;
+			mainGroup = E5B91954297809DE00433AF7;
+			productRefGroup = E5B9195F297809DE00433AF7 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				E5B918C9297801D700433AF7 /* CatalogCommon */,
-				E5B918D3297801D700433AF7 /* CatalogCommonTests */,
+				E5B9195D297809DE00433AF7 /* CatalogFavorite */,
+				E5B91967297809DE00433AF7 /* CatalogFavoriteTests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		E5B918C8297801D700433AF7 /* Resources */ = {
+		E5B9195C297809DE00433AF7 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		E5B918D2297801D700433AF7 /* Resources */ = {
+		E5B91966297809DE00433AF7 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -200,34 +190,34 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		E5B918C6297801D700433AF7 /* Sources */ = {
+		E5B9195A297809DE00433AF7 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E5B918CF297801D700433AF7 /* CatalogCommon.docc in Sources */,
+				E5B91963297809DE00433AF7 /* CatalogFavorite.docc in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		E5B918D0297801D700433AF7 /* Sources */ = {
+		E5B91964297809DE00433AF7 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E5B918DA297801D700433AF7 /* CatalogCommonTests.swift in Sources */,
+				E5B9196E297809DE00433AF7 /* CatalogFavoriteTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		E5B918D7297801D700433AF7 /* PBXTargetDependency */ = {
+		E5B9196B297809DE00433AF7 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = E5B918C9297801D700433AF7 /* CatalogCommon */;
-			targetProxy = E5B918D6297801D700433AF7 /* PBXContainerItemProxy */;
+			target = E5B9195D297809DE00433AF7 /* CatalogFavorite */;
+			targetProxy = E5B9196A297809DE00433AF7 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
-		E5B918DC297801D700433AF7 /* Debug */ = {
+		E5B91970297809DE00433AF7 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -290,7 +280,7 @@
 			};
 			name = Debug;
 		};
-		E5B918DD297801D700433AF7 /* Release */ = {
+		E5B91971297809DE00433AF7 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -347,7 +337,7 @@
 			};
 			name = Release;
 		};
-		E5B918DF297801D700433AF7 /* Debug */ = {
+		E5B91973297809DE00433AF7 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
@@ -358,7 +348,6 @@
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = CatalogCommon/Info.plist;
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -367,7 +356,7 @@
 					"@loader_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.dcd.CatalogCommon;
+				PRODUCT_BUNDLE_IDENTIFIER = com.dcd.CatalogFavorite;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
 				SWIFT_EMIT_LOC_STRINGS = YES;
@@ -376,7 +365,7 @@
 			};
 			name = Debug;
 		};
-		E5B918E0297801D700433AF7 /* Release */ = {
+		E5B91974297809DE00433AF7 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
@@ -387,7 +376,6 @@
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = CatalogCommon/Info.plist;
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -396,7 +384,7 @@
 					"@loader_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.dcd.CatalogCommon;
+				PRODUCT_BUNDLE_IDENTIFIER = com.dcd.CatalogFavorite;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
 				SWIFT_EMIT_LOC_STRINGS = YES;
@@ -405,7 +393,7 @@
 			};
 			name = Release;
 		};
-		E5B918E2297801D700433AF7 /* Debug */ = {
+		E5B91976297809DE00433AF7 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
@@ -413,7 +401,7 @@
 				DEVELOPMENT_TEAM = R2D4D7YLB2;
 				GENERATE_INFOPLIST_FILE = YES;
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.dcd.CatalogCommonTests;
+				PRODUCT_BUNDLE_IDENTIFIER = com.dcd.CatalogFavoriteTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = NO;
 				SWIFT_VERSION = 5.0;
@@ -421,7 +409,7 @@
 			};
 			name = Debug;
 		};
-		E5B918E3297801D700433AF7 /* Release */ = {
+		E5B91977297809DE00433AF7 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
@@ -429,7 +417,7 @@
 				DEVELOPMENT_TEAM = R2D4D7YLB2;
 				GENERATE_INFOPLIST_FILE = YES;
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.dcd.CatalogCommonTests;
+				PRODUCT_BUNDLE_IDENTIFIER = com.dcd.CatalogFavoriteTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = NO;
 				SWIFT_VERSION = 5.0;
@@ -440,53 +428,34 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		E5B918C4297801D700433AF7 /* Build configuration list for PBXProject "CatalogCommon" */ = {
+		E5B91958297809DE00433AF7 /* Build configuration list for PBXProject "CatalogFavorite" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				E5B918DC297801D700433AF7 /* Debug */,
-				E5B918DD297801D700433AF7 /* Release */,
+				E5B91970297809DE00433AF7 /* Debug */,
+				E5B91971297809DE00433AF7 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		E5B918DE297801D700433AF7 /* Build configuration list for PBXNativeTarget "CatalogCommon" */ = {
+		E5B91972297809DE00433AF7 /* Build configuration list for PBXNativeTarget "CatalogFavorite" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				E5B918DF297801D700433AF7 /* Debug */,
-				E5B918E0297801D700433AF7 /* Release */,
+				E5B91973297809DE00433AF7 /* Debug */,
+				E5B91974297809DE00433AF7 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		E5B918E1297801D700433AF7 /* Build configuration list for PBXNativeTarget "CatalogCommonTests" */ = {
+		E5B91975297809DE00433AF7 /* Build configuration list for PBXNativeTarget "CatalogFavoriteTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				E5B918E2297801D700433AF7 /* Debug */,
-				E5B918E3297801D700433AF7 /* Release */,
+				E5B91976297809DE00433AF7 /* Debug */,
+				E5B91977297809DE00433AF7 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
-
-/* Begin XCRemoteSwiftPackageReference section */
-		E5B91909297806EF00433AF7 /* XCRemoteSwiftPackageReference "lottie-ios" */ = {
-			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "https://github.com/airbnb/lottie-ios.git";
-			requirement = {
-				branch = master;
-				kind = branch;
-			};
-		};
-/* End XCRemoteSwiftPackageReference section */
-
-/* Begin XCSwiftPackageProductDependency section */
-		E5B9190A297806EF00433AF7 /* Lottie */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = E5B91909297806EF00433AF7 /* XCRemoteSwiftPackageReference "lottie-ios" */;
-			productName = Lottie;
-		};
-/* End XCSwiftPackageProductDependency section */
 	};
-	rootObject = E5B918C1297801D700433AF7 /* Project object */;
+	rootObject = E5B91955297809DE00433AF7 /* Project object */;
 }

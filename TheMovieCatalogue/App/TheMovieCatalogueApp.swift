@@ -6,6 +6,7 @@
 //
 
 import SwiftUI
+import CatalogHome
 
 @main
 struct TheMovieCatalogueApp: App {

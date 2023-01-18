@@ -6,6 +6,7 @@
 //
 
 import SwiftUI
+import CatalogFavorite
 
 struct HomePage: View {
     //    @State private var selectedTab: Int = 0
