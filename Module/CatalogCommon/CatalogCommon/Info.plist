@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>UIAppFonts</key>
+	<array>
+		<string>Montserrat-Medium.ttf</string>
+		<string>Montserrat-Regular.ttf</string>
+		<string>Montserrat-SemiBold.ttf</string>
+		<string>Montserrat-Bold.ttf</string>
+	</array>
+	<key>MovieAPIKey</key>
+	<string>4b5be937d573ade246e0789cfc56ea41</string>
+	<key>BaseImageURL</key>
+	<string>https://image.tmdb.org/t/p/w500</string>
+	<key>BaseURL</key>
+	<string>https://api.themoviedb.org/3/</string>
+</dict>
+</plist>
