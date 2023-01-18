@@ -17,7 +17,6 @@
 		E54784AE29658504006CB7F3 /* HomeRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = E54784AD29658504006CB7F3 /* HomeRouter.swift */; };
 		E54BC7DD295AD0980039A9BD /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = E54BC7DC295AD0980039A9BD /* Alamofire */; };
 		E54BC7E2295AD1E50039A9BD /* HomePage.swift in Sources */ = {isa = PBXBuildFile; fileRef = E54BC7E1295AD1E50039A9BD /* HomePage.swift */; };
-		E578BC582954626900B8FDF0 /* TheMovieCatalogueApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = E578BC572954626900B8FDF0 /* TheMovieCatalogueApp.swift */; };
 		E578BC5C2954626A00B8FDF0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E578BC5B2954626A00B8FDF0 /* Assets.xcassets */; };
 		E578BC5F2954626A00B8FDF0 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E578BC5E2954626A00B8FDF0 /* Preview Assets.xcassets */; };
 		E578BC692954626A00B8FDF0 /* TheMovieCatalogueTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E578BC682954626A00B8FDF0 /* TheMovieCatalogueTests.swift */; };
@@ -81,7 +80,6 @@
 		E54784AD29658504006CB7F3 /* HomeRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeRouter.swift; sourceTree = "<group>"; };
 		E54BC7E1295AD1E50039A9BD /* HomePage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomePage.swift; sourceTree = "<group>"; };
 		E578BC542954626900B8FDF0 /* TheMovieCatalogue.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TheMovieCatalogue.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		E578BC572954626900B8FDF0 /* TheMovieCatalogueApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TheMovieCatalogueApp.swift; sourceTree = "<group>"; };
 		E578BC5B2954626A00B8FDF0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E578BC5E2954626A00B8FDF0 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		E578BC642954626A00B8FDF0 /* TheMovieCatalogueTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TheMovieCatalogueTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -251,7 +249,6 @@
 		E578BC862954634600B8FDF0 /* App */ = {
 			isa = PBXGroup;
 			children = (
-				E578BC572954626900B8FDF0 /* TheMovieCatalogueApp.swift */,
 			);
 			path = App;
 			sourceTree = "<group>";
@@ -500,7 +497,6 @@
 				E54BC7E2295AD1E50039A9BD /* HomePage.swift in Sources */,
 				E547581B296D67870062716A /* FavoriteRouter.swift in Sources */,
 				E578BC962954651100B8FDF0 /* HomeLayout.swift in Sources */,
-				E578BC582954626900B8FDF0 /* TheMovieCatalogueApp.swift in Sources */,
 				E582AD992966AED5003487F0 /* MovieDetailView.swift in Sources */,
 				E54784AE29658504006CB7F3 /* HomeRouter.swift in Sources */,
 				E582D1972967D7E100757AEA /* DetailPresenter.swift in Sources */,
