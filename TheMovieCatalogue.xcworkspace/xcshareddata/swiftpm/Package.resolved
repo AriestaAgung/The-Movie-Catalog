@@ -6,7 +6,7 @@
       "location" : "https://github.com/Alamofire/Alamofire.git",
       "state" : {
         "branch" : "master",
-        "revision" : "ce7f662709a152e840b130a158b9afef3402e146"
+        "revision" : "f1f7a06f40c6aadb4beb2a78f380f9938d574fa7"
       }
     },
     {
@@ -15,7 +15,7 @@
       "location" : "https://github.com/airbnb/lottie-ios.git",
       "state" : {
         "branch" : "master",
-        "revision" : "f2ed8ef11d59bbfaae8797df4ecfc302c1d635ba"
+        "revision" : "4247a7a57de59d5ca4922c38007d7a2355d6941a"
       }
     },
     {

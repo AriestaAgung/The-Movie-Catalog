@@ -1,0 +1,17 @@
+//
+//  MovieListModel.swift
+//  TheMovieCatalogue
+//
+//  Created by BRIMO on 05/01/23.
+//
+
+import Foundation
+
+public struct MovieListModel: Equatable, Identifiable {
+    let id: Int
+    let title: String
+    let posterImage: String
+    let desc: String
+    let firstAiring: String
+    let isFavorite: Bool
+}

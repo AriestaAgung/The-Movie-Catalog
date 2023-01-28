@@ -24,6 +24,12 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		E57BCDB1298563EE000275E4 /* HomePresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomePresenter.swift; sourceTree = "<group>"; };
+		E57BCDB4298563EE000275E4 /* HomeCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeCell.swift; sourceTree = "<group>"; };
+		E57BCDB5298563EE000275E4 /* HomeTabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeTabView.swift; sourceTree = "<group>"; };
+		E57BCDB6298563EE000275E4 /* HomeLayout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeLayout.swift; sourceTree = "<group>"; };
+		E57BCDB7298563EE000275E4 /* HomePage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomePage.swift; sourceTree = "<group>"; };
+		E57BCDB9298563EE000275E4 /* HomeRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeRouter.swift; sourceTree = "<group>"; };
 		E5B918EF2978067F00433AF7 /* CatalogHome.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = CatalogHome.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		E5B918F22978067F00433AF7 /* CatalogHome.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CatalogHome.h; sourceTree = "<group>"; };
 		E5B918F32978067F00433AF7 /* CatalogHome.docc */ = {isa = PBXFileReference; lastKnownFileType = folder.documentationcatalog; path = CatalogHome.docc; sourceTree = "<group>"; };
@@ -50,6 +56,41 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		E57BCDB0298563EE000275E4 /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				E57BCDB1298563EE000275E4 /* HomePresenter.swift */,
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		E57BCDB2298563EE000275E4 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				E57BCDB3298563EE000275E4 /* HomeComponent */,
+				E57BCDB7298563EE000275E4 /* HomePage.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		E57BCDB3298563EE000275E4 /* HomeComponent */ = {
+			isa = PBXGroup;
+			children = (
+				E57BCDB4298563EE000275E4 /* HomeCell.swift */,
+				E57BCDB5298563EE000275E4 /* HomeTabView.swift */,
+				E57BCDB6298563EE000275E4 /* HomeLayout.swift */,
+			);
+			path = HomeComponent;
+			sourceTree = "<group>";
+		};
+		E57BCDB8298563EE000275E4 /* Router */ = {
+			isa = PBXGroup;
+			children = (
+				E57BCDB9298563EE000275E4 /* HomeRouter.swift */,
+			);
+			path = Router;
+			sourceTree = "<group>";
+		};
 		E5B918E52978067F00433AF7 = {
 			isa = PBXGroup;
 			children = (
@@ -72,6 +113,9 @@
 			isa = PBXGroup;
 			children = (
 				E5B918F22978067F00433AF7 /* CatalogHome.h */,
+				E57BCDB0298563EE000275E4 /* Presenter */,
+				E57BCDB8298563EE000275E4 /* Router */,
+				E57BCDB2298563EE000275E4 /* View */,
 				E5B918F32978067F00433AF7 /* CatalogHome.docc */,
 			);
 			path = CatalogHome;
@@ -350,6 +394,7 @@
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -378,6 +423,7 @@
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

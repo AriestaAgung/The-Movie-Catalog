@@ -9,7 +9,7 @@ import Foundation
 import RxSwift
 import SwiftUI
 
-class FavoritePresenter: ObservableObject {
+public class FavoritePresenter: ObservableObject {
     private let disposeBag = DisposeBag()
     private let useCase: FavoriteUseCase
     let router = HomeRouter()
@@ -23,11 +23,11 @@ class FavoritePresenter: ObservableObject {
     @Published var loadingState: Bool = false
     
     
-    init(useCase: FavoriteUseCase) {
+    public init(useCase: FavoriteUseCase) {
         self.useCase = useCase
     }
     
-    func getTVList() {
+    public func getTVList() {
         useCase.getTVFavoriteList()
             .observe(on: MainScheduler.instance)
             .subscribe{ res in
@@ -43,7 +43,7 @@ class FavoritePresenter: ObservableObject {
             }.disposed(by: disposeBag)
     }
     
-    func getMovieList() {
+    public func getMovieList() {
         useCase.getMovieFavoriteList()
             .observe(on: MainScheduler.instance)
             .subscribe{ res in
@@ -57,7 +57,7 @@ class FavoritePresenter: ObservableObject {
             }.disposed(by: disposeBag)
     }
     
-    func getMovie(id: Int) {
+    public func getMovie(id: Int) {
         loadingState = true
         self.movieDetail = nil
         useCase.getMovieFavoriteDetail(id: id)
@@ -73,7 +73,7 @@ class FavoritePresenter: ObservableObject {
             }.disposed(by: disposeBag)
     }
     
-    func getTv(id: Int) {
+    public func getTv(id: Int) {
         loadingState = true
         self.tvDetail = nil
         useCase.getTVFavoriteDetail(id: id)
@@ -89,7 +89,7 @@ class FavoritePresenter: ObservableObject {
             }.disposed(by: disposeBag)
     }
     
-    func addTVFavorite(completion: @escaping () -> ()) {
+    public func addTVFavorite(completion: @escaping () -> ()) {
         let entity = TVListEntity()
         dump(tvDetail)
         if let tvDetail = tvDetail {
@@ -111,7 +111,7 @@ class FavoritePresenter: ObservableObject {
         }
     }
     
-    func addMovieFavorite(completion: @escaping () -> ()) {
+    public func addMovieFavorite(completion: @escaping () -> ()) {
         let entity = MovieListEntity()
         dump(movieDetail)
         if let tvDetail = movieDetail {
@@ -134,7 +134,7 @@ class FavoritePresenter: ObservableObject {
     }
     
     
-    func linkBuilder<Content: View>(
+    public func linkBuilder<Content: View>(
         isMovie: Bool,
         id: Int,
         @ViewBuilder content: () -> Content

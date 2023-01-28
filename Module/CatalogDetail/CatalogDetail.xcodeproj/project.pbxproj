@@ -24,6 +24,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		E57BCDBD29856403000275E4 /* DetailPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailPresenter.swift; sourceTree = "<group>"; };
+		E57BCDBF29856403000275E4 /* MovieDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieDetailView.swift; sourceTree = "<group>"; };
 		E5B9193A2978098400433AF7 /* CatalogDetail.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = CatalogDetail.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		E5B9193D2978098400433AF7 /* CatalogDetail.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CatalogDetail.h; sourceTree = "<group>"; };
 		E5B9193E2978098400433AF7 /* CatalogDetail.docc */ = {isa = PBXFileReference; lastKnownFileType = folder.documentationcatalog; path = CatalogDetail.docc; sourceTree = "<group>"; };
@@ -50,6 +52,22 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		E57BCDBC29856403000275E4 /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				E57BCDBD29856403000275E4 /* DetailPresenter.swift */,
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		E57BCDBE29856403000275E4 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				E57BCDBF29856403000275E4 /* MovieDetailView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
 		E5B919302978098400433AF7 = {
 			isa = PBXGroup;
 			children = (
@@ -72,6 +90,8 @@
 			isa = PBXGroup;
 			children = (
 				E5B9193D2978098400433AF7 /* CatalogDetail.h */,
+				E57BCDBC29856403000275E4 /* Presenter */,
+				E57BCDBE29856403000275E4 /* View */,
 				E5B9193E2978098400433AF7 /* CatalogDetail.docc */,
 			);
 			path = CatalogDetail;
@@ -350,6 +370,7 @@
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -378,6 +399,7 @@
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

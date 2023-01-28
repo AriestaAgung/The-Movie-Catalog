@@ -24,6 +24,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		E57BCDBB298563F9000275E4 /* ProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileView.swift; sourceTree = "<group>"; };
 		E5B919162978092900433AF7 /* CatalogProfile.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = CatalogProfile.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		E5B919192978092900433AF7 /* CatalogProfile.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CatalogProfile.h; sourceTree = "<group>"; };
 		E5B9191A2978092900433AF7 /* CatalogProfile.docc */ = {isa = PBXFileReference; lastKnownFileType = folder.documentationcatalog; path = CatalogProfile.docc; sourceTree = "<group>"; };
@@ -50,6 +51,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		E57BCDBA298563F9000275E4 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				E57BCDBB298563F9000275E4 /* ProfileView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
 		E5B9190C2978092900433AF7 = {
 			isa = PBXGroup;
 			children = (
@@ -72,6 +81,7 @@
 			isa = PBXGroup;
 			children = (
 				E5B919192978092900433AF7 /* CatalogProfile.h */,
+				E57BCDBA298563F9000275E4 /* View */,
 				E5B9191A2978092900433AF7 /* CatalogProfile.docc */,
 			);
 			path = CatalogProfile;
@@ -350,6 +360,7 @@
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -378,6 +389,7 @@
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

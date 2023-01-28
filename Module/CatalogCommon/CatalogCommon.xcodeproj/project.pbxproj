@@ -25,6 +25,20 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		E57BCD99298563DF000275E4 /* Networking.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Networking.swift; sourceTree = "<group>"; };
+		E57BCD9C298563DF000275E4 /* TabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabView.swift; sourceTree = "<group>"; };
+		E57BCD9E298563DF000275E4 /* ActivityIndicator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivityIndicator.swift; sourceTree = "<group>"; };
+		E57BCDA0298563DF000275E4 /* CustomNavigationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomNavigationView.swift; sourceTree = "<group>"; };
+		E57BCDA2298563DF000275E4 /* UISimpleSlidingTabController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UISimpleSlidingTabController.swift; sourceTree = "<group>"; };
+		E57BCDA4298563DF000275E4 /* loading.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = loading.json; sourceTree = "<group>"; };
+		E57BCDA5298563DF000275E4 /* LottieView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LottieView.swift; sourceTree = "<group>"; };
+		E57BCDA7298563DF000275E4 /* MovieMapper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieMapper.swift; sourceTree = "<group>"; };
+		E57BCDA8298563DF000275E4 /* TVMapper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TVMapper.swift; sourceTree = "<group>"; };
+		E57BCDAA298563DF000275E4 /* Montserrat-Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Montserrat-Medium.ttf"; sourceTree = "<group>"; };
+		E57BCDAB298563DF000275E4 /* Montserrat-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Montserrat-Bold.ttf"; sourceTree = "<group>"; };
+		E57BCDAC298563DF000275E4 /* Montserrat-SemiBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Montserrat-SemiBold.ttf"; sourceTree = "<group>"; };
+		E57BCDAD298563DF000275E4 /* Montserrat-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Montserrat-Regular.ttf"; sourceTree = "<group>"; };
+		E57BCDAF298563DF000275E4 /* GeneralHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GeneralHelper.swift; sourceTree = "<group>"; };
 		E5B918CA297801D700433AF7 /* CatalogCommon.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = CatalogCommon.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		E5B918CD297801D700433AF7 /* CatalogCommon.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CatalogCommon.h; sourceTree = "<group>"; };
 		E5B918CE297801D700433AF7 /* CatalogCommon.docc */ = {isa = PBXFileReference; lastKnownFileType = folder.documentationcatalog; path = CatalogCommon.docc; sourceTree = "<group>"; };
@@ -53,6 +67,95 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		E57BCD98298563DF000275E4 /* NetworkUtils */ = {
+			isa = PBXGroup;
+			children = (
+				E57BCD99298563DF000275E4 /* Networking.swift */,
+			);
+			path = NetworkUtils;
+			sourceTree = "<group>";
+		};
+		E57BCD9A298563DF000275E4 /* ViewComponent */ = {
+			isa = PBXGroup;
+			children = (
+				E57BCD9B298563DF000275E4 /* Tabs */,
+				E57BCD9D298563DF000275E4 /* Indicator */,
+				E57BCD9F298563DF000275E4 /* CustomNavigationView */,
+				E57BCDA1298563DF000275E4 /* MainHeader */,
+				E57BCDA3298563DF000275E4 /* Lottie */,
+			);
+			path = ViewComponent;
+			sourceTree = "<group>";
+		};
+		E57BCD9B298563DF000275E4 /* Tabs */ = {
+			isa = PBXGroup;
+			children = (
+				E57BCD9C298563DF000275E4 /* TabView.swift */,
+			);
+			path = Tabs;
+			sourceTree = "<group>";
+		};
+		E57BCD9D298563DF000275E4 /* Indicator */ = {
+			isa = PBXGroup;
+			children = (
+				E57BCD9E298563DF000275E4 /* ActivityIndicator.swift */,
+			);
+			path = Indicator;
+			sourceTree = "<group>";
+		};
+		E57BCD9F298563DF000275E4 /* CustomNavigationView */ = {
+			isa = PBXGroup;
+			children = (
+				E57BCDA0298563DF000275E4 /* CustomNavigationView.swift */,
+			);
+			path = CustomNavigationView;
+			sourceTree = "<group>";
+		};
+		E57BCDA1298563DF000275E4 /* MainHeader */ = {
+			isa = PBXGroup;
+			children = (
+				E57BCDA2298563DF000275E4 /* UISimpleSlidingTabController.swift */,
+			);
+			path = MainHeader;
+			sourceTree = "<group>";
+		};
+		E57BCDA3298563DF000275E4 /* Lottie */ = {
+			isa = PBXGroup;
+			children = (
+				E57BCDA4298563DF000275E4 /* loading.json */,
+				E57BCDA5298563DF000275E4 /* LottieView.swift */,
+			);
+			path = Lottie;
+			sourceTree = "<group>";
+		};
+		E57BCDA6298563DF000275E4 /* Mapper */ = {
+			isa = PBXGroup;
+			children = (
+				E57BCDA7298563DF000275E4 /* MovieMapper.swift */,
+				E57BCDA8298563DF000275E4 /* TVMapper.swift */,
+			);
+			path = Mapper;
+			sourceTree = "<group>";
+		};
+		E57BCDA9298563DF000275E4 /* Font */ = {
+			isa = PBXGroup;
+			children = (
+				E57BCDAA298563DF000275E4 /* Montserrat-Medium.ttf */,
+				E57BCDAB298563DF000275E4 /* Montserrat-Bold.ttf */,
+				E57BCDAC298563DF000275E4 /* Montserrat-SemiBold.ttf */,
+				E57BCDAD298563DF000275E4 /* Montserrat-Regular.ttf */,
+			);
+			path = Font;
+			sourceTree = "<group>";
+		};
+		E57BCDAE298563DF000275E4 /* Helper */ = {
+			isa = PBXGroup;
+			children = (
+				E57BCDAF298563DF000275E4 /* GeneralHelper.swift */,
+			);
+			path = Helper;
+			sourceTree = "<group>";
+		};
 		E5B918C0297801D700433AF7 = {
 			isa = PBXGroup;
 			children = (
@@ -76,6 +179,11 @@
 			children = (
 				E5B918E42978032300433AF7 /* Info.plist */,
 				E5B918CD297801D700433AF7 /* CatalogCommon.h */,
+				E57BCDA9298563DF000275E4 /* Font */,
+				E57BCDAE298563DF000275E4 /* Helper */,
+				E57BCDA6298563DF000275E4 /* Mapper */,
+				E57BCD98298563DF000275E4 /* NetworkUtils */,
+				E57BCD9A298563DF000275E4 /* ViewComponent */,
 				E5B918CE297801D700433AF7 /* CatalogCommon.docc */,
 			);
 			path = CatalogCommon;
@@ -361,6 +469,7 @@
 				INFOPLIST_FILE = CatalogCommon/Info.plist;
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -390,6 +499,7 @@
 				INFOPLIST_FILE = CatalogCommon/Info.plist;
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

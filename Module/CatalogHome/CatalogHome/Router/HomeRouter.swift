@@ -1,16 +1,15 @@
 //
-//  FavoriteRouter.swift
+//  HomeRouter.swift
 //  TheMovieCatalogue
 //
-//  Created by BRIMO on 10/01/23.
+//  Created by BRIMO on 04/01/23.
 //
 
 import Foundation
 import SwiftUI
 import RxSwift
-import CatalogCore
 
-public class FavoriteRouter{
+public class HomeRouter{
     public func showDetailView(id: Int, isMovie: Bool) -> some View {
         let detailUseCase = Injection().provideDetailItem()
         let favoriteUseCase = Injection().provideFavorite()
