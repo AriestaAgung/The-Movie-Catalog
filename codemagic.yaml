@@ -1,7 +1,7 @@
 workflows:
     sample-workflow:
         name: iOS - Build
-        max_build_duration: 3600
+        max_build_duration: 120
         instance_type: mac_mini_m1
 environment:
     vars:
