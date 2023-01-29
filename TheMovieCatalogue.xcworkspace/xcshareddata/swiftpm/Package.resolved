@@ -1,0 +1,68 @@
+{
+  "pins" : [
+    {
+      "identity" : "alamofire",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/Alamofire/Alamofire.git",
+      "state" : {
+        "branch" : "master",
+        "revision" : "f1f7a06f40c6aadb4beb2a78f380f9938d574fa7"
+      }
+    },
+    {
+      "identity" : "lottie-ios",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/airbnb/lottie-ios.git",
+      "state" : {
+        "branch" : "master",
+        "revision" : "4247a7a57de59d5ca4922c38007d7a2355d6941a"
+      }
+    },
+    {
+      "identity" : "realm-core",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/realm/realm-core.git",
+      "state" : {
+        "revision" : "b77443ca7fa25407869ca537bf3ae912b1427bff",
+        "version" : "12.13.0"
+      }
+    },
+    {
+      "identity" : "realm-swift",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/realm/realm-swift",
+      "state" : {
+        "branch" : "master",
+        "revision" : "f5aaf456ea725ac2f352b0b3decc78a7094adbd8"
+      }
+    },
+    {
+      "identity" : "rxswift",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/ReactiveX/RxSwift",
+      "state" : {
+        "branch" : "main",
+        "revision" : "91a36920b1ec069004fef9dc41b7c5dbcaa5fffe"
+      }
+    },
+    {
+      "identity" : "sdwebimage",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/SDWebImage/SDWebImage.git",
+      "state" : {
+        "revision" : "6c6b951845a520fa7e8356e28adb5339c0f008d3",
+        "version" : "5.15.0"
+      }
+    },
+    {
+      "identity" : "sdwebimageswiftui",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/SDWebImage/SDWebImageSwiftUI.git",
+      "state" : {
+        "branch" : "master",
+        "revision" : "61fefe9c284fd41ddef77d02749e88f00c305196"
+      }
+    }
+  ],
+  "version" : 2
+}

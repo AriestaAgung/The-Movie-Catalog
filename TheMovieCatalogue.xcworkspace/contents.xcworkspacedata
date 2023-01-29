@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Workspace
+   version = "1.0">
+   <FileRef
+      location = "group:Module/CatalogDetail/CatalogDetail.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:Module/CatalogProfile/CatalogProfile.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:Module/CatalogCommon/CatalogCommon.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:Module/CatalogCore/CatalogCore.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:TheMovieCatalogue.xcodeproj">
+   </FileRef>
+</Workspace>
