@@ -11,6 +11,7 @@
 		E5204FC1298663A000950470 /* CatalogCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E5204FC0298663A000950470 /* CatalogCore.framework */; };
 		E5204FC3298663A000950470 /* CatalogDetail.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E5204FC2298663A000950470 /* CatalogDetail.framework */; };
 		E5204FC5298663A000950470 /* CatalogProfile.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E5204FC4298663A000950470 /* CatalogProfile.framework */; };
+		E5204FC729867D8F00950470 /* codemagic.yaml in Resources */ = {isa = PBXBuildFile; fileRef = E5204FC629867D8F00950470 /* codemagic.yaml */; };
 		E578BC5C2954626A00B8FDF0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E578BC5B2954626A00B8FDF0 /* Assets.xcassets */; };
 		E578BC5F2954626A00B8FDF0 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E578BC5E2954626A00B8FDF0 /* Preview Assets.xcassets */; };
 		E578BC692954626A00B8FDF0 /* TheMovieCatalogueTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E578BC682954626A00B8FDF0 /* TheMovieCatalogueTests.swift */; };
@@ -83,6 +84,7 @@
 		E5204FC0298663A000950470 /* CatalogCore.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = CatalogCore.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		E5204FC2298663A000950470 /* CatalogDetail.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = CatalogDetail.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		E5204FC4298663A000950470 /* CatalogProfile.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = CatalogProfile.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E5204FC629867D8F00950470 /* codemagic.yaml */ = {isa = PBXFileReference; lastKnownFileType = text.yaml; path = codemagic.yaml; sourceTree = "<group>"; };
 		E577398B2980C5420053E43D /* TheMovieCatalogue-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "TheMovieCatalogue-Bridging-Header.h"; sourceTree = "<group>"; };
 		E578BC542954626900B8FDF0 /* TheMovieCatalogue.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TheMovieCatalogue.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E578BC5B2954626A00B8FDF0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -163,6 +165,7 @@
 		E578BC4B2954626900B8FDF0 = {
 			isa = PBXGroup;
 			children = (
+				E5204FC629867D8F00950470 /* codemagic.yaml */,
 				E5ED66D42986593900F4CB78 /* .travis.yml */,
 				E578BC562954626900B8FDF0 /* TheMovieCatalogue */,
 				E578BC672954626A00B8FDF0 /* TheMovieCatalogueTests */,
@@ -469,6 +472,7 @@
 				E5ED66D32986535000F4CB78 /* Montserrat-Regular.ttf in Resources */,
 				E5ED66D12986535000F4CB78 /* Montserrat-Bold.ttf in Resources */,
 				E578BC5F2954626A00B8FDF0 /* Preview Assets.xcassets in Resources */,
+				E5204FC729867D8F00950470 /* codemagic.yaml in Resources */,
 				E5ED66D02986535000F4CB78 /* Montserrat-Medium.ttf in Resources */,
 				E578BC5C2954626A00B8FDF0 /* Assets.xcassets in Resources */,
 				E5ED66D52986593900F4CB78 /* .travis.yml in Resources */,
