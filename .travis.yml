@@ -1,4 +1,3 @@
-
 language: swift
 osx_image: xcode14.2
 xcode_project: TheMovieCatalogue.xcodeproj
