@@ -8,6 +8,7 @@
 import Foundation
 import RealmSwift
 import RxSwift
+import CatalogCommon
 
 public protocol LocaleDataSourceProtocol {
     func getTVList() -> Observable<[TVListEntity]>
@@ -40,7 +41,7 @@ public final class LocaleDataSource: NSObject {
         self.realm = realm
     }
     
-    static let shared: (Realm?) -> LocaleDataSource = { realmDatabase in
+    public static let shared: (Realm?) -> LocaleDataSource = { realmDatabase in
         return LocaleDataSource(realm: realmDatabase)
     }
     

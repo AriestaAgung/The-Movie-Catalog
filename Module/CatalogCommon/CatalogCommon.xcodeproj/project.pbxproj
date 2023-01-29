@@ -7,7 +7,22 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		E5B918CF297801D700433AF7 /* CatalogCommon.docc in Sources */ = {isa = PBXBuildFile; fileRef = E5B918CE297801D700433AF7 /* CatalogCommon.docc */; };
+		E57B65D629857D9800BA0C36 /* CatalogCommon.h in Sources */ = {isa = PBXBuildFile; fileRef = E5B918CD297801D700433AF7 /* CatalogCommon.h */; };
+		E57B65DB29857D9800BA0C36 /* GeneralHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = E57BCDAF298563DF000275E4 /* GeneralHelper.swift */; };
+		E57B65DE29857D9800BA0C36 /* Networking.swift in Sources */ = {isa = PBXBuildFile; fileRef = E57BCD99298563DF000275E4 /* Networking.swift */; };
+		E57B65DF29857D9800BA0C36 /* TabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E57BCD9C298563DF000275E4 /* TabView.swift */; };
+		E57B65E029857D9800BA0C36 /* ActivityIndicator.swift in Sources */ = {isa = PBXBuildFile; fileRef = E57BCD9E298563DF000275E4 /* ActivityIndicator.swift */; };
+		E57B65E129857D9800BA0C36 /* CustomNavigationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E57BCDA0298563DF000275E4 /* CustomNavigationView.swift */; };
+		E57B65E229857D9800BA0C36 /* UISimpleSlidingTabController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E57BCDA2298563DF000275E4 /* UISimpleSlidingTabController.swift */; };
+		E57B65E329857D9800BA0C36 /* loading.json in Sources */ = {isa = PBXBuildFile; fileRef = E57BCDA4298563DF000275E4 /* loading.json */; };
+		E57B65E429857D9800BA0C36 /* LottieView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E57BCDA5298563DF000275E4 /* LottieView.swift */; };
+		E57B65F82985814B00BA0C36 /* UIFont+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = E57B65F32985814B00BA0C36 /* UIFont+Extension.swift */; };
+		E57B65F92985814B00BA0C36 /* Results+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = E57B65F42985814B00BA0C36 /* Results+Extension.swift */; };
+		E57B65FA2985814B00BA0C36 /* CustomError+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = E57B65F52985814B00BA0C36 /* CustomError+Extension.swift */; };
+		E57B65FB2985814B00BA0C36 /* Text+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = E57B65F62985814B00BA0C36 /* Text+Extension.swift */; };
+		E57B65FC2985814B00BA0C36 /* View+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = E57B65F72985814B00BA0C36 /* View+Extension.swift */; };
+		E57B66002985832D00BA0C36 /* Realm in Frameworks */ = {isa = PBXBuildFile; productRef = E57B65FF2985832D00BA0C36 /* Realm */; };
+		E57B66022985832D00BA0C36 /* RealmSwift in Frameworks */ = {isa = PBXBuildFile; productRef = E57B66012985832D00BA0C36 /* RealmSwift */; };
 		E5B918D5297801D700433AF7 /* CatalogCommon.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E5B918CA297801D700433AF7 /* CatalogCommon.framework */; };
 		E5B918DA297801D700433AF7 /* CatalogCommonTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5B918D9297801D700433AF7 /* CatalogCommonTests.swift */; };
 		E5B918DB297801D700433AF7 /* CatalogCommon.h in Headers */ = {isa = PBXBuildFile; fileRef = E5B918CD297801D700433AF7 /* CatalogCommon.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -25,6 +40,12 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		E57B65E829857FC200BA0C36 /* CatalogCore.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = CatalogCore.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E57B65F32985814B00BA0C36 /* UIFont+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIFont+Extension.swift"; sourceTree = "<group>"; };
+		E57B65F42985814B00BA0C36 /* Results+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Results+Extension.swift"; sourceTree = "<group>"; };
+		E57B65F52985814B00BA0C36 /* CustomError+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "CustomError+Extension.swift"; sourceTree = "<group>"; };
+		E57B65F62985814B00BA0C36 /* Text+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Text+Extension.swift"; sourceTree = "<group>"; };
+		E57B65F72985814B00BA0C36 /* View+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "View+Extension.swift"; sourceTree = "<group>"; };
 		E57BCD99298563DF000275E4 /* Networking.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Networking.swift; sourceTree = "<group>"; };
 		E57BCD9C298563DF000275E4 /* TabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabView.swift; sourceTree = "<group>"; };
 		E57BCD9E298563DF000275E4 /* ActivityIndicator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivityIndicator.swift; sourceTree = "<group>"; };
@@ -32,19 +53,11 @@
 		E57BCDA2298563DF000275E4 /* UISimpleSlidingTabController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UISimpleSlidingTabController.swift; sourceTree = "<group>"; };
 		E57BCDA4298563DF000275E4 /* loading.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = loading.json; sourceTree = "<group>"; };
 		E57BCDA5298563DF000275E4 /* LottieView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LottieView.swift; sourceTree = "<group>"; };
-		E57BCDA7298563DF000275E4 /* MovieMapper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieMapper.swift; sourceTree = "<group>"; };
-		E57BCDA8298563DF000275E4 /* TVMapper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TVMapper.swift; sourceTree = "<group>"; };
-		E57BCDAA298563DF000275E4 /* Montserrat-Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Montserrat-Medium.ttf"; sourceTree = "<group>"; };
-		E57BCDAB298563DF000275E4 /* Montserrat-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Montserrat-Bold.ttf"; sourceTree = "<group>"; };
-		E57BCDAC298563DF000275E4 /* Montserrat-SemiBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Montserrat-SemiBold.ttf"; sourceTree = "<group>"; };
-		E57BCDAD298563DF000275E4 /* Montserrat-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Montserrat-Regular.ttf"; sourceTree = "<group>"; };
 		E57BCDAF298563DF000275E4 /* GeneralHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GeneralHelper.swift; sourceTree = "<group>"; };
 		E5B918CA297801D700433AF7 /* CatalogCommon.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = CatalogCommon.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		E5B918CD297801D700433AF7 /* CatalogCommon.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CatalogCommon.h; sourceTree = "<group>"; };
-		E5B918CE297801D700433AF7 /* CatalogCommon.docc */ = {isa = PBXFileReference; lastKnownFileType = folder.documentationcatalog; path = CatalogCommon.docc; sourceTree = "<group>"; };
 		E5B918D4297801D700433AF7 /* CatalogCommonTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CatalogCommonTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		E5B918D9297801D700433AF7 /* CatalogCommonTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CatalogCommonTests.swift; sourceTree = "<group>"; };
-		E5B918E42978032300433AF7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -52,6 +65,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E57B66022985832D00BA0C36 /* RealmSwift in Frameworks */,
+				E57B66002985832D00BA0C36 /* Realm in Frameworks */,
 				E5B9190B297806EF00433AF7 /* Lottie in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -67,6 +82,34 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		E57B65E729857FC200BA0C36 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				E57B65E829857FC200BA0C36 /* CatalogCore.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		E57B65F12985814B00BA0C36 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				E57B65F22985814B00BA0C36 /* Extension */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		E57B65F22985814B00BA0C36 /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				E57B65F32985814B00BA0C36 /* UIFont+Extension.swift */,
+				E57B65F42985814B00BA0C36 /* Results+Extension.swift */,
+				E57B65F52985814B00BA0C36 /* CustomError+Extension.swift */,
+				E57B65F62985814B00BA0C36 /* Text+Extension.swift */,
+				E57B65F72985814B00BA0C36 /* View+Extension.swift */,
+			);
+			path = Extension;
+			sourceTree = "<group>";
+		};
 		E57BCD98298563DF000275E4 /* NetworkUtils */ = {
 			isa = PBXGroup;
 			children = (
@@ -128,26 +171,6 @@
 			path = Lottie;
 			sourceTree = "<group>";
 		};
-		E57BCDA6298563DF000275E4 /* Mapper */ = {
-			isa = PBXGroup;
-			children = (
-				E57BCDA7298563DF000275E4 /* MovieMapper.swift */,
-				E57BCDA8298563DF000275E4 /* TVMapper.swift */,
-			);
-			path = Mapper;
-			sourceTree = "<group>";
-		};
-		E57BCDA9298563DF000275E4 /* Font */ = {
-			isa = PBXGroup;
-			children = (
-				E57BCDAA298563DF000275E4 /* Montserrat-Medium.ttf */,
-				E57BCDAB298563DF000275E4 /* Montserrat-Bold.ttf */,
-				E57BCDAC298563DF000275E4 /* Montserrat-SemiBold.ttf */,
-				E57BCDAD298563DF000275E4 /* Montserrat-Regular.ttf */,
-			);
-			path = Font;
-			sourceTree = "<group>";
-		};
 		E57BCDAE298563DF000275E4 /* Helper */ = {
 			isa = PBXGroup;
 			children = (
@@ -162,6 +185,7 @@
 				E5B918CC297801D700433AF7 /* CatalogCommon */,
 				E5B918D8297801D700433AF7 /* CatalogCommonTests */,
 				E5B918CB297801D700433AF7 /* Products */,
+				E57B65E729857FC200BA0C36 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -177,14 +201,11 @@
 		E5B918CC297801D700433AF7 /* CatalogCommon */ = {
 			isa = PBXGroup;
 			children = (
-				E5B918E42978032300433AF7 /* Info.plist */,
+				E57B65F12985814B00BA0C36 /* Utils */,
 				E5B918CD297801D700433AF7 /* CatalogCommon.h */,
-				E57BCDA9298563DF000275E4 /* Font */,
 				E57BCDAE298563DF000275E4 /* Helper */,
-				E57BCDA6298563DF000275E4 /* Mapper */,
 				E57BCD98298563DF000275E4 /* NetworkUtils */,
 				E57BCD9A298563DF000275E4 /* ViewComponent */,
-				E5B918CE297801D700433AF7 /* CatalogCommon.docc */,
 			);
 			path = CatalogCommon;
 			sourceTree = "<group>";
@@ -227,6 +248,8 @@
 			name = CatalogCommon;
 			packageProductDependencies = (
 				E5B9190A297806EF00433AF7 /* Lottie */,
+				E57B65FF2985832D00BA0C36 /* Realm */,
+				E57B66012985832D00BA0C36 /* RealmSwift */,
 			);
 			productName = CatalogCommon;
 			productReference = E5B918CA297801D700433AF7 /* CatalogCommon.framework */;
@@ -279,6 +302,7 @@
 			mainGroup = E5B918C0297801D700433AF7;
 			packageReferences = (
 				E5B91909297806EF00433AF7 /* XCRemoteSwiftPackageReference "lottie-ios" */,
+				E57B65FE2985832D00BA0C36 /* XCRemoteSwiftPackageReference "realm-swift" */,
 			);
 			productRefGroup = E5B918CB297801D700433AF7 /* Products */;
 			projectDirPath = "";
@@ -312,7 +336,20 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E5B918CF297801D700433AF7 /* CatalogCommon.docc in Sources */,
+				E57B65D629857D9800BA0C36 /* CatalogCommon.h in Sources */,
+				E57B65FC2985814B00BA0C36 /* View+Extension.swift in Sources */,
+				E57B65F82985814B00BA0C36 /* UIFont+Extension.swift in Sources */,
+				E57B65FB2985814B00BA0C36 /* Text+Extension.swift in Sources */,
+				E57B65DB29857D9800BA0C36 /* GeneralHelper.swift in Sources */,
+				E57B65DE29857D9800BA0C36 /* Networking.swift in Sources */,
+				E57B65FA2985814B00BA0C36 /* CustomError+Extension.swift in Sources */,
+				E57B65DF29857D9800BA0C36 /* TabView.swift in Sources */,
+				E57B65E029857D9800BA0C36 /* ActivityIndicator.swift in Sources */,
+				E57B65E129857D9800BA0C36 /* CustomNavigationView.swift in Sources */,
+				E57B65E229857D9800BA0C36 /* UISimpleSlidingTabController.swift in Sources */,
+				E57B65F92985814B00BA0C36 /* Results+Extension.swift in Sources */,
+				E57B65E329857D9800BA0C36 /* loading.json in Sources */,
+				E57B65E429857D9800BA0C36 /* LottieView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -518,6 +555,7 @@
 		E5B918E2297801D700433AF7 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = R2D4D7YLB2;
@@ -534,6 +572,7 @@
 		E5B918E3297801D700433AF7 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = R2D4D7YLB2;
@@ -580,6 +619,14 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
+		E57B65FE2985832D00BA0C36 /* XCRemoteSwiftPackageReference "realm-swift" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/realm/realm-swift";
+			requirement = {
+				branch = master;
+				kind = branch;
+			};
+		};
 		E5B91909297806EF00433AF7 /* XCRemoteSwiftPackageReference "lottie-ios" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/airbnb/lottie-ios.git";
@@ -591,6 +638,16 @@
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
+		E57B65FF2985832D00BA0C36 /* Realm */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = E57B65FE2985832D00BA0C36 /* XCRemoteSwiftPackageReference "realm-swift" */;
+			productName = Realm;
+		};
+		E57B66012985832D00BA0C36 /* RealmSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = E57B65FE2985832D00BA0C36 /* XCRemoteSwiftPackageReference "realm-swift" */;
+			productName = RealmSwift;
+		};
 		E5B9190A297806EF00433AF7 /* Lottie */ = {
 			isa = XCSwiftPackageProductDependency;
 			package = E5B91909297806EF00433AF7 /* XCRemoteSwiftPackageReference "lottie-ios" */;

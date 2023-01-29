@@ -7,23 +7,33 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		E52D16BE2980F54B0096D0D4 /* CatalogCommon.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E5B9197829780CB400433AF7 /* CatalogCommon.framework */; };
-		E52D16BF2980F54B0096D0D4 /* CatalogCommon.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = E5B9197829780CB400433AF7 /* CatalogCommon.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		E52D16C02980F54B0096D0D4 /* CatalogCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E5B918852977FF1F00433AF7 /* CatalogCore.framework */; };
-		E52D16C12980F54B0096D0D4 /* CatalogCore.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = E5B918852977FF1F00433AF7 /* CatalogCore.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		E54BC7DD295AD0980039A9BD /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = E54BC7DC295AD0980039A9BD /* Alamofire */; };
 		E578BC5C2954626A00B8FDF0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E578BC5B2954626A00B8FDF0 /* Assets.xcassets */; };
 		E578BC5F2954626A00B8FDF0 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E578BC5E2954626A00B8FDF0 /* Preview Assets.xcassets */; };
 		E578BC692954626A00B8FDF0 /* TheMovieCatalogueTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E578BC682954626A00B8FDF0 /* TheMovieCatalogueTests.swift */; };
 		E578BC732954626A00B8FDF0 /* TheMovieCatalogueUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E578BC722954626A00B8FDF0 /* TheMovieCatalogueUITests.swift */; };
 		E578BC752954626A00B8FDF0 /* TheMovieCatalogueUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E578BC742954626A00B8FDF0 /* TheMovieCatalogueUITestsLaunchTests.swift */; };
-		E57FF09629652C8A00E14AB9 /* SDWebImageSwiftUI in Frameworks */ = {isa = PBXBuildFile; productRef = E57FF09529652C8A00E14AB9 /* SDWebImageSwiftUI */; };
-		E57FF09B29653DE500E14AB9 /* RxCocoa in Frameworks */ = {isa = PBXBuildFile; productRef = E57FF09A29653DE500E14AB9 /* RxCocoa */; };
-		E57FF09D29653DE500E14AB9 /* RxSwift in Frameworks */ = {isa = PBXBuildFile; productRef = E57FF09C29653DE500E14AB9 /* RxSwift */; };
-		E57FF0A129654B7300E14AB9 /* Realm in Frameworks */ = {isa = PBXBuildFile; productRef = E57FF0A029654B7300E14AB9 /* Realm */; };
-		E57FF0A329654B7300E14AB9 /* RealmSwift in Frameworks */ = {isa = PBXBuildFile; productRef = E57FF0A229654B7300E14AB9 /* RealmSwift */; };
-		E5AA29E8296807F800AF0C35 /* Lottie in Frameworks */ = {isa = PBXBuildFile; productRef = E5AA29E7296807F800AF0C35 /* Lottie */; };
-		E5AA29F229686BD800AF0C35 /* Introspect in Frameworks */ = {isa = PBXBuildFile; productRef = E5AA29F129686BD800AF0C35 /* Introspect */; };
+		E5793DC929861CF000835318 /* CatalogCommon.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E5793DC829861CF000835318 /* CatalogCommon.framework */; };
+		E5793DCA29861FEB00835318 /* HomePresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5793DBC29861B6E00835318 /* HomePresenter.swift */; };
+		E5793DCB29861FEB00835318 /* HomeRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5793DBE29861B6E00835318 /* HomeRouter.swift */; };
+		E5793DCC29861FEB00835318 /* HomeCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5793DC029861B6E00835318 /* HomeCell.swift */; };
+		E5793DCD29861FEB00835318 /* HomeTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5793DC129861B6E00835318 /* HomeTabView.swift */; };
+		E5793DCE29861FEB00835318 /* HomeLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5793DC229861B6E00835318 /* HomeLayout.swift */; };
+		E5793DCF29861FEB00835318 /* HomePage.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5793DC429861B6E00835318 /* HomePage.swift */; };
+		E5793DD12986208F00835318 /* CatalogDetail.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E5793DD02986208F00835318 /* CatalogDetail.framework */; };
+		E5793DD52986208F00835318 /* CatalogProfile.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E5793DD42986208F00835318 /* CatalogProfile.framework */; };
+		E5793E0729863DAE00835318 /* FavoritePresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5793E0029863DAE00835318 /* FavoritePresenter.swift */; };
+		E5793E0829863DAE00835318 /* FavoriteRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5793E0229863DAE00835318 /* FavoriteRouter.swift */; };
+		E5793E0929863DAE00835318 /* FavoriteCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5793E0429863DAE00835318 /* FavoriteCell.swift */; };
+		E5793E0A29863DAE00835318 /* FavoriteTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5793E0529863DAE00835318 /* FavoriteTabView.swift */; };
+		E5793E0B29863DAE00835318 /* FavoriteLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5793E0629863DAE00835318 /* FavoriteLayout.swift */; };
+		E57BCDC029856B67000275E4 /* TheMovieCatalogueApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5B9198B29780F4300433AF7 /* TheMovieCatalogueApp.swift */; };
+		E57BCDCF298574D5000275E4 /* CatalogCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E57BCDCE298574D5000275E4 /* CatalogCore.framework */; };
+		E57BCDD0298574D5000275E4 /* CatalogCore.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = E57BCDCE298574D5000275E4 /* CatalogCore.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		E5A3CD5D29857B2800457B2D /* CatalogCore.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = E5A3CD5B29857B2800457B2D /* CatalogCore.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		E5ED66D02986535000F4CB78 /* Montserrat-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = E5ED66CC2986535000F4CB78 /* Montserrat-Medium.ttf */; };
+		E5ED66D12986535000F4CB78 /* Montserrat-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = E5ED66CD2986535000F4CB78 /* Montserrat-Bold.ttf */; };
+		E5ED66D22986535000F4CB78 /* Montserrat-SemiBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = E5ED66CE2986535000F4CB78 /* Montserrat-SemiBold.ttf */; };
+		E5ED66D32986535000F4CB78 /* Montserrat-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = E5ED66CF2986535000F4CB78 /* Montserrat-Regular.ttf */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,14 +54,14 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
-		E52D16C22980F54C0096D0D4 /* Embed Frameworks */ = {
+		E57BCDD1298574D5000275E4 /* Embed Frameworks */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				E52D16BF2980F54B0096D0D4 /* CatalogCommon.framework in Embed Frameworks */,
-				E52D16C12980F54B0096D0D4 /* CatalogCore.framework in Embed Frameworks */,
+				E5A3CD5D29857B2800457B2D /* CatalogCore.framework in Embed Frameworks */,
+				E57BCDD0298574D5000275E4 /* CatalogCore.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -69,7 +79,25 @@
 		E578BC6E2954626A00B8FDF0 /* TheMovieCatalogueUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TheMovieCatalogueUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		E578BC722954626A00B8FDF0 /* TheMovieCatalogueUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TheMovieCatalogueUITests.swift; sourceTree = "<group>"; };
 		E578BC742954626A00B8FDF0 /* TheMovieCatalogueUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TheMovieCatalogueUITestsLaunchTests.swift; sourceTree = "<group>"; };
-		E578BCA329546A1E00B8FDF0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		E5793DBC29861B6E00835318 /* HomePresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomePresenter.swift; sourceTree = "<group>"; };
+		E5793DBE29861B6E00835318 /* HomeRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeRouter.swift; sourceTree = "<group>"; };
+		E5793DC029861B6E00835318 /* HomeCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeCell.swift; sourceTree = "<group>"; };
+		E5793DC129861B6E00835318 /* HomeTabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeTabView.swift; sourceTree = "<group>"; };
+		E5793DC229861B6E00835318 /* HomeLayout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeLayout.swift; sourceTree = "<group>"; };
+		E5793DC429861B6E00835318 /* HomePage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomePage.swift; sourceTree = "<group>"; };
+		E5793DC829861CF000835318 /* CatalogCommon.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = CatalogCommon.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E5793DD02986208F00835318 /* CatalogDetail.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = CatalogDetail.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E5793DD22986208F00835318 /* CatalogFavorite.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = CatalogFavorite.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E5793DD42986208F00835318 /* CatalogProfile.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = CatalogProfile.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E5793E0029863DAE00835318 /* FavoritePresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FavoritePresenter.swift; sourceTree = "<group>"; };
+		E5793E0229863DAE00835318 /* FavoriteRouter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FavoriteRouter.swift; sourceTree = "<group>"; };
+		E5793E0429863DAE00835318 /* FavoriteCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FavoriteCell.swift; sourceTree = "<group>"; };
+		E5793E0529863DAE00835318 /* FavoriteTabView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FavoriteTabView.swift; sourceTree = "<group>"; };
+		E5793E0629863DAE00835318 /* FavoriteLayout.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FavoriteLayout.swift; sourceTree = "<group>"; };
+		E57BCDC129856C3C000275E4 /* CatalogHome.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = CatalogHome.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E57BCDCE298574D5000275E4 /* CatalogCore.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = CatalogCore.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E57BCDD2298574DC000275E4 /* CatalogHome.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = CatalogHome.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E5A3CD5B29857B2800457B2D /* CatalogCore.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = CatalogCore.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		E5B918852977FF1F00433AF7 /* CatalogCore.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = CatalogCore.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		E5B9197829780CB400433AF7 /* CatalogCommon.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = CatalogCommon.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		E5B9197929780CB400433AF7 /* CatalogCore.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = CatalogCore.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -78,6 +106,11 @@
 		E5B9197C29780CB400433AF7 /* CatalogHome.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = CatalogHome.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		E5B9197D29780CB400433AF7 /* CatalogProfile.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = CatalogProfile.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		E5B9198B29780F4300433AF7 /* TheMovieCatalogueApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TheMovieCatalogueApp.swift; sourceTree = "<group>"; };
+		E5ED66CA2986481600F4CB78 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E5ED66CC2986535000F4CB78 /* Montserrat-Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Montserrat-Medium.ttf"; sourceTree = "<group>"; };
+		E5ED66CD2986535000F4CB78 /* Montserrat-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Montserrat-Bold.ttf"; sourceTree = "<group>"; };
+		E5ED66CE2986535000F4CB78 /* Montserrat-SemiBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Montserrat-SemiBold.ttf"; sourceTree = "<group>"; };
+		E5ED66CF2986535000F4CB78 /* Montserrat-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Montserrat-Regular.ttf"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -85,16 +118,10 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E57FF0A329654B7300E14AB9 /* RealmSwift in Frameworks */,
-				E52D16BE2980F54B0096D0D4 /* CatalogCommon.framework in Frameworks */,
-				E5AA29E8296807F800AF0C35 /* Lottie in Frameworks */,
-				E57FF09B29653DE500E14AB9 /* RxCocoa in Frameworks */,
-				E57FF09629652C8A00E14AB9 /* SDWebImageSwiftUI in Frameworks */,
-				E52D16C02980F54B0096D0D4 /* CatalogCore.framework in Frameworks */,
-				E57FF09D29653DE500E14AB9 /* RxSwift in Frameworks */,
-				E5AA29F229686BD800AF0C35 /* Introspect in Frameworks */,
-				E54BC7DD295AD0980039A9BD /* Alamofire in Frameworks */,
-				E57FF0A129654B7300E14AB9 /* Realm in Frameworks */,
+				E5793DD12986208F00835318 /* CatalogDetail.framework in Frameworks */,
+				E5793DD52986208F00835318 /* CatalogProfile.framework in Frameworks */,
+				E5793DC929861CF000835318 /* CatalogCommon.framework in Frameworks */,
+				E57BCDCF298574D5000275E4 /* CatalogCore.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -139,8 +166,10 @@
 		E578BC562954626900B8FDF0 /* TheMovieCatalogue */ = {
 			isa = PBXGroup;
 			children = (
+				E5ED66CB2986535000F4CB78 /* Font */,
+				E5793DE329863CFD00835318 /* CatalogFavorite */,
+				E5793DC729861B6E00835318 /* CatalogHome */,
 				E5B9198A29780F4300433AF7 /* App */,
-				E578BCA329546A1E00B8FDF0 /* Info.plist */,
 				E578BC5B2954626A00B8FDF0 /* Assets.xcassets */,
 				E578BC5D2954626A00B8FDF0 /* Preview Content */,
 			);
@@ -172,9 +201,101 @@
 			path = TheMovieCatalogueUITests;
 			sourceTree = "<group>";
 		};
+		E5793DBD29861B6E00835318 /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				E5793DBC29861B6E00835318 /* HomePresenter.swift */,
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		E5793DBF29861B6E00835318 /* Router */ = {
+			isa = PBXGroup;
+			children = (
+				E5793DBE29861B6E00835318 /* HomeRouter.swift */,
+			);
+			path = Router;
+			sourceTree = "<group>";
+		};
+		E5793DC329861B6E00835318 /* HomeComponent */ = {
+			isa = PBXGroup;
+			children = (
+				E5793DC029861B6E00835318 /* HomeCell.swift */,
+				E5793DC129861B6E00835318 /* HomeTabView.swift */,
+				E5793DC229861B6E00835318 /* HomeLayout.swift */,
+			);
+			path = HomeComponent;
+			sourceTree = "<group>";
+		};
+		E5793DC529861B6E00835318 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				E5793DC329861B6E00835318 /* HomeComponent */,
+				E5793DC429861B6E00835318 /* HomePage.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		E5793DC729861B6E00835318 /* CatalogHome */ = {
+			isa = PBXGroup;
+			children = (
+				E5793DBD29861B6E00835318 /* Presenter */,
+				E5793DBF29861B6E00835318 /* Router */,
+				E5793DC529861B6E00835318 /* View */,
+			);
+			path = CatalogHome;
+			sourceTree = "<group>";
+		};
+		E5793DE329863CFD00835318 /* CatalogFavorite */ = {
+			isa = PBXGroup;
+			children = (
+				E5793DFF29863DAE00835318 /* Presenter */,
+				E5793E0129863DAE00835318 /* Router */,
+				E5793E0329863DAE00835318 /* View */,
+			);
+			path = CatalogFavorite;
+			sourceTree = "<group>";
+		};
+		E5793DFF29863DAE00835318 /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				E5793E0029863DAE00835318 /* FavoritePresenter.swift */,
+			);
+			name = Presenter;
+			path = TheMovieCatalogue/CatalogFavorite/Presenter;
+			sourceTree = SOURCE_ROOT;
+		};
+		E5793E0129863DAE00835318 /* Router */ = {
+			isa = PBXGroup;
+			children = (
+				E5793E0229863DAE00835318 /* FavoriteRouter.swift */,
+			);
+			name = Router;
+			path = TheMovieCatalogue/CatalogFavorite/Router;
+			sourceTree = SOURCE_ROOT;
+		};
+		E5793E0329863DAE00835318 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				E5793E0429863DAE00835318 /* FavoriteCell.swift */,
+				E5793E0529863DAE00835318 /* FavoriteTabView.swift */,
+				E5793E0629863DAE00835318 /* FavoriteLayout.swift */,
+			);
+			name = View;
+			path = TheMovieCatalogue/CatalogFavorite/View;
+			sourceTree = SOURCE_ROOT;
+		};
 		E5B918842977FF1F00433AF7 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				E5793DD02986208F00835318 /* CatalogDetail.framework */,
+				E5793DD22986208F00835318 /* CatalogFavorite.framework */,
+				E5793DD42986208F00835318 /* CatalogProfile.framework */,
+				E5793DC829861CF000835318 /* CatalogCommon.framework */,
+				E5A3CD5B29857B2800457B2D /* CatalogCore.framework */,
+				E57BCDD2298574DC000275E4 /* CatalogHome.framework */,
+				E57BCDCE298574D5000275E4 /* CatalogCore.framework */,
+				E57BCDC129856C3C000275E4 /* CatalogHome.framework */,
 				E517BEBA2980EF8D0052DC73 /* CatalogCommon.framework */,
 				E5B9197829780CB400433AF7 /* CatalogCommon.framework */,
 				E5B9197929780CB400433AF7 /* CatalogCore.framework */,
@@ -190,10 +311,22 @@
 		E5B9198A29780F4300433AF7 /* App */ = {
 			isa = PBXGroup;
 			children = (
+				E5ED66CA2986481600F4CB78 /* Info.plist */,
 				E5B9198B29780F4300433AF7 /* TheMovieCatalogueApp.swift */,
 				E577398B2980C5420053E43D /* TheMovieCatalogue-Bridging-Header.h */,
 			);
 			path = App;
+			sourceTree = "<group>";
+		};
+		E5ED66CB2986535000F4CB78 /* Font */ = {
+			isa = PBXGroup;
+			children = (
+				E5ED66CC2986535000F4CB78 /* Montserrat-Medium.ttf */,
+				E5ED66CD2986535000F4CB78 /* Montserrat-Bold.ttf */,
+				E5ED66CE2986535000F4CB78 /* Montserrat-SemiBold.ttf */,
+				E5ED66CF2986535000F4CB78 /* Montserrat-Regular.ttf */,
+			);
+			path = Font;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -206,7 +339,7 @@
 				E578BC502954626900B8FDF0 /* Sources */,
 				E578BC512954626900B8FDF0 /* Frameworks */,
 				E578BC522954626900B8FDF0 /* Resources */,
-				E52D16C22980F54C0096D0D4 /* Embed Frameworks */,
+				E57BCDD1298574D5000275E4 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -214,14 +347,6 @@
 			);
 			name = TheMovieCatalogue;
 			packageProductDependencies = (
-				E54BC7DC295AD0980039A9BD /* Alamofire */,
-				E57FF09529652C8A00E14AB9 /* SDWebImageSwiftUI */,
-				E57FF09A29653DE500E14AB9 /* RxCocoa */,
-				E57FF09C29653DE500E14AB9 /* RxSwift */,
-				E57FF0A029654B7300E14AB9 /* Realm */,
-				E57FF0A229654B7300E14AB9 /* RealmSwift */,
-				E5AA29E7296807F800AF0C35 /* Lottie */,
-				E5AA29F129686BD800AF0C35 /* Introspect */,
 			);
 			productName = TheMovieCatalogue;
 			productReference = E578BC542954626900B8FDF0 /* TheMovieCatalogue.app */;
@@ -297,12 +422,6 @@
 			);
 			mainGroup = E578BC4B2954626900B8FDF0;
 			packageReferences = (
-				E54BC7DB295AD0980039A9BD /* XCRemoteSwiftPackageReference "Alamofire" */,
-				E57FF09429652C8900E14AB9 /* XCRemoteSwiftPackageReference "SDWebImageSwiftUI" */,
-				E57FF09929653DE500E14AB9 /* XCRemoteSwiftPackageReference "RxSwift" */,
-				E57FF09F29654B7300E14AB9 /* XCRemoteSwiftPackageReference "realm-cocoa" */,
-				E5AA29E6296807F800AF0C35 /* XCRemoteSwiftPackageReference "lottie-ios" */,
-				E5AA29F029686BD800AF0C35 /* XCRemoteSwiftPackageReference "SwiftUI-Introspect" */,
 			);
 			productRefGroup = E578BC552954626900B8FDF0 /* Products */;
 			projectDirPath = "";
@@ -320,8 +439,12 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E5ED66D32986535000F4CB78 /* Montserrat-Regular.ttf in Resources */,
+				E5ED66D12986535000F4CB78 /* Montserrat-Bold.ttf in Resources */,
 				E578BC5F2954626A00B8FDF0 /* Preview Assets.xcassets in Resources */,
+				E5ED66D02986535000F4CB78 /* Montserrat-Medium.ttf in Resources */,
 				E578BC5C2954626A00B8FDF0 /* Assets.xcassets in Resources */,
+				E5ED66D22986535000F4CB78 /* Montserrat-SemiBold.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -346,6 +469,18 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E5793E0A29863DAE00835318 /* FavoriteTabView.swift in Sources */,
+				E5793E0B29863DAE00835318 /* FavoriteLayout.swift in Sources */,
+				E5793E0829863DAE00835318 /* FavoriteRouter.swift in Sources */,
+				E5793DCA29861FEB00835318 /* HomePresenter.swift in Sources */,
+				E5793DCB29861FEB00835318 /* HomeRouter.swift in Sources */,
+				E5793DCC29861FEB00835318 /* HomeCell.swift in Sources */,
+				E5793E0929863DAE00835318 /* FavoriteCell.swift in Sources */,
+				E5793E0729863DAE00835318 /* FavoritePresenter.swift in Sources */,
+				E5793DCD29861FEB00835318 /* HomeTabView.swift in Sources */,
+				E5793DCE29861FEB00835318 /* HomeLayout.swift in Sources */,
+				E5793DCF29861FEB00835318 /* HomePage.swift in Sources */,
+				E57BCDC029856B67000275E4 /* TheMovieCatalogueApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -568,6 +703,7 @@
 		E578BC7C2954626A00B8FDF0 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
@@ -587,6 +723,7 @@
 		E578BC7D2954626A00B8FDF0 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
@@ -606,6 +743,7 @@
 		E578BC7F2954626A00B8FDF0 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = R2D4D7YLB2;
@@ -623,6 +761,7 @@
 		E578BC802954626A00B8FDF0 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = R2D4D7YLB2;
@@ -677,100 +816,6 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
-
-/* Begin XCRemoteSwiftPackageReference section */
-		E54BC7DB295AD0980039A9BD /* XCRemoteSwiftPackageReference "Alamofire" */ = {
-			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "https://github.com/Alamofire/Alamofire.git";
-			requirement = {
-				kind = upToNextMajorVersion;
-				minimumVersion = 5.0.0;
-			};
-		};
-		E57FF09429652C8900E14AB9 /* XCRemoteSwiftPackageReference "SDWebImageSwiftUI" */ = {
-			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "https://github.com/SDWebImage/SDWebImageSwiftUI.git";
-			requirement = {
-				kind = upToNextMajorVersion;
-				minimumVersion = 2.0.0;
-			};
-		};
-		E57FF09929653DE500E14AB9 /* XCRemoteSwiftPackageReference "RxSwift" */ = {
-			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "https://github.com/ReactiveX/RxSwift";
-			requirement = {
-				kind = upToNextMajorVersion;
-				minimumVersion = 6.0.0;
-			};
-		};
-		E57FF09F29654B7300E14AB9 /* XCRemoteSwiftPackageReference "realm-cocoa" */ = {
-			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "https://github.com/realm/realm-cocoa";
-			requirement = {
-				branch = master;
-				kind = branch;
-			};
-		};
-		E5AA29E6296807F800AF0C35 /* XCRemoteSwiftPackageReference "lottie-ios" */ = {
-			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "https://github.com/airbnb/lottie-ios.git";
-			requirement = {
-				kind = upToNextMajorVersion;
-				minimumVersion = 4.0.0;
-			};
-		};
-		E5AA29F029686BD800AF0C35 /* XCRemoteSwiftPackageReference "SwiftUI-Introspect" */ = {
-			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "https://github.com/siteline/SwiftUI-Introspect";
-			requirement = {
-				kind = upToNextMajorVersion;
-				minimumVersion = 0.1.4;
-			};
-		};
-/* End XCRemoteSwiftPackageReference section */
-
-/* Begin XCSwiftPackageProductDependency section */
-		E54BC7DC295AD0980039A9BD /* Alamofire */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = E54BC7DB295AD0980039A9BD /* XCRemoteSwiftPackageReference "Alamofire" */;
-			productName = Alamofire;
-		};
-		E57FF09529652C8A00E14AB9 /* SDWebImageSwiftUI */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = E57FF09429652C8900E14AB9 /* XCRemoteSwiftPackageReference "SDWebImageSwiftUI" */;
-			productName = SDWebImageSwiftUI;
-		};
-		E57FF09A29653DE500E14AB9 /* RxCocoa */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = E57FF09929653DE500E14AB9 /* XCRemoteSwiftPackageReference "RxSwift" */;
-			productName = RxCocoa;
-		};
-		E57FF09C29653DE500E14AB9 /* RxSwift */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = E57FF09929653DE500E14AB9 /* XCRemoteSwiftPackageReference "RxSwift" */;
-			productName = RxSwift;
-		};
-		E57FF0A029654B7300E14AB9 /* Realm */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = E57FF09F29654B7300E14AB9 /* XCRemoteSwiftPackageReference "realm-cocoa" */;
-			productName = Realm;
-		};
-		E57FF0A229654B7300E14AB9 /* RealmSwift */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = E57FF09F29654B7300E14AB9 /* XCRemoteSwiftPackageReference "realm-cocoa" */;
-			productName = RealmSwift;
-		};
-		E5AA29E7296807F800AF0C35 /* Lottie */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = E5AA29E6296807F800AF0C35 /* XCRemoteSwiftPackageReference "lottie-ios" */;
-			productName = Lottie;
-		};
-		E5AA29F129686BD800AF0C35 /* Introspect */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = E5AA29F029686BD800AF0C35 /* XCRemoteSwiftPackageReference "SwiftUI-Introspect" */;
-			productName = Introspect;
-		};
-/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = E578BC4C2954626900B8FDF0 /* Project object */;
 }

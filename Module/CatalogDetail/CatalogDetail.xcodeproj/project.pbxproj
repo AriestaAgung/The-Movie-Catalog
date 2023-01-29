@@ -7,10 +7,17 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		E5B9193F2978098400433AF7 /* CatalogDetail.docc in Sources */ = {isa = PBXBuildFile; fileRef = E5B9193E2978098400433AF7 /* CatalogDetail.docc */; };
+		E57B66222985945500BA0C36 /* CatalogDetail.h in Sources */ = {isa = PBXBuildFile; fileRef = E5B9193D2978098400433AF7 /* CatalogDetail.h */; };
+		E57B66232985945500BA0C36 /* DetailPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = E57BCDBD29856403000275E4 /* DetailPresenter.swift */; };
+		E57B66242985945500BA0C36 /* MovieDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E57BCDBF29856403000275E4 /* MovieDetailView.swift */; };
+		E57B6627298594B800BA0C36 /* CatalogCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E57B6626298594B800BA0C36 /* CatalogCore.framework */; };
+		E57B6628298594B800BA0C36 /* CatalogCore.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = E57B6626298594B800BA0C36 /* CatalogCore.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		E57B662E2985953F00BA0C36 /* CatalogCommon.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E57B662D2985953F00BA0C36 /* CatalogCommon.framework */; };
+		E57B662F2985953F00BA0C36 /* CatalogCommon.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = E57B662D2985953F00BA0C36 /* CatalogCommon.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		E5B919452978098500433AF7 /* CatalogDetail.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E5B9193A2978098400433AF7 /* CatalogDetail.framework */; };
 		E5B9194A2978098500433AF7 /* CatalogDetailTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5B919492978098500433AF7 /* CatalogDetailTests.swift */; };
 		E5B9194B2978098500433AF7 /* CatalogDetail.h in Headers */ = {isa = PBXBuildFile; fileRef = E5B9193D2978098400433AF7 /* CatalogDetail.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		E5ED66C92986437200F4CB78 /* Lottie in Frameworks */ = {isa = PBXBuildFile; productRef = E5ED66C82986437200F4CB78 /* Lottie */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -23,12 +30,29 @@
 		};
 /* End PBXContainerItemProxy section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		E57B6629298594B800BA0C36 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				E57B6628298594B800BA0C36 /* CatalogCore.framework in Embed Frameworks */,
+				E57B662F2985953F00BA0C36 /* CatalogCommon.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
+		E57B6626298594B800BA0C36 /* CatalogCore.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = CatalogCore.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E57B662D2985953F00BA0C36 /* CatalogCommon.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = CatalogCommon.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E57B66462985980700BA0C36 /* CatalogFavorite.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = CatalogFavorite.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		E57BCDBD29856403000275E4 /* DetailPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailPresenter.swift; sourceTree = "<group>"; };
 		E57BCDBF29856403000275E4 /* MovieDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieDetailView.swift; sourceTree = "<group>"; };
 		E5B9193A2978098400433AF7 /* CatalogDetail.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = CatalogDetail.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		E5B9193D2978098400433AF7 /* CatalogDetail.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CatalogDetail.h; sourceTree = "<group>"; };
-		E5B9193E2978098400433AF7 /* CatalogDetail.docc */ = {isa = PBXFileReference; lastKnownFileType = folder.documentationcatalog; path = CatalogDetail.docc; sourceTree = "<group>"; };
 		E5B919442978098500433AF7 /* CatalogDetailTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CatalogDetailTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		E5B919492978098500433AF7 /* CatalogDetailTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CatalogDetailTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -38,6 +62,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E57B6627298594B800BA0C36 /* CatalogCore.framework in Frameworks */,
+				E57B662E2985953F00BA0C36 /* CatalogCommon.framework in Frameworks */,
+				E5ED66C92986437200F4CB78 /* Lottie in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -52,6 +79,16 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		E57B6625298594B800BA0C36 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				E57B66462985980700BA0C36 /* CatalogFavorite.framework */,
+				E57B662D2985953F00BA0C36 /* CatalogCommon.framework */,
+				E57B6626298594B800BA0C36 /* CatalogCore.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		E57BCDBC29856403000275E4 /* Presenter */ = {
 			isa = PBXGroup;
 			children = (
@@ -74,6 +111,7 @@
 				E5B9193C2978098400433AF7 /* CatalogDetail */,
 				E5B919482978098500433AF7 /* CatalogDetailTests */,
 				E5B9193B2978098400433AF7 /* Products */,
+				E57B6625298594B800BA0C36 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -92,7 +130,6 @@
 				E5B9193D2978098400433AF7 /* CatalogDetail.h */,
 				E57BCDBC29856403000275E4 /* Presenter */,
 				E57BCDBE29856403000275E4 /* View */,
-				E5B9193E2978098400433AF7 /* CatalogDetail.docc */,
 			);
 			path = CatalogDetail;
 			sourceTree = "<group>";
@@ -127,12 +164,16 @@
 				E5B919362978098400433AF7 /* Sources */,
 				E5B919372978098400433AF7 /* Frameworks */,
 				E5B919382978098400433AF7 /* Resources */,
+				E57B6629298594B800BA0C36 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
 			name = CatalogDetail;
+			packageProductDependencies = (
+				E5ED66C82986437200F4CB78 /* Lottie */,
+			);
 			productName = CatalogDetail;
 			productReference = E5B9193A2978098400433AF7 /* CatalogDetail.framework */;
 			productType = "com.apple.product-type.framework";
@@ -182,6 +223,9 @@
 				Base,
 			);
 			mainGroup = E5B919302978098400433AF7;
+			packageReferences = (
+				E5ED66C72986437200F4CB78 /* XCRemoteSwiftPackageReference "lottie-ios" */,
+			);
 			productRefGroup = E5B9193B2978098400433AF7 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -214,7 +258,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E5B9193F2978098400433AF7 /* CatalogDetail.docc in Sources */,
+				E57B66222985945500BA0C36 /* CatalogDetail.h in Sources */,
+				E57B66232985945500BA0C36 /* DetailPresenter.swift in Sources */,
+				E57B66242985945500BA0C36 /* MovieDetailView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -418,6 +464,7 @@
 		E5B919522978098500433AF7 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = R2D4D7YLB2;
@@ -434,6 +481,7 @@
 		E5B919532978098500433AF7 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = R2D4D7YLB2;
@@ -478,6 +526,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		E5ED66C72986437200F4CB78 /* XCRemoteSwiftPackageReference "lottie-ios" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/airbnb/lottie-ios.git";
+			requirement = {
+				branch = master;
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		E5ED66C82986437200F4CB78 /* Lottie */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = E5ED66C72986437200F4CB78 /* XCRemoteSwiftPackageReference "lottie-ios" */;
+			productName = Lottie;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = E5B919312978098400433AF7 /* Project object */;
 }

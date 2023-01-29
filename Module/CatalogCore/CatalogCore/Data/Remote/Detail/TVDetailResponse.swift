@@ -157,19 +157,19 @@ public class JSONNull: Codable, Hashable {
 public class JSONCodingKey: CodingKey {
     let key: String
 
-    required init?(intValue: Int) {
+    required public init?(intValue: Int) {
         return nil
     }
 
-    required init?(stringValue: String) {
+    required public init?(stringValue: String) {
         key = stringValue
     }
 
-    var intValue: Int? {
+    public var intValue: Int? {
         return nil
     }
 
-    var stringValue: String {
+    public var stringValue: String {
         return key
     }
 }

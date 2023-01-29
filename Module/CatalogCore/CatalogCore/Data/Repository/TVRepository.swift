@@ -7,6 +7,7 @@
 
 import Foundation
 import RxSwift
+import CatalogCommon
 
 public protocol TVRepositoryProtocol {
     func getTVList() -> Observable<[TVListModel]>
@@ -19,7 +20,7 @@ public protocol TVRepositoryProtocol {
 }
 
 public final class TVRepository: NSObject {
-    typealias TVInstance = (LocaleDataSource, RemoteDataSource) -> TVRepository
+    public typealias TVInstance = (LocaleDataSource, RemoteDataSource) -> TVRepository
     fileprivate let remote: RemoteDataSource
     fileprivate let locale: LocaleDataSource
     
@@ -28,7 +29,7 @@ public final class TVRepository: NSObject {
         self.remote = remote
     }
     
-    static let shared: TVInstance = { localeRepo, remoteRepo in
+    public static let shared: TVInstance = { localeRepo, remoteRepo in
         return TVRepository(locale: localeRepo, remote: remoteRepo)
     }
 }
@@ -54,7 +55,7 @@ extension TVRepository: TVRepositoryProtocol {
     }
     
     
-    func getTVList() -> Observable<[TVListModel]> {
+    public func getTVList() -> Observable<[TVListModel]> {
         return self.locale.getTVList()
             .map{ HomeTVMapper.mapEntityToDomain(entities: $0)}
             .filter{ !$0.isEmpty }
@@ -67,7 +68,7 @@ extension TVRepository: TVRepositoryProtocol {
                 }
             )
     }
-    func getTVDetail(id: Int) -> RxSwift.Observable<TVListModel> {
+    public func getTVDetail(id: Int) -> RxSwift.Observable<TVListModel> {
         return self.locale.getTVDetail(id: id)
             .map{ item in
                 return TVListModel(id: item.id, title: item.title, posterImage: item.posterImage, desc: item.desc, firstAiring: item.firstAiring, isFavorite: item.isFavorite)

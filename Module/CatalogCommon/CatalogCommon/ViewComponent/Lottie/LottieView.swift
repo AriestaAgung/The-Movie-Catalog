@@ -9,10 +9,12 @@ import Foundation
 import SwiftUI
 import Lottie
 
-struct LottieView: UIViewRepresentable {
+public struct LottieView: UIViewRepresentable {
+    public init(file: String) {
+        self.file = file
+    }
     let file: String
-    
-    func makeUIView(context: Context) -> some UIView {
+    public func makeUIView(context: Context) -> some UIView {
         let animationView = LottieAnimationView(name: file)
         let view = UIView(frame: .zero)
         
@@ -26,7 +28,7 @@ struct LottieView: UIViewRepresentable {
         
     }
     
-    func updateUIView(_ uiView: UIViewType, context: Context) {
+    public func updateUIView(_ uiView: UIViewType, context: Context) {
         
     }
     

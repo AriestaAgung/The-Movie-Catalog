@@ -6,17 +6,22 @@
 //
 
 import SwiftUI
+import CatalogCore
+import CatalogCommon
 import SDWebImageSwiftUI
 import Lottie
 
 public struct MovieDetailView: View {
     @ObservedObject var presenter: DetailPresenter
-    @ObservedObject var favoritePresenter: FavoritePresenter
-    var isMovie: Bool = false
+    public var isMovie: Bool = false
     var animationView: LottieAnimationView?
     @State var isfav: Bool = false
-    
-    var body: some View {
+    public init(presenter: DetailPresenter, isMovie: Bool, animationView: LottieAnimationView? = nil) {
+        self.presenter = presenter
+        self.isMovie = isMovie
+        self.animationView = animationView
+    }
+    public var body: some View {
         NavigationStack {
             ScrollView{
                 if presenter.loadingState {
@@ -91,12 +96,12 @@ public struct MovieDetailView: View {
             .toolbar(content: {
                 Button(action: {
                     if isMovie {
-                        favoritePresenter.addMovieFavorite{
+                        presenter.addMovieFavorite{
                             self.isfav = !self.isfav
                         }
                     } else {
-                        favoritePresenter.tvDetail = presenter.tvDetail
-                        favoritePresenter.addTVFavorite {
+                        presenter.tvDetail = presenter.tvDetail
+                        presenter.addTVFavorite {
                             self.isfav = !self.isfav
                         }
                     }
@@ -114,12 +119,12 @@ public struct MovieDetailView: View {
             if self.presenter.isMovie {
                 print("id: \(self.presenter.selectedID)")
                 self.presenter.getMovie(id: self.presenter.movieDetail?.id ?? 0)
-                self.favoritePresenter.getMovie(id: self.presenter.movieDetail?.id ?? 0)
+                self.presenter.getFavMovie(id: self.presenter.movieDetail?.id ?? 0)
                 self.isfav = presenter.movieDetail?.isFavorite ?? false
             } else {
                 print("id: \(self.presenter.selectedID)")
                 self.presenter.getTv(id: self.presenter.tvDetail?.id ?? 0)
-                self.favoritePresenter.getTv(id: self.presenter.tvDetail?.id ?? 0)
+                self.presenter.getFavTv(id: self.presenter.tvDetail?.id ?? 0)
                 self.isfav = presenter.tvDetail?.isFavorite ?? false
             }
         }
@@ -127,12 +132,12 @@ public struct MovieDetailView: View {
     }
 }
 
-struct MovieDetailView_Previews: PreviewProvider {
-    static var previews: some View {
-        let detailUseCase = Injection().provideDetailItem()
-        let favoriteUseCase = Injection().provideFavorite()
-        let presenter = DetailPresenter(useCase: detailUseCase, isMovie: false, selectedID: 40)
-        let favoritePresenter = FavoritePresenter(useCase: favoriteUseCase)
-        MovieDetailView(presenter: presenter, favoritePresenter: favoritePresenter, isMovie: true)
-    }
-}
+//struct MovieDetailView_Previews: PreviewProvider {
+//    static var previews: some View {
+//        let detailUseCase = Injection().provideDetailItem()
+//        let favoriteUseCase = Injection().provideFavorite()
+//        let presenter = DetailPresenter(useCase: detailUseCase, isMovie: false, selectedID: 40)
+//        let favoritePresenter = FavoritePresenter(useCase: favoriteUseCase)
+//        MovieDetailView(presenter: presenter, favoritePresenter: favoritePresenter, isMovie: true)
+//    }
+//}

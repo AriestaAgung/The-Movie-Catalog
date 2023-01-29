@@ -19,15 +19,6 @@
       }
     },
     {
-      "identity" : "realm-cocoa",
-      "kind" : "remoteSourceControl",
-      "location" : "https://github.com/realm/realm-cocoa",
-      "state" : {
-        "branch" : "master",
-        "revision" : "824b625945e37480299cc451591fcac3f4c839cf"
-      }
-    },
-    {
       "identity" : "realm-core",
       "kind" : "remoteSourceControl",
       "location" : "https://github.com/realm/realm-core.git",
@@ -37,12 +28,21 @@
       }
     },
     {
+      "identity" : "realm-swift",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/realm/realm-swift",
+      "state" : {
+        "branch" : "master",
+        "revision" : "f5aaf456ea725ac2f352b0b3decc78a7094adbd8"
+      }
+    },
+    {
       "identity" : "rxswift",
       "kind" : "remoteSourceControl",
       "location" : "https://github.com/ReactiveX/RxSwift",
       "state" : {
-        "revision" : "b4307ba0b6425c0ba4178e138799946c3da594f8",
-        "version" : "6.5.0"
+        "branch" : "main",
+        "revision" : "91a36920b1ec069004fef9dc41b7c5dbcaa5fffe"
       }
     },
     {
@@ -59,17 +59,8 @@
       "kind" : "remoteSourceControl",
       "location" : "https://github.com/SDWebImage/SDWebImageSwiftUI.git",
       "state" : {
-        "revision" : "61fefe9c284fd41ddef77d02749e88f00c305196",
-        "version" : "2.2.2"
-      }
-    },
-    {
-      "identity" : "swiftui-introspect",
-      "kind" : "remoteSourceControl",
-      "location" : "https://github.com/siteline/SwiftUI-Introspect",
-      "state" : {
-        "revision" : "f2616860a41f9d9932da412a8978fec79c06fe24",
-        "version" : "0.1.4"
+        "branch" : "master",
+        "revision" : "61fefe9c284fd41ddef77d02749e88f00c305196"
       }
     }
   ],

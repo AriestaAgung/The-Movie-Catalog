@@ -8,6 +8,7 @@
 import Foundation
 import RxSwift
 import Alamofire
+import CatalogCommon
 
 public protocol RemoteDataSourceProtocol {
     func getTVList() -> Observable<TVPopularResponse?>
@@ -19,7 +20,7 @@ public protocol RemoteDataSourceProtocol {
 public final class RemoteDataSource: NSObject {
     public override init() { }
     
-    static let shared: RemoteDataSource = RemoteDataSource()
+    public static let shared: RemoteDataSource = RemoteDataSource()
     
     let header: HTTPHeaders = [
         "Authorization": "Bearer \(API.apiKey)",

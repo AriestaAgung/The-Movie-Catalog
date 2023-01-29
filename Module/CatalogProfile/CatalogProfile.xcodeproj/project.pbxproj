@@ -7,7 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		E5B9191B2978092900433AF7 /* CatalogProfile.docc in Sources */ = {isa = PBXBuildFile; fileRef = E5B9191A2978092900433AF7 /* CatalogProfile.docc */; };
+		E5793DD929862C0D00835318 /* CatalogCommon.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E5793DD729862C0D00835318 /* CatalogCommon.framework */; };
+		E5793DDA29862C0D00835318 /* CatalogCommon.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = E5793DD729862C0D00835318 /* CatalogCommon.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		E5793DDB29862C0D00835318 /* CatalogCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E5793DD829862C0D00835318 /* CatalogCore.framework */; };
+		E5793DDC29862C0D00835318 /* CatalogCore.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = E5793DD829862C0D00835318 /* CatalogCore.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		E57B66302985962A00BA0C36 /* CatalogProfile.h in Sources */ = {isa = PBXBuildFile; fileRef = E5B919192978092900433AF7 /* CatalogProfile.h */; };
+		E57B66312985962A00BA0C36 /* ProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E57BCDBB298563F9000275E4 /* ProfileView.swift */; };
 		E5B919212978092A00433AF7 /* CatalogProfile.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E5B919162978092900433AF7 /* CatalogProfile.framework */; };
 		E5B919262978092A00433AF7 /* CatalogProfileTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5B919252978092A00433AF7 /* CatalogProfileTests.swift */; };
 		E5B919272978092A00433AF7 /* CatalogProfile.h in Headers */ = {isa = PBXBuildFile; fileRef = E5B919192978092900433AF7 /* CatalogProfile.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -23,7 +28,24 @@
 		};
 /* End PBXContainerItemProxy section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		E5793DDD29862C0D00835318 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				E5793DDA29862C0D00835318 /* CatalogCommon.framework in Embed Frameworks */,
+				E5793DDC29862C0D00835318 /* CatalogCore.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
+		E5793DD729862C0D00835318 /* CatalogCommon.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = CatalogCommon.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E5793DD829862C0D00835318 /* CatalogCore.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = CatalogCore.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		E57BCDBB298563F9000275E4 /* ProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileView.swift; sourceTree = "<group>"; };
 		E5B919162978092900433AF7 /* CatalogProfile.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = CatalogProfile.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		E5B919192978092900433AF7 /* CatalogProfile.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CatalogProfile.h; sourceTree = "<group>"; };
@@ -37,6 +59,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E5793DD929862C0D00835318 /* CatalogCommon.framework in Frameworks */,
+				E5793DDB29862C0D00835318 /* CatalogCore.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -51,6 +75,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		E5793DD629862C0D00835318 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				E5793DD729862C0D00835318 /* CatalogCommon.framework */,
+				E5793DD829862C0D00835318 /* CatalogCore.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		E57BCDBA298563F9000275E4 /* View */ = {
 			isa = PBXGroup;
 			children = (
@@ -65,6 +98,7 @@
 				E5B919182978092900433AF7 /* CatalogProfile */,
 				E5B919242978092A00433AF7 /* CatalogProfileTests */,
 				E5B919172978092900433AF7 /* Products */,
+				E5793DD629862C0D00835318 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -117,6 +151,7 @@
 				E5B919122978092900433AF7 /* Sources */,
 				E5B919132978092900433AF7 /* Frameworks */,
 				E5B919142978092900433AF7 /* Resources */,
+				E5793DDD29862C0D00835318 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -204,7 +239,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E5B9191B2978092900433AF7 /* CatalogProfile.docc in Sources */,
+				E57B66302985962A00BA0C36 /* CatalogProfile.h in Sources */,
+				E57B66312985962A00BA0C36 /* ProfileView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -408,6 +444,7 @@
 		E5B9192E2978092A00433AF7 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = R2D4D7YLB2;
@@ -424,6 +461,7 @@
 		E5B9192F2978092A00433AF7 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = R2D4D7YLB2;

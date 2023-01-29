@@ -15,7 +15,7 @@ public class TVDetailEntity: Object {
     @objc dynamic var desc: String = ""
     @objc dynamic var firstAiring: String = ""
     
-    override static func primaryKey() -> String? {
+    public override static func primaryKey() -> String? {
       return "id"
     }
 }

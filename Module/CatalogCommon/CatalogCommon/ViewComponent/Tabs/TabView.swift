@@ -7,17 +7,27 @@
 
 import SwiftUI
 
-struct Tab {
-    var icon: Image?
-    var title: String
+public struct Tab {
+    public init(icon: Image?, title: String) {
+        self.icon = icon
+        self.title = title
+    }
+    public var icon: Image?
+    public var title: String
 }
 
-struct TabComponent: View {
-    var fixed = true
-    var tabs: [Tab]
-    var geoWidth: CGFloat
-    @Binding var selectedTab: Int
-    var body: some View {
+public struct TabComponent: View {
+    public var fixed = true
+    public var tabs: [Tab]
+    public var geoWidth: CGFloat
+    @Binding public var selectedTab: Int
+    public init(fixed: Bool = true, tabs: [Tab], geoWidth: CGFloat, selectedTab: Binding<Int>) {
+        self.fixed = fixed
+        self.tabs = tabs
+        self.geoWidth = geoWidth
+        self._selectedTab = selectedTab
+    }
+    public var body: some View {
         ScrollView(.horizontal, showsIndicators: false) {
             ScrollViewReader { proxy in
                 VStack(spacing: 0) {
@@ -69,13 +79,13 @@ struct TabComponent: View {
     }
 }
 
-struct TabView_Previews: PreviewProvider {
-    static var previews: some View {
-        TabComponent(fixed: true,
-                     tabs: [.init(icon: Image(systemName: "star.fill"), title: "Tab 1"),
-                            .init(icon: Image(systemName: "star.fill"), title: "Tab 2"),
-                            .init(icon: Image(systemName: "star.fill"), title: "Tab 3")],
-                     geoWidth: 375,
-                     selectedTab: .constant(0))
-    }
-}
+//struct TabView_Previews: PreviewProvider {
+//    static var previews: some View {
+//        TabComponent(fixed: true,
+//                     tabs: [.init(icon: Image(systemName: "star.fill"), title: "Tab 1"),
+//                            .init(icon: Image(systemName: "star.fill"), title: "Tab 2"),
+//                            .init(icon: Image(systemName: "star.fill"), title: "Tab 3")],
+//                     geoWidth: 375,
+//                     selectedTab: .constant(0))
+//    }
+//}

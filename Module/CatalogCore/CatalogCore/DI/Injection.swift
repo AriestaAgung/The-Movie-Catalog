@@ -7,9 +7,10 @@
 
 import RealmSwift
 import Realm
+import CatalogCommon
 
 public class Injection: NSObject {
-    public init() {}
+    public override init() {}
     private func provideTVRepository() -> TVRepositoryProtocol {
         let configuration = Realm.Configuration(
             schemaVersion: GeneralHelper.databaseSchemaVersion
@@ -33,6 +34,7 @@ public class Injection: NSObject {
         
         return MovieRepository.shared(locale, remote)
     }
+    
     public func provideHome() -> HomeUseCase {
         let repo = provideTVRepository()
         let movieRepo = provideMovieRepository()

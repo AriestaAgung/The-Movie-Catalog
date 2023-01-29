@@ -7,19 +7,21 @@
 
 import Foundation
 
-struct API {
-    static let baseUrl = Bundle.main.object(forInfoDictionaryKey: "BaseURL") as! String
-    static let imgBaseUrl = Bundle.main.object(forInfoDictionaryKey: "BaseImageURL") as! String
-    static let apiKey = Bundle.main.object(forInfoDictionaryKey: "MovieAPIKey") as! String
+public struct API {
+    public init() {}
+    
+    public static let baseUrl = Bundle.main.object(forInfoDictionaryKey: "BaseURL") as! String
+    public static let imgBaseUrl = Bundle.main.object(forInfoDictionaryKey: "BaseImageURL") as! String
+    public static let apiKey = Bundle.main.object(forInfoDictionaryKey: "MovieAPIKey") as! String
 }
 
 protocol Endpoint {
     var url: String { get }
 }
 
-enum Endpoints {
+public enum Endpoints {
     
-    enum Gets: Endpoint {
+    public enum Gets: Endpoint {
         case movieList
         case movieDetail
         case tvList

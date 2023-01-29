@@ -6,19 +6,17 @@
 //
 
 import SwiftUI
-import CatalogHome
 import CatalogCore
+import CatalogCommon
 
 @main
 struct TheMovieCatalogueApp: App {
-    
     init() {
-        let injection = Injection()
-        
+        GeneralHelper.getInfo(bundle: Bundle.main)
     }
     var body: some Scene {
         WindowGroup {
-            HomePage()
+            HomePage()            
         }
     }
 }

@@ -7,7 +7,7 @@
 
 import UIKit
 
-class UISimpleSlidingTabController: UIViewController {
+public class UISimpleSlidingTabController: UIViewController {
     
     private let collectionHeader = UICollectionView(frame: .zero, collectionViewLayout: UICollectionViewFlowLayout.init())
     private let collectionPage = UICollectionView(frame: .zero, collectionViewLayout: UICollectionViewFlowLayout.init())
@@ -22,24 +22,24 @@ class UISimpleSlidingTabController: UIViewController {
     private var tabStyle = SlidingTabStyle.fixed
     private let heightHeader = 57
     
-    func addItem(item: UIViewController, title: String){
+    public func addItem(item: UIViewController, title: String){
         items.append(item)
         titles.append(title)
     }
     
-    func setHeaderBackgroundColor(color: UIColor){
+    public func setHeaderBackgroundColor(color: UIColor){
         colorHeaderBackground = color
     }
     
-    func setHeaderActiveColor(color: UIColor){
+    public func setHeaderActiveColor(color: UIColor){
         colorHeaderActive = color
     }
     
-    func setHeaderInActiveColor(color: UIColor){
+    public func setHeaderInActiveColor(color: UIColor){
         colorHeaderInActive = color
     }
     
-    func setCurrentPosition(position: Int){
+    public func setCurrentPosition(position: Int){
         currentPosition = position
         let path = IndexPath(item: currentPosition, section: 0)
         
@@ -56,11 +56,11 @@ class UISimpleSlidingTabController: UIViewController {
         }
     }
     
-    func setStyle(style: SlidingTabStyle){
+    public func setStyle(style: SlidingTabStyle){
         tabStyle = style
     }
     
-    func build(){
+    public func build(){
         // view
         view.addSubview(collectionHeader)
         view.addSubview(collectionPage)
@@ -151,11 +151,11 @@ class UISimpleSlidingTabController: UIViewController {
 }
 
 extension UISimpleSlidingTabController: UICollectionViewDelegate{
-    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+    public func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
         setCurrentPosition(position: indexPath.row)
     }
     
-    func scrollViewDidEndDecelerating(_ scrollView: UIScrollView) {
+    public func scrollViewDidEndDecelerating(_ scrollView: UIScrollView) {
         if scrollView == collectionPage{
             let currentIndex = Int(self.collectionPage.contentOffset.x / collectionPage.frame.size.width)
             setCurrentPosition(position: currentIndex)
@@ -164,7 +164,7 @@ extension UISimpleSlidingTabController: UICollectionViewDelegate{
 }
 
 extension UISimpleSlidingTabController: UICollectionViewDataSource{
-    func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
+    public func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         if collectionView == collectionHeader {
             return titles.count
         }
@@ -172,7 +172,7 @@ extension UISimpleSlidingTabController: UICollectionViewDataSource{
         return items.count
     }
     
-    func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
+    public func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         if collectionView == collectionHeader {
             let cell = collectionView.dequeueReusableCell(withReuseIdentifier: collectionHeaderIdentifier, for: indexPath) as! HeaderCell
             cell.text = titles[indexPath.row]
@@ -204,7 +204,7 @@ extension UISimpleSlidingTabController: UICollectionViewDataSource{
 }
 
 extension UISimpleSlidingTabController: UICollectionViewDelegateFlowLayout{
-    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
+    public func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
         if collectionView == collectionHeader {
             if tabStyle == .fixed {
                 let spacer = CGFloat(titles.count)
@@ -217,7 +217,7 @@ extension UISimpleSlidingTabController: UICollectionViewDelegateFlowLayout{
         return CGSize(width: view.frame.width, height: view.frame.height)
     }
     
-    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, minimumLineSpacingForSectionAt section: Int) -> CGFloat {
+    public func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, minimumLineSpacingForSectionAt section: Int) -> CGFloat {
         if collectionView == collectionHeader {
             return 10
         }
@@ -226,7 +226,7 @@ extension UISimpleSlidingTabController: UICollectionViewDelegateFlowLayout{
     }
 }
 
-enum SlidingTabStyle: String {
+public enum SlidingTabStyle: String {
     case fixed
     case flexible
 }

@@ -6,9 +6,11 @@
 //
 
 import SwiftUI
+import CatalogCommon
 
 public struct ProfileView: View {
-    var body: some View {
+    public init() {}
+    public var body: some View {
         NavigationView{
             ZStack{
                 GeometryReader { geo in

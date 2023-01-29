@@ -7,10 +7,10 @@
 
 import SwiftUI
 
-struct CustomNavigationView: ViewModifier {
+public struct CustomNavigationView: ViewModifier {
 
 
-    init() {
+    public init() {
         // this is not the same as manipulating the proxy directly
         let appearance = UINavigationBarAppearance()
         
@@ -19,12 +19,13 @@ struct CustomNavigationView: ViewModifier {
         
         // this only applies to big titles
         appearance.largeTitleTextAttributes = [
-            .font : UIFont.getCustomFont(type: .bold, size: 20),
+//            .font : UIFont(type: .bold, size: 20),
+            .font: UIFont.init(type: .bold, size: 20),
             NSAttributedString.Key.foregroundColor : UIColor.white
         ]
         // this only applies to small titles
         appearance.titleTextAttributes = [
-            .font : UIFont.getCustomFont(type: .bold, size: 20),
+            .font: UIFont.init(type: .bold, size: 20),
             NSAttributedString.Key.foregroundColor : UIColor.white
         ]
         
@@ -41,7 +42,7 @@ struct CustomNavigationView: ViewModifier {
         UINavigationBar.appearance().isTranslucent = false
         
     }
-    func body(content: Content) -> some View {
+    public func body(content: Content) -> some View {
         content
     }
 }
