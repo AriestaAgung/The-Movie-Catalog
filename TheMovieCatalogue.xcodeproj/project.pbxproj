@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		E5204FBF298663A000950470 /* CatalogCommon.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E5204FBE298663A000950470 /* CatalogCommon.framework */; };
+		E5204FC1298663A000950470 /* CatalogCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E5204FC0298663A000950470 /* CatalogCore.framework */; };
+		E5204FC3298663A000950470 /* CatalogDetail.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E5204FC2298663A000950470 /* CatalogDetail.framework */; };
+		E5204FC5298663A000950470 /* CatalogProfile.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E5204FC4298663A000950470 /* CatalogProfile.framework */; };
 		E578BC5C2954626A00B8FDF0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E578BC5B2954626A00B8FDF0 /* Assets.xcassets */; };
 		E578BC5F2954626A00B8FDF0 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E578BC5E2954626A00B8FDF0 /* Preview Assets.xcassets */; };
 		E578BC692954626A00B8FDF0 /* TheMovieCatalogueTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E578BC682954626A00B8FDF0 /* TheMovieCatalogueTests.swift */; };
@@ -71,6 +75,14 @@
 
 /* Begin PBXFileReference section */
 		E517BEBA2980EF8D0052DC73 /* CatalogCommon.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = CatalogCommon.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E5204FB629865EC700950470 /* CatalogCommon.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = CatalogCommon.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E5204FB829865EC700950470 /* CatalogCore.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = CatalogCore.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E5204FBA29865EC700950470 /* CatalogDetail.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = CatalogDetail.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E5204FBC29865EC700950470 /* CatalogProfile.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = CatalogProfile.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E5204FBE298663A000950470 /* CatalogCommon.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = CatalogCommon.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E5204FC0298663A000950470 /* CatalogCore.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = CatalogCore.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E5204FC2298663A000950470 /* CatalogDetail.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = CatalogDetail.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E5204FC4298663A000950470 /* CatalogProfile.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = CatalogProfile.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		E577398B2980C5420053E43D /* TheMovieCatalogue-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "TheMovieCatalogue-Bridging-Header.h"; sourceTree = "<group>"; };
 		E578BC542954626900B8FDF0 /* TheMovieCatalogue.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TheMovieCatalogue.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E578BC5B2954626A00B8FDF0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -131,6 +143,10 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E5204FC5298663A000950470 /* CatalogProfile.framework in Frameworks */,
+				E5204FBF298663A000950470 /* CatalogCommon.framework in Frameworks */,
+				E5204FC3298663A000950470 /* CatalogDetail.framework in Frameworks */,
+				E5204FC1298663A000950470 /* CatalogCore.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -291,6 +307,14 @@
 		E5B918842977FF1F00433AF7 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				E5204FBE298663A000950470 /* CatalogCommon.framework */,
+				E5204FC0298663A000950470 /* CatalogCore.framework */,
+				E5204FC2298663A000950470 /* CatalogDetail.framework */,
+				E5204FC4298663A000950470 /* CatalogProfile.framework */,
+				E5204FB629865EC700950470 /* CatalogCommon.framework */,
+				E5204FB829865EC700950470 /* CatalogCore.framework */,
+				E5204FBA29865EC700950470 /* CatalogDetail.framework */,
+				E5204FBC29865EC700950470 /* CatalogProfile.framework */,
 				E5793DD02986208F00835318 /* CatalogDetail.framework */,
 				E5793DD22986208F00835318 /* CatalogFavorite.framework */,
 				E5793DD42986208F00835318 /* CatalogProfile.framework */,
