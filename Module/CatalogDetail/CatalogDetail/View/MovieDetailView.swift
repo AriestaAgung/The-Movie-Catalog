@@ -118,13 +118,19 @@ public struct MovieDetailView: View {
             self.presenter.isMovie = self.isMovie
             if self.presenter.isMovie {
                 print("id: \(self.presenter.selectedID)")
-                self.presenter.getMovie(id: self.presenter.movieDetail?.id ?? 0)
-                self.presenter.getFavMovie(id: self.presenter.movieDetail?.id ?? 0)
+                if isfav {
+                    self.presenter.getFavMovie(id: self.presenter.movieDetail?.id ?? 0)
+                } else {
+                    self.presenter.getMovie(id: self.presenter.movieDetail?.id ?? 0)
+                }
                 self.isfav = presenter.movieDetail?.isFavorite ?? false
             } else {
                 print("id: \(self.presenter.selectedID)")
-                self.presenter.getTv(id: self.presenter.tvDetail?.id ?? 0)
-                self.presenter.getFavTv(id: self.presenter.tvDetail?.id ?? 0)
+                if isfav {
+                    self.presenter.getFavTv(id: self.presenter.tvDetail?.id ?? 0)
+                } else {
+                    self.presenter.getTv(id: self.presenter.tvDetail?.id ?? 0)
+                }
                 self.isfav = presenter.tvDetail?.isFavorite ?? false
             }
         }
