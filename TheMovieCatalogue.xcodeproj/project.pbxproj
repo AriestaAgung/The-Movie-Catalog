@@ -39,7 +39,6 @@
 		E5ED66D12986535000F4CB78 /* Montserrat-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = E5ED66CD2986535000F4CB78 /* Montserrat-Bold.ttf */; };
 		E5ED66D22986535000F4CB78 /* Montserrat-SemiBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = E5ED66CE2986535000F4CB78 /* Montserrat-SemiBold.ttf */; };
 		E5ED66D32986535000F4CB78 /* Montserrat-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = E5ED66CF2986535000F4CB78 /* Montserrat-Regular.ttf */; };
-		E5ED66D52986593900F4CB78 /* .travis.yml in Resources */ = {isa = PBXBuildFile; fileRef = E5ED66D42986593900F4CB78 /* .travis.yml */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -126,7 +125,6 @@
 		E5ED66CD2986535000F4CB78 /* Montserrat-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Montserrat-Bold.ttf"; sourceTree = "<group>"; };
 		E5ED66CE2986535000F4CB78 /* Montserrat-SemiBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Montserrat-SemiBold.ttf"; sourceTree = "<group>"; };
 		E5ED66CF2986535000F4CB78 /* Montserrat-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Montserrat-Regular.ttf"; sourceTree = "<group>"; };
-		E5ED66D42986593900F4CB78 /* .travis.yml */ = {isa = PBXFileReference; lastKnownFileType = text.yaml; path = .travis.yml; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -166,7 +164,6 @@
 			isa = PBXGroup;
 			children = (
 				E5204FC629867D8F00950470 /* codemagic.yaml */,
-				E5ED66D42986593900F4CB78 /* .travis.yml */,
 				E578BC562954626900B8FDF0 /* TheMovieCatalogue */,
 				E578BC672954626A00B8FDF0 /* TheMovieCatalogueTests */,
 				E578BC712954626A00B8FDF0 /* TheMovieCatalogueUITests */,
@@ -475,7 +472,6 @@
 				E5204FC729867D8F00950470 /* codemagic.yaml in Resources */,
 				E5ED66D02986535000F4CB78 /* Montserrat-Medium.ttf in Resources */,
 				E578BC5C2954626A00B8FDF0 /* Assets.xcassets in Resources */,
-				E5ED66D52986593900F4CB78 /* .travis.yml in Resources */,
 				E5ED66D22986535000F4CB78 /* Montserrat-SemiBold.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

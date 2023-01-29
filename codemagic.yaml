@@ -1,0 +1,22 @@
+workflows:
+    sample-workflow:
+        name: iOS - Build
+        max_build_duration: 3600
+        instance_type: mac_mini_m1
+environment:
+    vars:
+      BUNDLE_ID: "com.dcd.TheMovieCatalogue"
+      XCODE_WORKSPACE: "TheMovieCatalogue.xcworkspace" # <-- Name of your Xcode workspace
+      XCODE_SCHEME: "TheMovieCatalogue" # <-- Name of your Xcode scheme
+scripts:
+  # ...
+  - name: TheMovieCatalogue Build Ipa
+    script: |
+      xcode-project build-ipa \
+        --workspace "$CM_BUILD_DIR/$XCODE_WORKSPACE" \
+        --scheme "$XCODE_SCHEME"
+artifacts:
+  - build/ios/ipa/*.ipa
+  - /tmp/xcodebuild_logs/*.log
+  - $HOME/Library/Developer/Xcode/DerivedData/**/Build/**/*.app
+  - $HOME/Library/Developer/Xcode/DerivedData/**/Build/**/*.dSYM
