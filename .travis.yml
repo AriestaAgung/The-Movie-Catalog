@@ -1,0 +1,6 @@
+
+language: swift
+osx_image: xcode14.2
+xcode_project: TheMovieCatalogue.xcodeproj
+xcode_scheme: TheMovieCatalogue
+xcode_destination: platform=iOS Simulator,OS=16.2,name=iPhone 14 Pro
