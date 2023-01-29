@@ -96,7 +96,6 @@
 		E57BCD97298563AA000275E4 /* MovieDetailResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieDetailResponse.swift; sourceTree = "<group>"; };
 		E5B918622977F74300433AF7 /* CatalogCore.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = CatalogCore.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		E5B918652977F74300433AF7 /* CatalogCore.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CatalogCore.h; sourceTree = "<group>"; };
-		E5B918662977F74300433AF7 /* CatalogCore.docc */ = {isa = PBXFileReference; lastKnownFileType = folder.documentationcatalog; path = CatalogCore.docc; sourceTree = "<group>"; };
 		E5B9186C2977F74300433AF7 /* CatalogCoreTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CatalogCoreTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		E5B918712977F74300433AF7 /* CatalogCoreTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CatalogCoreTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -295,7 +294,6 @@
 				E57BCD82298563AA000275E4 /* Data */,
 				E57BCD80298563AA000275E4 /* DI */,
 				E57BCD78298563AA000275E4 /* Domain */,
-				E5B918662977F74300433AF7 /* CatalogCore.docc */,
 			);
 			path = CatalogCore;
 			sourceTree = "<group>";
